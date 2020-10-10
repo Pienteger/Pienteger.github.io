@@ -1,0 +1,17 @@
+#WWW Rewriter
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pienteger.com[nc]
+RewriteRule ^(.*)$ http:#www.pienteger.com/$1 [r=301,nc]
+#WWW Rewriter
+#Error 404
+#ErrorDocument 404 http://mahmudx.com/404
+#Error 404
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+#Mixed Settings
+#Disable access to .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+#Mixed Settings
