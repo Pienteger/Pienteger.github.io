@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career at Pienteger | Pienteger Jobs </title>
+    <script type="module" src="https://unpkg.com/@microsoft/fast-components"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fabric.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="./img/pi.PNG" />
+</head>
+<fast-design-system-provider use-defaults background-color="#faf9f8">
+
+    <body class="scrollbar-custom" style="margin: 0;">
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <a href="https://www.pienteger.com">Home</a>
+                <a href="">Career</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNavToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div style="margin: 0px 10px 0px 10px; padding: 15px 10px;min-height: 100vh;">
+            <fast-card style="height: 90h;">
+                <img src="./img/classaidlogo.png" />
+                <div style="padding: 0 10px 10px; color: var(--neutral-foreground-rest)">
+                    <h2>ClassAiD - Student Power Tool</h2>
+                    <p><a href="https://appcenter.ms"><img
+                                src="https://build.appcenter.ms/v0.1/apps/b336c44f-1df2-4d73-9721-88e703d2c453/branches/master/badge"
+                                alt="Build status"></a></p>
+                                <p>
+                                    ClassAiD is an advanced class management tool that lets you
+                                    bring your entire class within a single network. 
+                                    Class representatives can send notice and set class schedules. 
+                                    Everyone in a single network can chat in a room.
+                                </p>
+                                <p>Thank you for joining our beta program.</p>
+                    <fast-anchor
+                        href="https://firebasestorage.googleapis.com/v0/b/classaidapp.appspot.com/o/com.pienteger.classaid.apk?alt=media&token=a3c5bcf6-2eaf-49e6-b4b0-d45019d567b4">
+                        Download Beta</fast-anchor>
+                </div>
+            </fast-card>
+        </div>
+        <script>
+            function responsiveNavToggle() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</fast-design-system-provider>
+
+
+</html>
