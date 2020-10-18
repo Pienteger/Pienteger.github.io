@@ -5,7 +5,7 @@ RewriteCond %{HTTP_HOST} ^pienteger.com[nc]
 RewriteRule ^(.*)$ http:#www.pienteger.com/$1 [r=301,nc]
 #WWW Rewriter
 #Error 404
-#ErrorDocument 404 http://mahmudx.com/404
+ErrorDocument 404 http://www.pienteger.com
 #Error 404
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 #Mixed Settings
