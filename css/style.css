@@ -89,8 +89,9 @@ em {
   font-size: small;
 }
 .responsive {
-  width: 100%;
+  width: 50%;
   height: auto;
+  border: 1px solid #6264A7;
 }
 .card {
   width: 23.5vw;
