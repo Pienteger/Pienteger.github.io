@@ -1,9 +1,7 @@
 @import url("https://use.typekit.net/hcj0syx.css");
 body {
   font-family: acumin-pro, sans-serif;
-
   font-weight: 400;
-
   font-style: normal;
 }
 
@@ -65,24 +63,35 @@ fast-anchor {
   padding: 10px;
   /* color: #11100f; */
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: acuta, serif;
   font-weight: 500;
   font-style: normal;
+  color: #11100f;
 }
-h2 {
-  font-family: ibm-plex-mono, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-p {
+p,
+ul,
+em {
   font-family: ibm-plex-serif, sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #161514;
+
+}
+em {
+  font-style: italic;
+  font-weight: 400;
+  font-size: small;
 }
 .responsive {
-  width: 100%;
+  width: 50%;
   height: auto;
+  border: 1px solid #6264A7;
 }
 .card {
   width: 23.5vw;

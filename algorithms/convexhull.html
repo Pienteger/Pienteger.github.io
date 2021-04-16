@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Algorithms - Convex Hull | Pienteger</title>
+    <script type="module" src="https://unpkg.com/@microsoft/fast-components"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <link rel="stylesheet" href="../css/fabric.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../img/pi.png" />
+</head>
+<!-- background-color="#faf9f8" -->
+<fast-design-system-provider use-defaults background-color="#faf9f8">
+
+    <body class="scrollbar-custom" style="margin: 0;">
+        <header>
+            <nav class="topnav" id="myTopnav">
+                <a href="https://www.pienteger.com">Home</a>
+                <a href="">Career</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNavToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <div style="margin: 0px 10px 0px 10px; padding: 15px 10px;min-height: 100vh;">
+            <div class="ms-Grid" dir="ltr">
+                <div class="ms-Grid-row">
+                    <h1>Gift wrapping algorithm</h1>
+                    <p>
+                        In computational geometry, numerous algorithms are proposed for computing the
+                        convex hull of a finite set of points, with various computational complexities.
+                        The gift wrapping algorithm is one of the most famous algorithms
+                        for computing the convex hull of a given set of points.
+                    </p>
+                    <h2>Visualization</h2>
+                    <div class="ms-Grid-col ms-sm12 ms-md12 ms-lg12">
+                        <center>
+                            <div id="convexHolder"></div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+    </body>
+</fast-design-system-provider>
+
+<script src="../js/convexhull.js"></script>
+</html>
