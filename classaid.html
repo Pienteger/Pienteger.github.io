@@ -2,8 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ClassAiD | Inter class collaboration tool </title>
     <meta property="og:title" content="ClassAiD - Inter class collaboration tool" />
     <meta property="og:url" content="https://www.pienteger.com/classaid" />
@@ -11,11 +17,20 @@
         content="https://raw.githubusercontent.com/Pienteger/Pienteger.github.io/master/img/ogclassaidlogo.jpg" />
     <meta property="og:description"
         content="Download ClassAiD beta v2 and let us know about your experience. We will appreciate your valuable feedback." />
+
     <script type="module" src="https://unpkg.com/@microsoft/fast-components"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fabric.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="./img/pi.png" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon192.png">
+
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
 <fast-design-system-provider use-defaults background-color="#faf9f8">
 
@@ -27,6 +42,9 @@
         </style>
         <header>
             <nav class="topnav" id="myTopnav">
+                <a style="padding: 0;">
+                    <img src="/img/pienteger_logo.png" style="width: 48px; max-height: 100%;" />
+                </a>
                 <a href="https://www.pienteger.com">Home</a>
                 <a href="">Career</a>
                 <a href="javascript:void(0);" class="icon" onclick="responsiveNavToggle()">
@@ -83,13 +101,15 @@
                             However,
                             we can not read messages and personal information such as phone numbers. Because they are
                             stored
-                            as encrypted text.</em></p>
+                            as encrypted text.</em>
+                    </p>
                     <h3>Screenshot</h3>
                     <center>
                         <img src="./img/ss_clasaid.png" class="responsive" />
                     </center>
                     <center>
-                        <em>Seeing repetitive data? Yes because we wanted to.</em></center>
+                        <em>Seeing repetitive data? Yes because we wanted to.</em>
+                    </center>
                     <h3>Note</h3>
                     <p>
                         In the future, we will use ClassAiD's chat pipeline to train our language processing model.

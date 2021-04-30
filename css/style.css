@@ -12,6 +12,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #5c2d91;
+  height: 48px;
+  padding-left: 48px;
 }
 
 .topnav a {
@@ -81,7 +83,6 @@ em {
   font-weight: 500;
   font-style: normal;
   color: #161514;
-
 }
 em {
   font-style: italic;
@@ -91,7 +92,7 @@ em {
 .responsive {
   width: 50%;
   height: auto;
-  border: 1px solid #6264A7;
+  border: 1px solid #6264a7;
 }
 .card {
   width: 23.5vw;
@@ -125,6 +126,9 @@ em {
   .topnav a {
     float: left;
   }
+  .topnav {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 600px) {
   .middle {
@@ -147,5 +151,17 @@ em {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+.img_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .img_center {
+    width: 100%;
   }
 }
