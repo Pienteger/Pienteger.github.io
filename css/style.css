@@ -1,6 +1,8 @@
 @import url("https://use.typekit.net/hcj0syx.css");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
 body {
-  font-family: acumin-pro, sans-serif;
+  font-family: 'Baloo Da 2', cursive, acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -41,9 +43,11 @@ body {
 .topnav .icon {
   display: none;
 }
+
 .middle {
   margin-top: 35px;
 }
+
 .footer {
   left: 0;
   bottom: 0;
@@ -52,6 +56,7 @@ body {
   color: #11100f;
   text-align: center;
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -61,42 +66,49 @@ a,
 fast-anchor {
   text-decoration: none !important;
 }
+
 .contentBox {
   padding: 10px;
   /* color: #11100f; */
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: acuta, serif;
+  font-family: 'Baloo Da 2', cursive, acuta, serif;
   font-weight: 500;
   font-style: normal;
   color: #11100f;
 }
+
 p,
 ul,
 em {
-  font-family: ibm-plex-serif, sans-serif;
+  font-family: 'Baloo Da 2', cursive, ibm-plex-serif, sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #161514;
 }
+
 em {
   font-style: italic;
   font-weight: 400;
   font-size: small;
 }
+
 .responsive {
   width: 50%;
   height: auto;
   border: 1px solid #6264a7;
 }
+
 .card {
   width: 23.5vw;
 }
+
 .scrollbar-custom::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -119,34 +131,42 @@ em {
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
   }
+
   .topnav a {
     float: left;
   }
+
   .topnav {
     padding-left: 10px;
   }
 }
+
 @media (max-width: 600px) {
   .middle {
     margin-top: 0px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .card {
     width: 90vw;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -160,6 +180,7 @@ em {
   margin-right: auto;
   width: 50%;
 }
+
 @media only screen and (max-width: 600px) {
   .img_center {
     width: 100%;
