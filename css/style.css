@@ -5,9 +5,8 @@ body {
   font-family: 'Baloo Da 2', cursive, acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+  scroll-behavior: smooth;
 
-body {
   margin: 0;
 }
 
@@ -48,19 +47,6 @@ body {
   margin-top: 35px;
 }
 
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #faf9f8;
-  color: #11100f;
-  text-align: center;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-}
 
 a,
 fast-anchor {
@@ -90,7 +76,6 @@ em {
   font-family: 'Baloo Da 2', cursive, ibm-plex-serif, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #161514;
 }
 
 em {
@@ -181,8 +166,154 @@ em {
   width: 50%;
 }
 
+
+
+.bottom-bar {
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #5c2e91;
+}
+
+.top-bar {
+  height: 10px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: #5c2e91;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  width: -moz-available;
+  box-sizing: border-box;
+  background-color: #1b1a19;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.footer .links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .links>a {
+  margin: 0 5px;
+  color: #8764b8;
+}
+
+.header {
+  background-color: #F5F3F1;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  height: 48px;
+  width: 100%;
+  width: -moz-available;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+.header>img {
+  max-height: 100%;
+  height: 40px;
+  width: 40px;
+  align-content: center;
+  align-self: center;
+}
+
+.header>a {
+  color: #1b1a19;
+  text-decoration: none !important;
+}
+
+.header .divider {
+  height: 30px;
+  width: 3px;
+  background-color: black;
+  align-self: center;
+  margin: 0 1vw;
+}
+
+.header .links {
+  color: #1b1a19;
+  align-self: center;
+}
+
+header .links>a {
+  color: #1b1a19;
+  font-weight: 600;
+  font-size: large;
+  margin: 0 5px;
+}
+
+.header>.account {
+  color: #1b1a19;
+  align-self: center;
+  margin-left: auto;
+}
+
+header .account>a {
+  color: #1b1a19;
+  font-weight: 600;
+  font-size: large;
+  margin: 0 5px;
+}
+
+
+
+.main {
+  top: 58px;
+  position: relative;
+  padding: 15px 10px;
+  overflow: hidden;
+  height: 100%;
+  height: fit-content;
+  display: inline-block;
+  scroll-behavior: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .img_center {
     width: 100%;
+  }
+
+  .header {
+    flex-flow: column;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .main {
+    top: auto;
+    position: relative;
+  }
+
+  .links {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .account {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header .divider {
+    display: none;
   }
 }
