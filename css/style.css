@@ -100,11 +100,14 @@ img {
   width: -moz-available;
   box-sizing: border-box;
   background-color: #1b1a19;
-  color: #fff;
   text-align: center;
   overflow: hidden;
   margin-top: 50px;
   padding-top: 15px;
+}
+
+.footer>p {
+  color: #edebe9;
 }
 
 .footer .links {
