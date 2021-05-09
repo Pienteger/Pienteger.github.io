@@ -194,6 +194,7 @@ header .account>a {
   display: inline-block;
   scroll-behavior: auto;
   padding: 3vh 10vw;
+  min-height: 71vh;
 }
 
 @media only screen and (max-width: 600px) {

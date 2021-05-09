@@ -29,38 +29,54 @@
 
 <fast-design-system-provider use-defaults background-color="#faf9f8">
 
-    <body style="margin: 0;" class="scrollbar-custom">
-        <header>
-            <nav class="topnav" id="myTopnav">
-                <a style="padding: 0;">
-                    <img src="/img/pienteger_logo.png" style="width: 48px; max-height: 100%;" />
-                </a>
-                <a class="active" href="./index.html">Home</a>
-                <!-- <a href="./logo">Logo</a> -->
-                <a href="javascript:void(0);" class="icon" onclick="responsiveNavToggle()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
+    <body class="scrollbar-custom">
+        <div class="top-bar"></div>
+        <header class="header">
+            <a href="/index.html">
+                <img src="/img/pienteger_logo.png" />
+            </a>
+            <div class="divider"></div>
+            <div class="links">
+                <a href="/index.html">Home</a>
+                <a href="">About</a>
+                <a href="">Products</a>
+                <a href="">Solutions</a>
+                <a href="">Docs</a>
+            </div>
+            <div class="account">
+                <a href="">Store</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
         </header>
-        <div style="margin: 0px 10px 0px 10px; padding: 15px 10px;min-height: 100vh;">
+        <div class="main">
             <div class="ms-Grid" dir="ltr">
                 <div class="ms-Grid-row">
-                    <fast-card
-                        style="width: 70vw; padding:10px 15px; margin: 3px; margin-left: auto; margin-right: auto;"
-                        class="card">
-                        <div x-data="hadith" x-init="getHadith()">
-                            <h2>আপনি যে পেজটি খুঁজছেন তা পাওয়া যায় নি।</h2>
-                            <h4>আপনি হোমে ফিরে যেতে পারেন। তার আগে হাদিস টি পড়ে নিন।</h4>
-                            <p x-text="body"></p>
-                            <p>বর্ণনাকারীঃ <span x-text="speaker"></span></p>
-                            <p>বইঃ <span x-text="book"></span></p>
-                            <p>মানঃ <span x-text="condition"></span></p>
-                        </div>
-                    </fast-card>
+                    <h1>404</h1>
+                    <h2>আপনি যে পেজটি খুঁজছেন তা পাওয়া যায় নি।</h2>
+                    <h4>আপনি <a href="/index.html">হোমে</a> ফিরে যেতে পারেন। তার আগে হাদিস টি পড়ে নিন।</h4>
+                    <div x-data="hadith" x-init="getHadith()">
+                        <p x-text="body"></p>
+                        <p>বর্ণনাকারীঃ <span x-text="speaker"></span></p>
+                        <p>বইঃ <span x-text="book"></span></p>
+                        <p>মানঃ <span x-text="condition"></span></p>
+                    </div>
                 </div>
             </div>
 
         </div>
+        <footer class="footer">
+            <div class="links">
+                <a>Privacy</a>|
+                <a href="/terms.html">TOS</a>|
+                <a href="/logo.html">Logo</a>|
+                <a>History</a>|
+                <a href="/careers.html">Career</a>
+            </div>
+
+            <p>Made with love in Bangladesh</p>
+        </footer>
+        <div class="bottom-bar"></div>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script>
             const hadith = {
