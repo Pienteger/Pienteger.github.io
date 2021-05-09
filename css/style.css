@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import url("./noto.ttf");
-@import url("./noto-re.ttf");
+@import url(./fluenticon.css);
+
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url("./noto.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans Regular";
+  src: url("./noto-re.ttf") format("truetype");
+}
 
 :root {
   --first-color: #27133D;
@@ -8,6 +17,8 @@
   --third-color: #8809E3;
   --fourth-color: #859600;
   --fifth-color: #7C3FC2;
+  --text-primary: #161514;
+  --text-secondary: #292827;
 }
 
 body {
@@ -23,6 +34,19 @@ a {
   font-style: normal;
   text-decoration: none;
   color: var(--fourth-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
 }
 
 img {
@@ -111,7 +135,7 @@ footer .links>a {
   align-content: center;
 }
 
-.header>img {
+.header>a>img {
   max-height: 100%;
   height: 40px;
   width: 40px;
