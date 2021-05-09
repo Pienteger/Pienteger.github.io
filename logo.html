@@ -11,8 +11,6 @@
     <title>Logo | Pienteger</title>
 
     <meta property="og:image" content="/img/logo_banner.png" />
-    <script type="module" src="https://unpkg.com/@microsoft/fast-components"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fabric.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -26,59 +24,61 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 </head>
 
-
-<fast-design-system-provider use-defaults background-color="#faf9f8">
-
-    <body class="scrollbar-custom" style="margin: 0;">
-        <header>
-            <nav class="topnav" id="myTopnav">
-                <a style="padding: 0;">
-                    <img src="/img/pienteger_logo.png" style="width: 48px; max-height: 100%;" />
-                </a>
-                <a href="https://www.pienteger.com">Home</a>
-                <a class="active" href="">Logo</a>
-                <a href="javascript:void(0);" class="icon" onclick="responsiveNavToggle()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-        </header>
-        <div style="margin: 0px 10px 0px 10px; padding: 15px 10px;min-height: 100vh;">
-            <div style="padding-left: 20px; padding-right: 20px;">
-
-                <h1>Shape, Color, and Stroke | Pienteger adopts a newly designed logo</h1>
-                <img src="/img/logo_banner.png"
-                    alt="A black banner image contains Pienteger's logo at the left bottom and a text 'Int32.Parse(π);' at the top right corner."
-                    class="img_center" />
-
-                <p>
-                    Pienteger's new logo expresses durability, security, strength which can be
-                    defined by math. It's a black squire that contains 3, 'i' and a perfect angle.
-                    The name Pienteger came from the concept of an integer typed π. Here 3 in
-                    the logo expresses the integer version of π which is 3, 'i' means 'integer'
-                    and the angle refers to strength with flexibility.
-                </p>
-                <h2>Pienteger's Logo</h2>
-                <h3>Main Logo</h3>
-                <img src="/img/pienteger_logo.png" alt="Pienteger's Logo" class="img_center" />
-                <h3>Gradient Logo</h3>
-                <img src="/img/pienteger_logo_gradient.png" alt="Pienteger's Logo with a gradient background"
-                    class="img_center" />
-                <h3>White Banner</h3>
-                <img src="/img/white_banner.png" alt="Pienteger's Logo in a white banner." class="img_center" />
-            </div>
+<body class="scrollbar-custom">
+    <div class="top-bar"></div>
+    <header class="header">
+        <img src="/img/pienteger_logo.png" />
+        <div class="divider"></div>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Products</a>
+            <a href="">Solutions</a>
+            <a href="">Docs</a>
         </div>
-        <script>
-            function responsiveNavToggle() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-    </body>
-</fast-design-system-provider>
+        <div class="account">
+            <a href="">Store</a>
+            <a href="">Login</a>
+            <a href="">Sign Up</a>
+        </div>
+    </header>
+    <div class="main">
+        <div style="padding-left: 20px; padding-right: 20px;">
 
+            <h1>Shape, Color, and Stroke | Pienteger adopts a newly designed logo</h1>
+            <img src="/img/logo_banner.png"
+                alt="A black banner image contains Pienteger's logo at the left bottom and a text 'Int32.Parse(π);' at the top right corner."
+                class="img_center" />
+
+            <p>
+                Pienteger's new logo expresses durability, security, strength which can be
+                defined by math. It's a black squire that contains 3, 'i' and a perfect angle.
+                The name Pienteger came from the concept of an integer typed π. Here 3 in
+                the logo expresses the integer version of π which is 3, 'i' means 'integer'
+                and the angle refers to strength with flexibility.
+            </p>
+            <h2>Pienteger's Logo</h2>
+            <h3>Main Logo</h3>
+            <img src="/img/pienteger_logo.png" alt="Pienteger's Logo" class="img_center" />
+            <h3>Gradient Logo</h3>
+            <img src="/img/pienteger_logo_gradient.png" alt="Pienteger's Logo with a gradient background"
+                class="img_center" />
+            <h3>White Banner</h3>
+            <img src="/img/white_banner.png" alt="Pienteger's Logo in a white banner." class="img_center" />
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="links">
+            <a>Privacy</a>|
+            <a>TOS</a>|
+            <a href="/logo.html">Logo</a>|
+            <a>History</a>|
+            <a href="/careers.html">Career</a>
+        </div>
+
+        <p>Made with love in Bangladesh</p>
+    </footer>
+    <div class="bottom-bar"></div>
+</body>
 
 </html>
