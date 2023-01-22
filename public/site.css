@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Bengali&display=swap');
+
+:root {
+    --first-color: #27133D;
+    --second-color: #A424FF;
+    --third-color: #8809E3;
+    --fourth-color: #859600;
+    --fifth-color: #7C3FC2;
+    --text-primary: #161514;
+    --text-secondary: #292827;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, 'Noto Sans Bengali', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    scroll-behavior: smooth;
+    margin: 0;
+    background-color: #fff;
+}
+
+code {
+    font-family: 'Cascadia Code', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+
+a {
+    /* font-family: 'Open Sans', 'Noto Sans Bengali', sans-serif; */
+    font-style: normal;
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+    background-color: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background-color: none;
+
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--fifth-color);
+    display: auto;
+}
+
+@media screen and (max-width: 600px) {}
+
+.top-bar {
+    height: 10px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: var(--first-color);
+}
+
+mt-3 {
+    margin-top: 20px;
+}
+
+.header {
+    background-color: #F5F3F1;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    height: 48px;
+    width: 100%;
+    width: -moz-available;
+    padding: 0 5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* display: flex;
+    flex-flow: row wrap;
+    align-content: center; */
+}
+
+.header-logo {
+    max-height: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.header>a {
+    color: #1b1a19;
+    text-decoration: none !important;
+}
+
+.header .divider {
+    height: 30px;
+    width: 3px;
+    background-color: black;
+    align-self: center;
+    margin: 0 1vw;
+}
+
+.header .links {
+    color: #1b1a19;
+    align-self: center;
+}
+
+header .links>a {
+    color: #1b1a19;
+    /* font-weight: 600; */
+    font-size: large;
+    margin: 0 5px;
+}
+
+.header>.account {
+    color: #1b1a19;
+    align-self: center;
+    margin-left: auto;
+}
+
+header .account>a {
+    color: #1b1a19;
+    /* font-weight: 600; */
+    font-size: large;
+    margin: 0 5px;
+}
+
+.bottom-bar {
+    height: 10px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: var(--first-color);
+}
+
+.footer {
+    /* bottom: 10px; */
+    position: relative;
+    width: 100%;
+    width: -moz-available;
+    box-sizing: border-box;
+    background-color: #1b1a19;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: 15px;
+}
+
+.footer>p {
+    color: #edebe9;
+}
+
+.footer .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links>a {
+    margin: 0 5px;
+    color: #8764b8;
+}
+
+.container {
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+.main {
+    top: 58px;
+    position: relative;
+    padding: 15px 10px;
+    overflow: hidden;
+    height: 100%;
+    height: fit-content;
+    display: inline-block;
+    scroll-behavior: auto;
+    padding: 3vh 10vw;
+    min-height: 71vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .img_center {
+        width: 100%;
+    }
+
+    .header {
+        flex-flow: column;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+
+    .main {
+        top: auto;
+        position: relative;
+        padding: 0 6vw;
+
+    }
+
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .account {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header .divider {
+        display: none;
+    }
+}
+
+.anchor-button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.anchor-button:hover {
+    background-color: #e1dfdd;
+}
+
+.anchor-button>a {
+    color: #1b1a19;
+    font-weight: 600;
+}
