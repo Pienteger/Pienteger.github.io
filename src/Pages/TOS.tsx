@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const TOS = () => {
+    useEffect(() => {
+        document.title = "Terms of Services - Pienteger";
+    }, []);
     return (<>
         <h1>Website Terms of Use</h1>
         <h5>Version 1.0, last updated: Jan 22, 2023</h5>

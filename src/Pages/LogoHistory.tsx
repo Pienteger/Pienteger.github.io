@@ -2,8 +2,12 @@ import logo from '../images/pienteger_logo.png';
 import logoGrad from '../images/pienteger_logo_gradient.png';
 import whiteBg from '../images/white_banner.png';
 import logoBanner from '../images/logo_banner.png';
+import { useEffect } from 'react';
 
 const LogoHistory = () => {
+    useEffect(() => {
+        document.title = "Logo History - Pienteger";
+    }, []);
     return (<>
 
         <div style={{ paddingLeft: '20px', paddingRight: '20px' }}>

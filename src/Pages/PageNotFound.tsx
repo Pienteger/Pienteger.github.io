@@ -17,34 +17,9 @@ interface Hadith {
     grades: any[];
 }
 
-
 const PageNotFound = () => {
-    const [randomH, setRandomH] = useState<RandomH>();
-
-    // call https://api.sunnah.com/v1/hadiths/random with X-API-Key
-    // and get a random hadith
-    // and display it on the page
-
-    const getHadith = () => {
-        fetch('https://api.sunnah.com/v1/hadiths/random', {
-            method: 'GET',
-            headers: {
-                'X-API-Key': '',
-                'Content-Type': 'application/jsonp'
-            }
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                setRandomH(data);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    }
-
     useEffect(() => {
-        getHadith();
+        document.title = "Page Not Found - Pienteger";
     }, []);
 
     return (

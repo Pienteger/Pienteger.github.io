@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Copyrights = () => {
+    useEffect(() => {
+        document.title = "Copyrights and attributes - Pienteger";
+      }, []);
     return (
         <>
             <h1 className="display-1">Copyrights and attributes</h1>

@@ -4,8 +4,15 @@ import csharp from "../images/programming-languages/c-sharp.png";
 import sql from "../images/programming-languages/sql-server.png";
 import ts from "../images/programming-languages/typescript.png";
 import dotnet_bot from "../images/programming-languages/dotnet_bot.svg";
+import { useEffect } from "react";
 
 const Home = () => {
+
+
+    useEffect(() => {
+        document.title = "Home Page - Pienteger";
+      }, []);
+
     return (
         <>
             <h1 style={{ fontSize: '10vw' }}>WE BUILD <span className="flamingo-1 bold">SOFTWARE</span></h1>
