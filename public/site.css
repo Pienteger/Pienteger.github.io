@@ -8,6 +8,37 @@
     --fifth-color: #7C3FC2;
     --text-primary: #161514;
     --text-secondary: #292827;
+
+    --flamingo-1: #FF3F3B;
+    --flamingo-2: #F28585;
+    --flamingo-3: #F24452;
+    --flamingo-4: #DB324F;
+    --flamingo-5: #FF3B6C;
+}
+
+/* Flamingo Color Theme Swatches in Hex */
+.flamingo-1 {
+    color: #FF3F3B;
+}
+
+.flamingo-2 {
+    color: #F28585;
+}
+
+.flamingo-3 {
+    color: #F24452;
+}
+
+.flamingo-4 {
+    color: #DB324F;
+}
+
+.flamingo-5 {
+    color: #FF3B6C;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 body {
@@ -34,6 +65,10 @@ a {
     color: var(--fourth-color);
 }
 
+a:hover {
+    color: var(--flamingo-4);
+}
+
 h1,
 h2,
 h3,
@@ -47,10 +82,10 @@ p {
     color: var(--text-secondary);
 }
 
-img {
+/* img {
     height: 100%;
     width: 100%;
-}
+} */
 
 .scrollbar-custom::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -81,7 +116,7 @@ img {
     width: 100%;
     top: 0;
     position: absolute;
-    background-color: var(--first-color);
+    background-color: var(--flamingo-4);
 }
 
 mt-3 {
@@ -151,14 +186,15 @@ header .account>a {
 .bottom-bar {
     height: 10px;
     width: 100%;
-    bottom: 0;
-    position: relative;
-    background-color: var(--first-color);
+    /* position: relative; */
+    background-color: var(--flamingo-4);
 }
 
 .footer {
     /* bottom: 10px; */
     position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
     width: -moz-available;
     box-sizing: border-box;
@@ -202,6 +238,8 @@ footer .links>a {
     padding: 3vh 10vw;
     min-height: 71vh;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .img_center {
@@ -253,4 +291,9 @@ footer .links>a {
 .anchor-button>a {
     color: #1b1a19;
     font-weight: 600;
+}
+
+.text-size-1-5rem {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
