@@ -14,8 +14,8 @@ const HeaderComponent = () => {
                     </a>
                     <div className="divider"></div>
                     <div className="links">
-                        <a href="/">Home</a>
-                        <a href="/about">About</a>
+                        {/* <a href="/">Home</a>
+                        <a href="/about">About</a> */}
                         <a href="/products">Products</a>
                         <a href="/solutions">Solutions</a>
                         <a href="/docs">Docs</a>

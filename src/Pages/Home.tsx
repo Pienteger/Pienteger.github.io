@@ -11,21 +11,40 @@ const Home = () => {
 
     useEffect(() => {
         document.title = "Home Page - Pienteger";
-      }, []);
+    }, []);
 
     return (
         <>
-            <h1 style={{ fontSize: '10vw' }}>WE BUILD <span className="flamingo-1 bold">SOFTWARE</span></h1>
+            <h1 className="mt-20vmax">At our HQ, we build</h1>
+            <div className="d-flex flex-sm-row flex-column flex-wrap justify-content-between">
+                <h2 className="bold fs-6vmax">
+                    <span className="flamingo-1 ">Websites</span>,
+                </h2>
+                <h2 className="flamingo-4 bold fs-6vmax">Tools</h2>
+                {/* <h2 className="flamingo-3 bold fs-6vmax"></h2> */}
+                <h2 className="bold fs-6vmax">
+                    & <span className="flamingo-3 ">Softwares</span>
+                </h2>
+            </div>
+
+            <div className="bar-100 mt-3 mb-5"></div>
+
+            <p className="fs-1-5rem mt-20vmax">
+                Leading digital agency with solid design and engineering expertise.
+                We build ready-made websites, mobile applications, desktop tools and web services to elevate your business.
+            </p>
+
             <Button size="large" as="a" href="mailto:pienteger@gmail.com" icon={<Mail20Filled />}>
                 Request a Demo</Button>
-            <h3 className="display-3 mt-5">Our Tech Stack</h3>
 
-            <div className="d-flex justify-content-around mt-5">
-                <Image src={csharp} height={'100px'} />
-                <Image src={ts} height={'100px'} />
-                <Image src={sql} height={'100px'} />
-                <Image src={dotnet_bot} height={'100px'} />
-            </div>
+            {/* <h3 className="display-3 mt-5">Our Tech Stack</h3>
+
+                <div className="d-flex flex-wrap mt-5">
+                <Image src={csharp} height={'50px'} className="me-3" />
+                <Image src={ts} height={'50px'} />
+                <Image src={sql} height={'50px'} />
+                <Image src={dotnet_bot} height={'50px'} />
+            </div> */}
         </>
     )
 }
