@@ -43,6 +43,17 @@
     font-weight: bold;
 }
 
+/**/
+.bg-flamingo {
+    background-color: #FF3F3B;
+}
+
+.bg-matt-white {
+    background-color: #FDFBF9;
+}
+
+/**/
+
 body {
     margin: 0;
     font-family: Inter, 'Noto Sans Bengali', sans-serif;
@@ -358,6 +369,10 @@ footer .links>a {
     line-height: 2.5rem;
 }
 
+.fs-1-2rem {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 
 /*-------------------*/
 /*--TEXT STYLES END--*/

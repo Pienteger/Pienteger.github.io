@@ -3,6 +3,7 @@ import logoGrad from '../images/pienteger_logo_gradient.png';
 import whiteBg from '../images/white_banner.png';
 import logoBanner from '../images/logo_banner.png';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const LogoHistory = () => {
     useEffect(() => {
@@ -24,6 +25,11 @@ const LogoHistory = () => {
                 the logo expresses the integer version of π which is 3, 'i' means 'integer'
                 and the angle refers to strength with flexibility.
             </p>
+
+            <p className="mt-2">
+                This logo is heavily inspired by the logo of <Link to="https://www.jetbrains.com/">JetBrains s.r.o</Link> which is a software development company.
+            </p>
+
             <h2 className="mt-2">Pienteger's Logo</h2>
 
             <div className="row">

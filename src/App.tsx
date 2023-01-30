@@ -9,6 +9,7 @@ import Copyrights from './Pages/Copyrights';
 import Home from './Pages/Home';
 import LogoHistory from './Pages/LogoHistory';
 import PageNotFound from './Pages/PageNotFound';
+import Solutions from './Pages/Solutions';
 import TOS from './Pages/TOS';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="Algorithms/ConvexHull" element={<ConvexHull />} />
             <Route path="Copyrights" element={<Copyrights />} />
             <Route path="Contact" element={<ContactPage />} />
+            <Route path="Solutions" element={<Solutions />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>

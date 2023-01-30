@@ -20,10 +20,9 @@ const Home = () => {
                 <h2 className="bold fs-6vmax">
                     <span className="flamingo-1 ">Websites</span>,
                 </h2>
-                <h2 className="flamingo-4 bold fs-6vmax">Tools</h2>
-                {/* <h2 className="flamingo-3 bold fs-6vmax"></h2> */}
-                <h2 className="bold fs-6vmax">
-                    & <span className="flamingo-3 ">Softwares</span>
+                <h2 className="flamingo-4 bold fs-6vmax">&nbsp;Tools&nbsp;</h2>
+                
+                <h2 className="bold fs-6vmax">& <span className="flamingo-3">Softwares</span>
                 </h2>
             </div>
 
