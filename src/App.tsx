@@ -32,7 +32,7 @@ function App() {
         </BrowserRouter>
       </div>
       <FooterComponents />
-      <BlackCircle />
+      {/* <BlackCircle /> */}
     </>
   );
 }

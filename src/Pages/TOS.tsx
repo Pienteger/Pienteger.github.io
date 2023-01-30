@@ -44,25 +44,22 @@ const TOS = () => {
             <li>
                 You will not use Website in any way that could damage, disable, overburden, or impair any Pienteger
                 server, or the network(s) connected to any Pienteger server (including linked sites), or interfere with
-                any other visitors’ use and enjoyment of Website.
+                any other visitors' use and enjoyment of Website.
             </li>
             <li>
                 You will not upload, email, or otherwise transmit via Website any potentially destructive, disruptive,
-                or otherwise harmful programs, files, or code, including viruses, Trojan horses, worms, cancelbots, time
+                or otherwise harmful programs, files, or code, including viruses, Trojan horses, worms, cancel-bots, time
                 bombs, or any other form or designation of files or programs that may damage, impair, or alter the
-                operation of
-                a computer or network that is the property of Pienteger or any third party.
+                operation of a computer or network that is the property of Pienteger or any third party.
             </li>
             <li>
                 You will not attempt to disrupt or interfere with the security, integrity, or availability of, or
                 otherwise cause harm to, Website and/or its content and its content delivery, any resources provided for
-                Website
-                visitors, user or administrator accounts, passwords, servers, or any networks connected to Website or
-                accessible
-                through it. The same applies to any linked websites.
+                Website visitors, user or administrator accounts, passwords, servers, or any networks connected to Website or
+                accessible through it. The same applies to any linked websites.
             </li>
             <li>
-                You will not attempt to gain unauthorized access to services, materials, visitor information, visitors’
+                You will not attempt to gain unauthorized access to services, materials, visitor information, visitors'
                 accounts, computer systems, or networks connected to any Pienteger server or to Website, through
                 hacking, password mining, or any other means. You will not obtain or attempt to obtain any materials or
                 information through any means not intentionally made available via Website.
@@ -95,10 +92,10 @@ const TOS = () => {
             country.
         </p>
         <p>
-            Website is hosted and offered from inside the EU. Pienteger makes no claim or representation that Website,
-            or any resources available through it, are appropriate to or made available for locations outside the
-            European Union. If Website or any of the resources it makes available are illegal in your locality, DO NOT
-            USE WEBSITE. If you access Website from a location outside the European Union, you are responsible for
+            Website is hosted in Singapore and operated in Bangladesh. Pienteger makes no claim or representation that Website,
+            or any resources available through it, are appropriate to or made available for locations outside Bangladesh.
+            If Website or any of the resources it makes available are illegal in your locality, DO NOT
+            USE WEBSITE. If you access Website from a location outside the Bangladesh, you are responsible for
             compliance with all applicable local laws.
         </p>
 

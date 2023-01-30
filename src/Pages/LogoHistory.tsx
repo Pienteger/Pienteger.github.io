@@ -15,7 +15,7 @@ const LogoHistory = () => {
             <h1>Shape, Color, and Stroke | Pienteger adopts a newly designed logo</h1>
             <img src={logoBanner}
                 alt="A black banner image contains Pienteger's logo at the left bottom and a text 'Int32.Parse(π);' at the top right corner."
-                className="img_center mt-2" />
+                className="img_center mt-2 w-100" />
 
             <p className="mt-2">
                 Pienteger's new logo expresses durability, security, strength which can be
@@ -25,13 +25,21 @@ const LogoHistory = () => {
                 and the angle refers to strength with flexibility.
             </p>
             <h2 className="mt-2">Pienteger's Logo</h2>
-            <h3 className="mt-2">Main Logo</h3>
-            <img src={logo} alt="Pienteger's Logo" className="img_center mt-2" />
-            <h3 className="mt-2">Gradient Logo</h3>
-            <img src={logoGrad} alt="Pienteger's Logo with a gradient background"
-                className="img_center mt-2" />
+
+            <div className="row">
+                <div className='col-12 col-sm-6 p-3'>
+                    <h3 className="mt-2">Main Logo</h3>
+                    <img src={logo} alt="Pienteger's Logo" className="img_center mt-2 w-100" />
+                </div>
+                <div className='col-12 col-sm-6 p-3'>
+                    <h3 className="mt-2">Gradient Logo</h3>
+                    <img src={logoGrad} alt="Pienteger's Logo with a gradient background"
+                        className="img_center mt-2 w-100" />
+                </div>
+            </div>
+
             <h3 className="mt-2">White Banner</h3>
-            <img src={whiteBg} alt="Pienteger's Logo in a white banner." className="img_center mt-2" />
+            <img src={whiteBg} alt="Pienteger's Logo in a white banner." className="img_center mt-2 w-100" />
         </div>
     </>)
 };

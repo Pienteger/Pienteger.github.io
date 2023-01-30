@@ -1,5 +1,5 @@
 import { Button, Image } from "@fluentui/react-components";
-import { Library16Filled, Mail20Filled } from "@fluentui/react-icons";
+import { Library16Filled, Mail20Filled, Call20Filled } from "@fluentui/react-icons";
 import csharp from "../images/programming-languages/c-sharp.png";
 import sql from "../images/programming-languages/sql-server.png";
 import ts from "../images/programming-languages/typescript.png";
@@ -16,7 +16,7 @@ const Home = () => {
     return (
         <>
             <h1 className="mt-20vmax">At our HQ, we build</h1>
-            <div className="d-flex flex-sm-row flex-column flex-wrap justify-content-between">
+            <div className="d-flex flex-sm-row flex-column flex-wrap">
                 <h2 className="bold fs-6vmax">
                     <span className="flamingo-1 ">Websites</span>,
                 </h2>
@@ -34,8 +34,11 @@ const Home = () => {
                 We build ready-made websites, mobile applications, desktop tools and web services to elevate your business.
             </p>
 
-            <Button size="large" as="a" href="mailto:pienteger@gmail.com" icon={<Mail20Filled />}>
+            <Button size="large" as="a" className="me-2" href="mailto:pienteger@gmail.com" icon={<Mail20Filled />}>
                 Request a Demo</Button>
+
+            <Button size="large" as="a" href="tel:8801935037396" icon={<Call20Filled />}>
+                Call Us</Button>
 
             {/* <h3 className="display-3 mt-5">Our Tech Stack</h3>
 

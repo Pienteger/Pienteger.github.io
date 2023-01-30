@@ -7,8 +7,8 @@ const FooterComponents = () => {
                     <a className="text-decoration-none" href="/terms">TOS</a>|
                     <a className="text-decoration-none" href="/copyrights">Copyrights</a>|
                     <a className="text-decoration-none" href="/logoHistory">Logo</a>|
-                    <a className="text-decoration-none">History</a>|
-                    <a className="text-decoration-none" href="/careers">Career</a>
+                    <a className="text-decoration-none" href="/Contact">Contact</a>|
+                    <a className="text-decoration-none" href="/Careers">Career</a>
                 </div>
                 <div className="links" style={{ marginTop: '20px' }}>
                     <a className="text-decoration-none" href="https://www.linkedin.com/company/68650611">LinkedIn</a> |
