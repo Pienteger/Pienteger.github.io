@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+Bengali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --first-color: #27133D;
@@ -16,6 +16,10 @@
     --flamingo-3: #F24452;
     --flamingo-4: #DB324F;
     --flamingo-5: #FF3B6C;
+
+    --humming-bird-color: #9CECFB;
+    --humming-bird-color-light: #B3F5FF;
+    --humming-bird-color-dark: #2F80ED;
 }
 
 /* Flamingo Color Theme Swatches in Hex */
@@ -354,6 +358,46 @@ footer .links>a {
     background-color: var(--flamingo-5);
 }
 
+/*-------------------*/
+/*----TEXT WEIGHTS---*/
+/*-------------------*/
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
 
 /*-------------------*/
 /*----TEXT STYLES----*/
@@ -361,6 +405,7 @@ footer .links>a {
 
 .fs-6vmax {
     font-size: 5vmax;
+    line-height: 6vmax;
 }
 
 
@@ -377,6 +422,18 @@ footer .links>a {
 /*-------------------*/
 /*--TEXT STYLES END--*/
 /*-------------------*/
+
+
+/*-------------------*/
+/*-----SPACINGS-----*/
+
+/*75% when the screen is >650*/
+
+@media only screen and (min-width: 650px) {
+    .w-sm-75 {
+        width: 75%;
+    }
+}
 
 
 /*-------------------*/
@@ -423,4 +480,14 @@ footer .links>a {
 
 .me-20vmax {
     margin-right: 20vmax;
+}
+
+
+/*-------------------*/
+/*-------Hovers------*/
+/*-------------------*/
+
+.hover-hummingbird:hover {
+    transition: all 0.3s ease;
+    color: var(--humming-bird-color-dark);
 }

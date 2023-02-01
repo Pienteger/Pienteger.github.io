@@ -18,11 +18,17 @@ const Home = () => {
             <h1 className="mt-20vmax">At our HQ, we build</h1>
             <div className="d-flex flex-sm-row flex-column flex-wrap">
                 <h2 className="bold fs-6vmax">
-                    <span className="flamingo-1 ">Websites</span>,
+                    <span className="flamingo-1 ">Websites</span>,&nbsp;
                 </h2>
-                <h2 className="flamingo-4 bold fs-6vmax">&nbsp;Tools&nbsp;</h2>
-                
-                <h2 className="bold fs-6vmax">& <span className="flamingo-3">Softwares</span>
+                <h2 className="flamingo-4 bold fs-6vmax">Tools&nbsp;</h2>
+
+                <h2 className="bold fs-6vmax">&&nbsp;
+
+                    <a href="/solutions/software-development">
+                        <span className="flamingo-3 hover-hummingbird">
+                            Softwares
+                        </span>
+                    </a>
                 </h2>
             </div>
 

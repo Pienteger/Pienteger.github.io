@@ -10,6 +10,8 @@ import Home from './Pages/Home';
 import LogoHistory from './Pages/LogoHistory';
 import PageNotFound from './Pages/PageNotFound';
 import Solutions from './Pages/Solutions';
+import Consultancy from './Pages/Solutions/Consultancy';
+import SoftwareDevelopment from './Pages/Solutions/SoftwareDevelopment';
 import TOS from './Pages/TOS';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
             <Route path="Contact" element={<ContactPage />} />
             <Route path="Solutions" element={<Solutions />} />
             <Route path="*" element={<PageNotFound />} />
+            <Route path='/solutions/consultancy' element={<Consultancy />} />
+            <Route path='/solutions/software-development' element={<SoftwareDevelopment />} />
           </Routes>
         </BrowserRouter>
       </div>
