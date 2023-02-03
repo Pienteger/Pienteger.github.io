@@ -8,6 +8,9 @@ const TOS = () => {
         <h1>Website Terms of Use</h1>
         <h5>Version 1.0, last updated: Jan 22, 2023</h5>
         <p>
+            In the name of <strong>Allah</strong>, the Most Gracious, the Most Merciful.
+        </p>
+        <p>
             PLEASE READ THE TERMS OF USE CAREFULLY BEFORE USING THIS WEBSITE. BY ACCESSING AND USING THE SITE IN ANY
             WAY, INCLUDING BROWSING THE SITE, USING ANY INFORMATION, CONTENT, OR SERVICES, DOWNLOADING ANY SOFTWARE
             OR FILES, OR PLACING ORDERS FOR PRODUCTS, YOU ARE ENTERING INTO A LEGAL AGREEMENT WITH PIENTEGER AND
@@ -20,7 +23,8 @@ const TOS = () => {
             BEHALF OF YOUR EMPLOYER.
         </p>
         <p>
-            "Pienteger Website" or "Website" means any website that is the property of Pienteger Inc., with offices at
+
+            "Pienteger Website" or "Website" means any website that is the property of Pienteger (pronounced as "Pi-en-tee-zer")., with offices at
             Rajshahi, Bangladesh.
         </p>
         <p>
@@ -45,6 +49,12 @@ const TOS = () => {
                 You will not use Website in any way that could damage, disable, overburden, or impair any Pienteger
                 server, or the network(s) connected to any Pienteger server (including linked sites), or interfere with
                 any other visitors' use and enjoyment of Website.
+            </li>
+            <li>
+                You will not use any Pienteger software, service, or resource in any way that is unlawful, or in any
+                blasphemy, or in any way that violates any (local, state, national, or international) and Islamic law, rule, or
+                regulation.
+
             </li>
             <li>
                 You will not upload, email, or otherwise transmit via Website any potentially destructive, disruptive,
@@ -84,6 +94,7 @@ const TOS = () => {
                 information.
             </li>
         </ol>
+
         <h2>International Access</h2>
         <p>
             Website can be accessed from most countries around the world. Website content may contain references to

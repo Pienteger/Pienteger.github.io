@@ -16,17 +16,17 @@ const HeaderComponent = () => {
                     <div className="links">
                         {/* <a href="/">Home</a>
                         <a href="/about">About</a> */}
-                        <a href="/products">Products</a>
+                        {/* <a href="/products">Products</a> */}
                         <a href="/solutions">Solutions</a>
-                        <a href="/docs">Docs</a>
+                        {/* <a href="/docs">Docs</a> */}
                     </div>
                 </div>
 
-                <div className="account">
+                {/* <div className="account">
                     <a href="/store">Store</a>
                     <a href="/login">Login</a>
                     <a href="/sign-up">Sign Up</a>
-                </div>
+                </div> */}
             </header>
 
         </>

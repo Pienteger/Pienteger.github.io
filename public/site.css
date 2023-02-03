@@ -312,26 +312,11 @@ footer .links>a {
 
 
 .p-cursor {
-    /* position: fixed;
-    left: 0;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.9);
-    pointer-events: none;
-    z-index: 250;
-    contain: layout style size;
-    will-change: transform;
-    transition: opacity 0.3s ease, top 0.4s ease; */
-    /* transition: opacity .3s, color .4s; */
-
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.9);
-
     position: fixed;
     top: 0;
     left: 0;
@@ -339,8 +324,11 @@ footer .links>a {
     contain: layout style size;
     pointer-events: none;
     will-change: transform;
-    transition: left 0.2s cubic-bezier(0.25, 0.13, 0.25, 1), top 0.2s cubic-bezier(0.25, 0.1, 0.25, 0.13);
-    /* transition: left 0.25s ease-in-out, top 0.25s ease-in-out, width 0.1s ease-out, height 0.1s ease-out; */
+    -webkit-transition: opacity 1s 0s linear;
+    -moz-transition: opacity 1s 0s linear;
+    -o-transition: opacity 1s 0s linear;
+    transition: opacity 1s 0s linear;
+
 
 
 }
@@ -348,6 +336,7 @@ footer .links>a {
 @media only screen and (max-width: 600px) {
     .p-cursor {
         display: none;
+        opacity: 0;
     }
 }
 
@@ -489,5 +478,5 @@ footer .links>a {
 
 .hover-hummingbird:hover {
     transition: all 0.3s ease;
-    color: var(--humming-bird-color-dark);
+    color: var(--fifth-color);
 }

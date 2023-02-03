@@ -13,7 +13,7 @@ const LogoHistory = () => {
 
         <div style={{ paddingLeft: '20px', paddingRight: '20px' }}>
 
-            <h1>Shape, Color, and Stroke | Pienteger adopts a newly designed logo</h1>
+            <h1>Shape, Color, and Stroke</h1>
             <img src={logoBanner}
                 alt="A black banner image contains Pienteger's logo at the left bottom and a text 'Int32.Parse(π);' at the top right corner."
                 className="img_center mt-2 w-100" />

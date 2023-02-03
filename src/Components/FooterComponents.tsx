@@ -3,7 +3,7 @@ const FooterComponents = () => {
         <>
             <footer className="footer">
                 <div className="links">
-                    <a className="text-decoration-none" href="/privacy">Privacy</a>|
+                    {/* <a className="text-decoration-none" href="/privacy">Privacy</a>| */}
                     <a className="text-decoration-none" href="/terms">TOS</a>|
                     <a className="text-decoration-none" href="/copyrights">Copyrights</a>|
                     <a className="text-decoration-none" href="/logoHistory">Logo</a>|

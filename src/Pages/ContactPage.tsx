@@ -9,7 +9,10 @@ const ContactPage = () => {
             <p className="fs-1-5rem"><Call20Filled /> <span className="bold">Phone:</span>  +8801935037396</p>
             <p className="fs-1-5rem"><Mail20Filled /> <span className="bold">Email:</span>  pienteger at gmail.com</p>
 
-            <p className="fs-1-5rem"><Location20Filled /> <span className="bold">Address:</span>  Chondrima Residential Area, Rajshahi-6203, Bangladesh</p>
+            <p className="fs-1-5rem"><Location20Filled /> <span className="bold">Address: </span>  
+            {/* Chondrima Residential Area, Rajshahi-6203, Bangladesh */}
+            Home Office
+            </p>
 
             <p className="fs-1-5rem"><Clock20Filled /> <span className="bold">Office Hours:</span>  10:00 AM to 10:00 PM (Saturday to Thursday)</p>
 

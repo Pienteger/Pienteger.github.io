@@ -21,6 +21,12 @@ const Copyrights = () => {
                         Flaticon
                     </Link>
                 </li>
+                <li>
+                    <a href="https://www.freepik.com/free-photo/computer-screens-running-programming-code-empty-software-developing-agency-office-computers-parsing-data-algorithms-background-neural-network-servers-cloud-computing-data-room_22298430.htm#query=software%20development&position=18&from_view=search&track=sph">Image by DCStudio</a> on Freepik
+                </li>
+                <li>
+                    <a href="https://www.freepik.com/free-photo/competition-computer-computing-perspective-sky_1046096.htm#query=cloud%20computing&position=30&from_view=search&track=sph">Image by evening_tao</a> on Freepik
+                </li>
             </ul>
         </>
     )
