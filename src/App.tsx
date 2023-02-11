@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <div className="container">
+      <div className="container min-vh-100">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

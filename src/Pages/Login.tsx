@@ -31,22 +31,39 @@ const Login = () => {
   const styles = useStyles();
 
   return (
-    <div className={`${styles.root} shadow p-5 rounded my-5`}>
-      <h2 className="fw-bold">Sign in</h2>
+    <div className="w-100 d-flex justify-content-center mt-5">
+      <div className={`${styles.root} shadow p-5 rounded my-5`}>
+        <h2 className="fw-bold">Sign in</h2>
 
-      <div>
-        <Label htmlFor={emailId}>Email input</Label>
-        <Input type="email" id={emailId} />
+        <div>
+          <Label htmlFor={emailId}>Email input</Label>
+          <Input type="email" id={emailId} />
+        </div>
+
+        <div>
+          <Label htmlFor={passwordId}>Password input</Label>
+          <Input type="password" defaultValue="" id={passwordId} />
+        </div>
+
+        <Button appearance="primary" className="py-2 my-4">
+          Sign in
+        </Button>
+
+        <div className="d-flex ">
+          <p className="text-center">
+            Forgot Password?
+            <a href="#" className="">
+              Click here
+            </a>
+          </p>
+          <p className="text-center">
+            Don't have an account?
+            <a href="#" className="">
+              Register here
+            </a>
+          </p>
+        </div>
       </div>
-
-      <div>
-        <Label htmlFor={passwordId}>Password input</Label>
-        <Input type="password" defaultValue="" id={passwordId} />
-      </div>
-
-      <Button appearance="primary" className="py-2">
-        Sign in
-      </Button>
     </div>
   );
 };
