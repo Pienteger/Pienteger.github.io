@@ -8,6 +8,7 @@ import {
   Button,
 } from "@fluentui/react-components";
 import { CalendarMonthRegular } from "@fluentui/react-icons";
+import style from "./Css/Login.module.css";
 
 const useStyles = makeStyles({
   root: {
@@ -30,22 +31,39 @@ const Login = () => {
   const passwordId = useId("input-password");
   const styles = useStyles();
 
+  // CSS modules
+
   return (
-    <div className="w-100 d-flex justify-content-center mt-5">
-      <div className={`${styles.root} shadow p-5 rounded my-5`}>
-        <h2 className="fw-bold">Sign in</h2>
+    <div className="w-100 d-flex justify-content-center justify-content-lg-end mt-5 ">
+      <div className={`${styles.root} shadow p-5 rounded my-5 me-0 me-lg-5`}>
+        <h2
+          className={`${style["login_primary_border_left"]} fw-bold text-uppercase ps-3 mb-5 `}
+        >
+          Sign in
+        </h2>
 
-        <div>
-          <Label htmlFor={emailId}>Email input</Label>
-          <Input type="email" id={emailId} />
+        <div className={`mt-3`}>
+          {/* <Label htmlFor={emailId}>Email</Label> */}
+          <Input
+            type="email"
+            id={emailId}
+            className={`${style["genuine_width"]} p-2 fw-bold`}
+            placeholder="example@gmail.com"
+          />
         </div>
 
         <div>
-          <Label htmlFor={passwordId}>Password input</Label>
-          <Input type="password" defaultValue="" id={passwordId} />
+          {/* <Label htmlFor={passwordId}>Password</Label> */}
+          <Input
+            type="password"
+            defaultValue=""
+            id={passwordId}
+            className={`${style["genuine_width"]} p-2 fw-bold`}
+            placeholder="password"
+          />
         </div>
 
-        <Button appearance="primary" className="py-2 my-4">
+        <Button appearance="primary" className={` py-2 my-4`}>
           Sign in
         </Button>
 
