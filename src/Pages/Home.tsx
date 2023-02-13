@@ -5,6 +5,7 @@ import sql from "../images/programming-languages/sql-server.png";
 import ts from "../images/programming-languages/typescript.png";
 import dotnet_bot from "../images/programming-languages/dotnet_bot.svg";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
 
@@ -15,6 +16,23 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Home Page - Pienteger</title>
+                <meta name="description" content="Pienteger is a leading software company with solid design and engineering expertise. 
+                We build ready-made websites, mobile applications, desktop tools and web services to elevate your business." />
+
+                <meta property="og:title" content="Home Page - Pienteger" />
+                <meta property="og:description" content="Pienteger is a leading software company with solid design and engineering expertise.
+                We build ready-made websites, mobile applications, desktop tools and web services to elevate your business." />
+                <meta property="og:image" content="https://pienteger.com/static/media/white_banner.318afd674551b16f53b5.png" />
+                <meta property="og:url" content="https://pienteger.com" />
+
+                <meta name="twitter:title" content="Home Page - Pienteger" />
+                <meta name="twitter:description" content="Pienteger is a leading software company with solid design and engineering expertise.
+                We build ready-made websites, mobile applications, desktop tools and web services to elevate your business." />
+                <meta name="twitter:image" content="https://pienteger.com/static/media/white_banner.318afd674551b16f53b5.png" />
+                <meta name="twitter:card" content="summary_large_image" />
+            </Helmet>
             <h1 className="mt-20vmax">At our HQ, we build</h1>
             <div className="d-flex flex-sm-row flex-column flex-wrap">
                 <h2 className="bold fs-6vmax">
@@ -35,7 +53,7 @@ const Home = () => {
             <div className="bar-100 mt-3 mb-5"></div>
 
             <p className="fs-1-5rem mt-20vmax">
-                Leading digital agency with solid design and engineering expertise.
+                Leading software company with solid design and engineering expertise.
                 We build ready-made websites, mobile applications, desktop tools and web services to elevate your business.
             </p>
 
