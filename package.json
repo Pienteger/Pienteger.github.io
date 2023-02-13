@@ -21,7 +21,6 @@
     "react-player": "^2.11.0",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -29,7 +28,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "postbuild": "react-snap",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
