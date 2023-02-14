@@ -1,0 +1,28 @@
+.font_20 {
+  font-size: 20px;
+}
+
+.width_fit_content {
+  width: fit-content;
+}
+
+.text_opacity_light_black:hover {
+  opacity: 0.7;
+}
+
+.bg_opacity_light_black:hover {
+  opacity: 0.75;
+}
+
+.bg_white_transparent {
+  background: rgba(247, 247, 248, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.pseudo_arrow::after {
+  content: "↗";
+  font-style: normal;
+  margin-left: 3px;
+  font-weight: 700;
+  font-family: IconsAI;
+}
