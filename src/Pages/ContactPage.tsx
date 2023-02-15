@@ -7,7 +7,7 @@ const ContactPage = () => {
         <>
             <h1 className="mb-5">Contact Us</h1>
             <p className="fs-1-5rem"><Call20Filled /> <span className="bold">Phone:</span>  +8801935037396</p>
-            <p className="fs-1-5rem"><Mail20Filled /> <span className="bold">Email:</span>  pienteger at gmail.com</p>
+            <p className="fs-1-5rem"><Mail20Filled /> <span className="bold">Email:</span>  info at pienteger.com</p>
 
             <p className="fs-1-5rem"><Location20Filled /> <span className="bold">Address: </span>  
             {/* Chondrima Residential Area, Rajshahi-6203, Bangladesh */}
