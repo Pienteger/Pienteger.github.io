@@ -57,7 +57,7 @@ const Home = () => {
                 We build ready-made websites, mobile applications, desktop tools and web services to elevate your business.
             </p>
 
-            <Button size="large" as="a" className="me-2" href="mailto:pienteger@gmail.com" icon={<Mail20Filled />}>
+            <Button size="large" as="a" className="me-2" href="mailto:info@pienteger.com" icon={<Mail20Filled />}>
                 Request a Demo</Button>
 
             <Button size="large" as="a" href="tel:8801935037396" icon={<Call20Filled />}>
