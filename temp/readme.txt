@@ -1,1 +1,0 @@
-This folder is used to build temporary web pages.
