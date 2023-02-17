@@ -76,7 +76,7 @@ const Login = () => {
           </p>
           <p className="text-center">
             Don't have an account?
-            <a href="#" className="">
+            <a href="Register" className="">
               Register here
             </a>
           </p>
