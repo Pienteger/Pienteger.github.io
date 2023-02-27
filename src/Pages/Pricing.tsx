@@ -1,5 +1,10 @@
 import React from "react";
 import style from "../Pages/Css/Pricing.module.css";
+import { Link } from "react-router-dom";
+import {
+  DataBarVertical24Filled,
+  Checkmark24Regular,
+} from "@fluentui/react-icons";
 
 const Pricing = () => {
   return (
@@ -10,7 +15,7 @@ const Pricing = () => {
           className={`container px-0 my-0 mx-auto py-4 position-relative  ${style["bg_white_transparent"]}`}
         >
           {/* <!-- navigation --> */}
-          <nav className={`navbar navbar-expand-lg bg-body-tertiary`}>
+          <nav className={`navbar navbar-expand-lg `}>
             <div className={`container-fluid`}>
               <button
                 className={`navbar-toggler shadow-none`}
@@ -42,43 +47,15 @@ const Pricing = () => {
                   >
                     pricing
                   </a>
-                  <a
-                    href=""
-                    className={`${style["text_opacity_light_black"]} text-uppercase text-decoration-none text-dark fw-semibold  ${style["pseudo_arrow"]}`}
-                  >
-                    docs
-                  </a>
-                  <a
-                    href=""
-                    className={`${style["text_opacity_light_black"]} text-uppercase text-decoration-none text-dark fw-semibold  ${style["pseudo_arrow"]}`}
-                  >
-                    examples
-                  </a>
                 </div>
               </div>
             </div>
           </nav>
-          <div
-            className={`right_div d-flex gap-4 align-items-center position-absolute end-0 top-50 translate-middle-y`}
-          >
-            <a
-              href=""
-              className={`text-uppercase text-decoration-none text-dark fw-semibold  ${style["text_opacity_light_black"]}`}
-            >
-              log in
-            </a>
-            <a
-              href=""
-              className={`text-uppercase text-decoration-none text-dark fw-semibold bg-black text-white rounded-5 py-2 px-3  ${style["bg_opacity_light_black"]}`}
-            >
-              sign up
-            </a>
-          </div>
         </div>
       </div>
-      <section className={`${style["bg_white_transparent"]} container-fluid`}>
+      <section className={`container-fluid`}>
         <section
-          className={`title_section container px-0 my-0 mx-auto py-5 mt-0`}
+          className={`title_section container px-0 my-0 mx-auto pt-5 mt-0`}
         >
           <h1 className={`text-center fw-normal display-4 mb-3`}>Pricing</h1>
           <p className={`text-center ${style["font_20"]} mb-4`}>
@@ -87,18 +64,18 @@ const Pricing = () => {
           <div
             className={`d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4 mb-5`}
           >
-            <a
-              href=""
+            <Link
+              to="/login"
               className={`text-uppercase text-decoration-none text-dark fw-semibold bg-black text-white rounded-5 py-2 px-3  ${style["bg_opacity_light_black"]}`}
             >
               get started
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/Contact"
               className={`text-uppercase text-decoration-none text-dark fw-semibold  ${style["text_opacity_light_black"]}`}
             >
               contact sales
-            </a>
+            </Link>
           </div>
         </section>
       </section>
@@ -106,13 +83,13 @@ const Pricing = () => {
       {/* <!-- main --> */}
       <section>
         {/* <!-- models 0--> */}
-        <div className={`container-fluid  ${style["light_gray_bg_1"]} py-5`}>
+        <div className={`container-fluid`}>
           <div
             className={`container px-0 d-flex flex-column flex-lg-row justify-content-center`}
           >
             <div className={`container`}>
               <h2 className={` ${style["section-heading-font-family"]} mb-4`}>
-                Software models
+                Image models
               </h2>
               <p
                 className={`text-center text-lg-start  ${style["font_20"]}  mb-4`}
@@ -122,7 +99,7 @@ const Pricing = () => {
                 for flexibility.
               </p>
               <a
-                href=""
+                href="#faqid"
                 className={`text-uppercase text-decoration-none text-black-50 fw-semibold  ${style["text-hover-black"]}  ${style["pseudo_arrow"]}`}
               >
                 learn more
@@ -133,7 +110,7 @@ const Pricing = () => {
                 <thead>
                   <tr>
                     <th className={` ${style["table_header_font"]} px-2 py-2`}>
-                      Version
+                      Resolution
                     </th>
                     <th className={` ${style["table_header_font"]} px-2 py-2`}>
                       price
@@ -142,16 +119,20 @@ const Pricing = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className={`${style["font_20"]}  px-2 py-1`}>bigger</td>
+                    <td className={`${style["font_20"]}  px-2 py-1`}>
+                      1024x1024
+                    </td>
                     <td className={`${style["font_20"]}  px-2 py-1`}>1000$</td>
                   </tr>
                   <tr>
-                    <td className={`${style["font_20"]}  px-2 py-1`}>medium</td>
+                    <td className={`${style["font_20"]}  px-2 py-1`}>
+                      512x512
+                    </td>
                     <td className={`${style["font_20"]}  px-2 py-1`}>700$</td>
                   </tr>
                   <tr>
                     <td className={`${style["font_20"]}  px-2 py-1`}>
-                      smaller
+                      256x256
                     </td>
                     <td className={`${style["font_20"]}  px-2 py-1`}>300$</td>
                   </tr>
@@ -162,7 +143,7 @@ const Pricing = () => {
         </div>
 
         {/* <!-- language models --> */}
-        <div className={`container-fluid  ${style["bg_white"]} py-5`}>
+        <div className={`container-fluid`}>
           <div className={`container`}>
             <h2
               className={`pb-5 pt-5  ${style["section-heading-font-family"]}`}
@@ -286,7 +267,7 @@ const Pricing = () => {
               </div>
             </div>
             <a
-              href=""
+              href="#faqid"
               className={`text-uppercase text-decoration-none text-black fw-semibold  ${style["text-hover-black"]}  ${style["pseudo_arrow_down"]} pb-5`}
             >
               learn more
@@ -295,27 +276,10 @@ const Pricing = () => {
             <div className={`row pt-5`}>
               <div className={`col-12 col-md-4 mb-1.5`}>
                 <h3
-                  className={`mb-1/3 d-flex  ${style["section-heading-font-family"]}  ${style["font_1_5rem"]}`}
+                  className={`mb-1/3 d-flex align-items-center gap-2  ${style["section-heading-font-family"]}  ${style["font_1_5rem"]}`}
                 >
                   <span className={`icon position-relative ml-n0.125 mr-0.25`}>
-                    [flag]
-                  </span>
-                  Start for free
-                </h3>
-                <div
-                  className={`content no-col medium-xsmall-copy line-height-1.5`}
-                >
-                  Start experimenting with $18 in free credit that can be used
-                  during your first 3 months.
-                </div>
-              </div>
-
-              <div className={`col-12 col-md-4 mb-1.5`}>
-                <h3
-                  className={`mb-1/3 d-flex  ${style["section-heading-font-family"]}  ${style["font_1_5rem"]}`}
-                >
-                  <span className={`icon position-relative ml-n0.125 mr-0.25`}>
-                    [barup]
+                    <DataBarVertical24Filled />
                   </span>
                   Pay as you go
                 </h3>
@@ -329,10 +293,10 @@ const Pricing = () => {
 
               <div className={`col-12 col-md-4 mb-1.5`}>
                 <h3
-                  className={`mb-1/3 d-flex  ${style["section-heading-font-family"]}  ${style["font_1_5rem"]}`}
+                  className={`mb-1/3 d-flex align-items-center gap-2  ${style["section-heading-font-family"]}  ${style["font_1_5rem"]}`}
                 >
                   <span className={`icon position-relative ml-n0.125 mr-0.25`}>
-                    [check]
+                    <Checkmark24Regular />
                   </span>
                   Choose your model
                 </h3>
@@ -348,9 +312,9 @@ const Pricing = () => {
         </div>
 
         {/* <!-- models 1--> */}
-        <div className={`container-fluid  ${style["bg_white"]} py-5`}>
+        <div className={`container-fluid py-2`}>
           <div
-            className={`container px-0 border-bottom py-5 d-flex flex-column flex-lg-row justify-content-center`}
+            className={`container px-0 border-bottom py-2 d-flex flex-column flex-lg-row justify-content-center`}
           >
             <div className={`container`}>
               <h2 className={` ${style["section-heading-font-family"]} mb-4`}>
@@ -364,7 +328,7 @@ const Pricing = () => {
                 for flexibility.
               </p>
               <a
-                href=""
+                href="#faqid"
                 className={`text-uppercase text-decoration-none text-black-50 fw-semibold  ${style["text-hover-black"]}  ${style["pseudo_arrow_down"]}`}
               >
                 learn more
@@ -419,7 +383,7 @@ const Pricing = () => {
         </div>
 
         {/* <!-- models 2--> */}
-        <div className={`container-fluid  ${style["bg_white"]} py-5`}>
+        <div className={`container-fluid py-1`}>
           <div
             className={`container px-0 border-bottom py-5 d-flex flex-column flex-lg-row justify-content-center`}
           >
@@ -464,40 +428,16 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* <!-- models 3 --> */}
-        <div className={`container-fluid  ${style["bg_white"]} py-5`}>
-          <div
-            className={`container px-0 d-flex flex-column flex-lg-row justify-content-center`}
-          >
-            <div className={`container`}>
-              <h2 className={` ${style["section-heading-font-family"]} mb-4`}>
-                Usage Quotas
-              </h2>
-            </div>
-            <div className={`container`}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                excepturi a hic vitae? Nihil odit asperiores facilis accusamus
-                placeat, dicta possimus repellat recusandae consequuntur
-                incidunt impedit ut saepe ea sequi.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* <!-- FAQ section --> */}
-        <div className={`container-fluid  ${style["light_gray_bg_1"]} py-5`}>
+        <div className={`container-fluid py-1`} id="faqid">
           <div
             className={`container  ${style["accordion-container"]} my-5 py-5`}
           >
             <h2 className={`pb-5  ${style["section-heading-font-family"]}`}>
               Frequently Asked Questions
             </h2>
-            <div
-              className={`accordion w-100  ${style["light_gray_bg_1"]}`}
-              id={style["a_accordion"]}
-            >
-              <div className={`accordion-item  ${style["light_gray_bg_1"]}`}>
+            <div className={`accordion w-100  `} id={style["a_accordion"]}>
+              <div className={`accordion-item  `}>
                 <h2 className={`accordion-header`} id="headingOne">
                   <button
                     className={` accordion-button px-0 py-3 fw-bold`}
@@ -529,7 +469,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  ${style["light_gray_bg_1"]}`}>
+              <div className={`accordion-item  `}>
                 <h2 className={`accordion-header" id="headingTwo`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
@@ -561,7 +501,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  ${style["light_gray_bg_1"]}`}>
+              <div className={`accordion-item  `}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
@@ -593,7 +533,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  ${style["light_gray_bg_1"]}`}>
+              <div className={`accordion-item  `}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
@@ -625,9 +565,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-              <div
-                className={`accordion-item ${style["light_gray_bg_1"]} ${style["ai_border_bottom"]}`}
-              >
+              <div className={`accordion-item  ${style["ai_border_bottom"]}`}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
                     className={`accordion-button px-0 py-3 fw-bold collapsed`}
@@ -664,7 +602,7 @@ const Pricing = () => {
         </div>
 
         {/* <!-- get started --> */}
-        <div className={`container-fluid  ${style["bg_white"]} py-5`}>
+        <div className={`container-fluid py-1`}>
           <section className={`title_section container px-0 my-0 mx-auto py-5`}>
             <h1
               className={`text-center fw-normal display-4 mx-auto mb-3 pt-5 pb-4  ${style["section-heading-font-family"]}  ${style["get-started"]}`}
@@ -676,18 +614,18 @@ const Pricing = () => {
             <div
               className={`d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4 mb-5`}
             >
-              <a
-                href=""
+              <Link
+                to="/login"
                 className={`text-uppercase text-decoration-none text-dark fw-semibold bg-black text-white rounded-5 py-2 px-3  ${style["bg_opacity_light_black"]}`}
               >
                 get started
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                to="/Contact"
                 className={`text-uppercase text-decoration-none text-dark fw-semibold  ${style["text_opacity_light_black"]}`}
               >
                 contact sales
-              </a>
+              </Link>
             </div>
           </section>
         </div>
