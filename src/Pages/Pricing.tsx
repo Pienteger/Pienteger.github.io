@@ -448,7 +448,7 @@ const Pricing = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item
+                    Which model should I use?
                   </button>
                 </h2>
                 <div
@@ -458,14 +458,18 @@ const Pricing = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className={`accordion-body px-0`}>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the , though the transition does limit
-                    overflow.
+                    While Davinci is generally the most capable model, the other
+                    models can perform certain tasks extremely well and, in some
+                    cases, significantly faster. They also have cost advantages.
+                    For example, Curie can perform many of the same tasks as
+                    Davinci, but faster and for 1/10th the cost. We encourage
+                    developers to experiment to find the model that's most
+                    efficient for your application. Visit our documentation for
+                    a more detailed{" "}
+                    <a href="" className="text-decoration-underline">
+                      model comparison
+                    </a>{" "}
+                    .
                   </div>
                 </div>
               </div>
@@ -480,7 +484,7 @@ const Pricing = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Accordion Item
+                    How will I know how many tokens I've used each month?
                   </button>
                 </h2>
                 <div
@@ -490,14 +494,12 @@ const Pricing = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className={`accordion-body px-0`}>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the , though the transition does limit
-                    overflow.
+                    Log in to your account to view your{" "}
+                    <a href="" className="text-decoration-underline">
+                      usage tracking dashboard
+                    </a>{" "}
+                    . This page will show you how many tokens you've used during
+                    the current and past billing cycles.
                   </div>
                 </div>
               </div>
@@ -512,7 +514,7 @@ const Pricing = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Accordion Item
+                    How can I manage my spending?
                   </button>
                 </h2>
                 <div
@@ -522,14 +524,16 @@ const Pricing = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className={`accordion-body px-0`}>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the , though the transition does limit
-                    overflow.
+                    You can configure a usage hard limit in your billing
+                    settings, after which we'll stop serving your requests. You
+                    may also configure a soft limit to receive an email alert
+                    once you pass a certain usage threshold. There may be a
+                    delay in enforcing the limit, and you are responsible for
+                    any overage incurred. We recommend checking your{" "}
+                    <a href="" className="text-decoration-underline">
+                      usage tracking
+                    </a>{" "}
+                    dashboard regularly to monitor your spend.
                   </div>
                 </div>
               </div>
@@ -544,7 +548,7 @@ const Pricing = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    Accordion Item
+                    Does Playground usage count against my quota?
                   </button>
                 </h2>
                 <div
@@ -554,14 +558,8 @@ const Pricing = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className={`accordion-body px-0`}>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the , though the transition does limit
-                    overflow.
+                    Yes, we treat Playground usage the same as regular API
+                    usage.
                   </div>
                 </div>
               </div>
