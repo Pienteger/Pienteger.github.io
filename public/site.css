@@ -1,89 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    --first-color: #27133D;
-    --second-color: #A424FF;
-    --third-color: #8809E3;
-    --fourth-color: #859600;
-    --fifth-color: #7C3FC2;
-    --text-primary: #171717;
-    --text-secondary: #292827;
+  --first-color: #27133d;
+  --second-color: #a424ff;
+  --third-color: #8809e3;
+  --fourth-color: #859600;
+  --fifth-color: #7c3fc2;
+  --text-primary: #171717;
+  --text-secondary: #292827;
 
+  --matt-black: #171717;
+  --flamingo-1: #ff3f3b;
+  --flamingo-2: #f28585;
+  --flamingo-3: #f24452;
+  --flamingo-4: #db324f;
+  --flamingo-5: #ff3b6c;
 
-    --matt-black: #171717;
-    --flamingo-1: #FF3F3B;
-    --flamingo-2: #F28585;
-    --flamingo-3: #F24452;
-    --flamingo-4: #DB324F;
-    --flamingo-5: #FF3B6C;
-
-    --humming-bird-color: #9CECFB;
-    --humming-bird-color-light: #B3F5FF;
-    --humming-bird-color-dark: #2F80ED;
+  --humming-bird-color: #9cecfb;
+  --humming-bird-color-light: #b3f5ff;
+  --humming-bird-color-dark: #2f80ed;
 }
 
 /* Flamingo Color Theme Swatches in Hex */
 .flamingo-1 {
-    color: #FF3F3B;
+  color: #ff3f3b;
 }
 
 .flamingo-2 {
-    color: #F28585;
+  color: #f28585;
 }
 
 .flamingo-3 {
-    color: #F24452;
+  color: #f24452;
 }
 
 .flamingo-4 {
-    color: #DB324F;
+  color: #db324f;
 }
 
 .flamingo-5 {
-    color: #FF3B6C;
+  color: #ff3b6c;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /**/
 .bg-flamingo {
-    background-color: #FF3F3B;
+  background-color: #ff3f3b;
 }
 
 .bg-matt-white {
-    background-color: #FDFBF9;
+  background-color: #fdfbf9;
 }
 
 /**/
 
 body {
-    margin: 0;
-    font-family: Inter, 'Noto Sans Bengali', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    scroll-behavior: smooth;
-    margin: 0;
-    background-color: #fff;
+  margin: 0;
+  font-family: Inter, "Noto Sans Bengali", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  scroll-behavior: smooth;
+  margin: 0;
+  background-color: #fff;
 }
 
 code {
-    font-family: 'Cascadia Code', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+  font-family: "Cascadia Code", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
 }
 
-
 a {
-    /* font-family: 'Open Sans', 'Noto Sans Bengali', sans-serif; */
-    font-style: normal;
-    text-decoration: none;
-    color: var(--fourth-color);
+  /* font-family: 'Open Sans', 'Noto Sans Bengali', sans-serif; */
+  font-style: normal;
+  text-decoration: none;
+  color: var(--fourth-color);
 }
 
 a:hover {
-    color: var(--flamingo-4);
+  color: var(--flamingo-4);
 }
 
 h1,
@@ -92,11 +90,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 p {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 /* img {
@@ -105,246 +103,235 @@ p {
 } */
 
 .scrollbar-custom::-webkit-scrollbar-track {
-
-    border-radius: 0;
-    background-color: transparent;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .scrollbar-custom::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-    background-color: none;
-    /* width: 0;
+  width: 7px;
+  height: 7px;
+  background-color: none;
+  /* width: 0;
     background-color: transparent; */
-
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-    background-color: var(--matt-black);
-    display: auto;
+  background-color: var(--matt-black);
+  display: auto;
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+}
 
 .top-bar {
-    height: 10px;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    background-color: #fff;
+  height: 10px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: #fff;
 }
 
 mt-3 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .header {
-    background-color: #fff;
-    color: #000;
-    position: absolute;
-    top: 10px;
-    height: 48px;
-    width: 100%;
-    width: -moz-available;
-    padding: 0 5vw;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* display: flex;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  height: 48px;
+  width: 100%;
+  width: -moz-available;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* display: flex;
     flex-flow: row wrap;
     align-content: center; */
 }
 
 .header-logo {
-    max-height: 100%;
-    height: 40px;
-    width: 40px;
+  max-height: 100%;
+  height: 40px;
+  width: 40px;
 }
 
-.header>a {
-    color: #1b1a19;
-    text-decoration: none !important;
+.header > a {
+  color: #1b1a19;
+  text-decoration: none !important;
 }
 
 .header .divider {
-    height: 30px;
-    width: 3px;
-    background-color: black;
-    align-self: center;
-    margin: 0 1vw;
+  height: 30px;
+  width: 3px;
+  background-color: black;
+  align-self: center;
+  margin: 0 1vw;
 }
 
 .header .links {
-    color: #1b1a19;
-    align-self: center;
+  color: #1b1a19;
+  align-self: center;
 }
 
-header .links>a {
-    color: #1b1a19;
-    /* font-weight: 600; */
-    font-size: large;
-    margin: 0 5px;
+header .links > a {
+  color: #1b1a19;
+  /* font-weight: 600; */
+  font-size: large;
+  margin: 0 5px;
 }
 
-.header>.account {
-    color: #1b1a19;
-    align-self: center;
-    margin-left: auto;
+.header > .account {
+  color: #1b1a19;
+  align-self: center;
+  margin-left: auto;
 }
 
-header .account>a {
-    color: #1b1a19;
-    /* font-weight: 600; */
-    font-size: large;
-    margin: 0 5px;
+header .account > a {
+  color: #1b1a19;
+  /* font-weight: 600; */
+  font-size: large;
+  margin: 0 5px;
 }
 
 .bottom-bar {
-    height: 10px;
-    width: 100%;
-    /* position: relative; */
-    background-color: var(--flamingo-4);
+  height: 10px;
+  width: 100%;
+  /* position: relative; */
+  background-color: var(--flamingo-4);
 }
 
 .footer {
-    /* bottom: 10px; */
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    width: -moz-available;
-    box-sizing: border-box;
-    background-color: #1b1a19;
-    text-align: center;
-    overflow: hidden;
-    margin-top: 50px;
-    padding-top: 15px;
+  /* bottom: 10px; */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  width: -moz-available;
+  box-sizing: border-box;
+  background-color: #1b1a19;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 50px;
+  padding-top: 15px;
 }
 
-.footer>p {
-    color: #edebe9;
+.footer > p {
+  color: #edebe9;
 }
 
 .footer .links {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .links>a {
-    margin: 0 5px;
-    color: #8764b8;
+footer .links > a {
+  margin: 0 5px;
+  color: #8764b8;
 }
 
 .container {
-    margin-top: 80px;
-    margin-bottom: 15px;
+  margin-top: 80px;
+  margin-bottom: 15px;
 }
 
 .main {
-    top: 58px;
-    position: relative;
-    padding: 15px 10px;
-    overflow: hidden;
-    height: 100%;
-    height: fit-content;
-    display: inline-block;
-    scroll-behavior: auto;
-    padding: 3vh 10vw;
-    min-height: 71vh;
+  top: 58px;
+  position: relative;
+  padding: 15px 10px;
+  overflow: hidden;
+  height: 100%;
+  height: fit-content;
+  display: inline-block;
+  scroll-behavior: auto;
+  padding: 3vh 10vw;
+  min-height: 71vh;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-    .img_center {
-        width: 100%;
-    }
+  .img_center {
+    width: 100%;
+  }
 
-    .header {
-        flex-flow: column;
-        height: auto;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        position: relative;
-    }
+  .header {
+    flex-flow: column;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
 
-    .main {
-        top: auto;
-        position: relative;
-        padding: 0 6vw;
+  .main {
+    top: auto;
+    position: relative;
+    padding: 0 6vw;
+  }
 
-    }
+  .links {
+    /* margin-left: auto; */
+    margin-left: 1rem;
+    margin-right: auto;
+  }
 
-    .links {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .account {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .account {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .header .divider {
-        display: none;
-    }
+  .header .divider {
+    display: none;
+  }
 }
 
 .anchor-button {
-    outline: none;
-    cursor: pointer;
-    border: 0;
-    border-radius: 3px;
-    padding: 12px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  padding: 12px;
 }
 
 .anchor-button:hover {
-    background-color: #e1dfdd;
+  background-color: #e1dfdd;
 }
 
-.anchor-button>a {
-    color: #1b1a19;
-    font-weight: 600;
+.anchor-button > a {
+  color: #1b1a19;
+  font-weight: 600;
 }
-
-
-
 
 .p-cursor {
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 250;
-    contain: layout style size;
-    pointer-events: none;
-    will-change: transform;
-    -webkit-transition: opacity 1s 0s linear;
-    -moz-transition: opacity 1s 0s linear;
-    -o-transition: opacity 1s 0s linear;
-    transition: opacity 1s 0s linear;
-
-
-
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  contain: layout style size;
+  pointer-events: none;
+  will-change: transform;
+  -webkit-transition: opacity 1s 0s linear;
+  -moz-transition: opacity 1s 0s linear;
+  -o-transition: opacity 1s 0s linear;
+  transition: opacity 1s 0s linear;
 }
 
 @media only screen and (max-width: 600px) {
-    .p-cursor {
-        display: none;
-        opacity: 0;
-    }
+  .p-cursor {
+    display: none;
+    opacity: 0;
+  }
 }
 
-
 .bar-100 {
-    width: 100%;
-    height: 5px;
-    background-color: var(--flamingo-5);
+  width: 100%;
+  height: 5px;
+  background-color: var(--flamingo-5);
 }
 
 /*-------------------*/
@@ -352,66 +339,63 @@ footer .links>a {
 /*-------------------*/
 
 .fw-900 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .fw-800 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .fw-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .fw-600 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .fw-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .fw-400 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .fw-300 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .fw-200 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .fw-100 {
-    font-weight: 100;
+  font-weight: 100;
 }
-
 
 /*-------------------*/
 /*----TEXT STYLES----*/
 /*-------------------*/
 
 .fs-6vmax {
-    font-size: 5vmax;
-    line-height: 6vmax;
+  font-size: 5vmax;
+  line-height: 6vmax;
 }
 
-
 .fs-1-5rem {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .fs-1-2rem {
-    font-size: 1.2rem;
-    line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 /*-------------------*/
 /*--TEXT STYLES END--*/
 /*-------------------*/
-
 
 /*-------------------*/
 /*-----SPACINGS-----*/
@@ -419,64 +403,60 @@ footer .links>a {
 /*75% when the screen is >650*/
 
 @media only screen and (min-width: 650px) {
-    .w-sm-75 {
-        width: 75%;
-    }
+  .w-sm-75 {
+    width: 75%;
+  }
 }
-
 
 /*-------------------*/
 /*-------Margin------*/
 /*-------------------*/
 
-
 .m-5vmax {
-    margin: 5vmax;
+  margin: 5vmax;
 }
 
 .mt-5vmax {
-    margin-top: 5vmax;
+  margin-top: 5vmax;
 }
 
 .mb-5vmax {
-    margin-bottom: 5vmax;
+  margin-bottom: 5vmax;
 }
 
 .ms-5vmax {
-    margin-left: 5vmax;
+  margin-left: 5vmax;
 }
 
 .me-5vmax {
-    margin-right: 5vmax;
+  margin-right: 5vmax;
 }
 
-
 .m-20vmax {
-    margin: 20vmax;
+  margin: 20vmax;
 }
 
 .mt-20vmax {
-    margin-top: 18vmax;
+  margin-top: 18vmax;
 }
 
 .mb-20vmax {
-    margin-bottom: 20vmax;
+  margin-bottom: 20vmax;
 }
 
 .ms-20vmax {
-    margin-left: 20vmax;
+  margin-left: 20vmax;
 }
 
 .me-20vmax {
-    margin-right: 20vmax;
+  margin-right: 20vmax;
 }
-
 
 /*-------------------*/
 /*-------Hovers------*/
 /*-------------------*/
 
 .hover-hummingbird:hover {
-    transition: all 0.3s ease;
-    color: var(--fifth-color);
+  transition: all 0.3s ease;
+  color: var(--fifth-color);
 }

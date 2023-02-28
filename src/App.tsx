@@ -16,6 +16,8 @@ import Infrastructure from "./Pages/Solutions/Infrastructure";
 import SoftwareDevelopment from "./Pages/Solutions/SoftwareDevelopment";
 import TOS from "./Pages/TOS";
 import Login from "./Pages/Login";
+import Pricing from "./Pages/Pricing";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login" element={<Login />} />
+            <Route path="Register" element={<Register />}/>
             {/* <Route path="register" element={<Register />} /> */}
             <Route path="Terms" element={<TOS />} />
             <Route path="LogoHistory" element={<LogoHistory />} />
@@ -34,6 +37,7 @@ function App() {
             <Route path="Contact" element={<ContactPage />} />
             <Route path="Careers" element={<CareerPage />} />
             <Route path="Solutions" element={<Solutions />} />
+            <Route path="Pricing" element={<Pricing />} />
             <Route path="*" element={<PageNotFound />} />
             <Route path="/solutions/consultancy" element={<Consultancy />} />
             <Route
