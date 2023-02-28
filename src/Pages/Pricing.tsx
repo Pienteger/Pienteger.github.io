@@ -43,7 +43,7 @@ const Pricing = () => {
                     pricing
                   </a>
                   <a
-                    href=""
+                    href="https://docs.pienteger.com/docs/category/openai"
                     className={`${style["text_opacity_light_black"]} text-uppercase text-decoration-none text-dark fw-semibold  ${style["pseudo_arrow"]}`}
                   >
                     docs
