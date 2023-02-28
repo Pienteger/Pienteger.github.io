@@ -1,12 +1,12 @@
 import React from "react";
-import style from "../Pages/Css/Pricing.module.css";
+import style from "../../Pages/Css/Pricing.module.css";
 import { Link } from "react-router-dom";
 import {
   DataBarVertical24Filled,
   Checkmark24Regular,
 } from "@fluentui/react-icons";
 
-const Pricing = () => {
+const OpenAiPricing = () => {
   return (
     <>
       {/* heading */}
@@ -632,4 +632,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default OpenAiPricing;

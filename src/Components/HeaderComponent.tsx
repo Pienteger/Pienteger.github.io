@@ -17,7 +17,7 @@ const HeaderComponent = () => {
                         <a href="/products">Products</a> */}
             <a href="/solutions">Solutions</a>
             <a href="//docs.pienteger.com">Docs</a>
-            <a href="/pricing">Pricing</a>
+            <a href="/marketplace">Marketplace</a>
           </div>
         </div>
 

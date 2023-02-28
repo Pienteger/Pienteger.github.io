@@ -33,35 +33,29 @@ const Home = () => {
                 <meta name="twitter:image" content="https://pienteger.com/static/media/white_banner.318afd674551b16f53b5.png" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Helmet>
-            <h1 className="mt-20vmax">At our HQ, we build</h1>
+            <h1 className="mt-20vmax">
+                At our HQ, we build
+            </h1>
             <div className="d-flex flex-sm-row flex-column flex-wrap">
                 <h2 className="bold fs-6vmax">
-                    <span className="flamingo-1 ">Websites</span>,&nbsp;
-                </h2>
-                <h2 className="flamingo-4 bold fs-6vmax">Tools&nbsp;</h2>
-
-                <h2 className="bold fs-6vmax">&&nbsp;
-
-                    <a href="/solutions/software-development">
-                        <span className="flamingo-3 hover-hummingbird">
-                            Softwares
-                        </span>
-                    </a>
+                    Websites, Tools and Softwares
                 </h2>
             </div>
 
             <div className="bar-100 mt-3 mb-5"></div>
 
-            <p className="fs-1-5rem mt-20vmax">
-                Leading software company with solid design and engineering expertise.
-                We build ready-made websites, mobile applications, desktop tools and web services to elevate your business.
+            <p className="fs-1-5rem mb-5">
+
+                Transforming Digital Bangladesh into the Smart Bangladesh.
             </p>
 
-            <Button size="large" as="a" className="me-2" href="mailto:info@pienteger.com" icon={<Mail20Filled />}>
-                Request a Demo</Button>
+            <h1 className="mt-5">
+                Let's browse through some of our products
+            </h1>
+            <h4>
+                Shall we?
+            </h4>
 
-            <Button size="large" as="a" href="tel:8801935037396" icon={<Call20Filled />}>
-                Call Us</Button>
 
             {/* <h3 className="display-3 mt-5">Our Tech Stack</h3>
 

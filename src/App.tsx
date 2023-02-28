@@ -16,8 +16,9 @@ import Infrastructure from "./Pages/Solutions/Infrastructure";
 import SoftwareDevelopment from "./Pages/Solutions/SoftwareDevelopment";
 import TOS from "./Pages/TOS";
 import Login from "./Pages/Login";
-import Pricing from "./Pages/Pricing";
+import OpenAiPricing from "./Pages/Marketplace/OpenAiPricing";
 import Register from "./Pages/Register";
+import Marketplace from "./Pages/Marketplace";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
             <Route path="Contact" element={<ContactPage />} />
             <Route path="Careers" element={<CareerPage />} />
             <Route path="Solutions" element={<Solutions />} />
-            <Route path="Pricing" element={<Pricing />} />
+            <Route path="Marketplace" element={<Marketplace />} />
+            <Route path="/marketplace/openai_pricing" element={<OpenAiPricing />} />
             <Route path="*" element={<PageNotFound />} />
             <Route path="/solutions/consultancy" element={<Consultancy />} />
             <Route
