@@ -436,23 +436,79 @@ const OpenAiPricing = () => {
             <h2 className={`pb-5  ${style["section-heading-font-family"]}`}>
               Frequently Asked Questions
             </h2>
-            <div className={`accordion w-100  `} id={style["a_accordion"]}>
-              <div className={`accordion-item  `}>
+            <div className={`accordion w-100`} id={style["a_accordion"]}>
+              <div className={`accordion-item`}>
+                <h2 className={`accordion-header" id="headingThree`}>
+                  <button
+                    className={` accordion-button px-0 py-3 fw-bold collapsed`}
+                    id={style["a_accordion-button"]}
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    What's a token?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className={`accordion-collapse collapse`}
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className={`accordion-body px-0`}>
+                    <div className="pb-5">
+                      <p>
+                        You can think of tokens as pieces of words used for
+                        natural language processing. For English text, 1 token
+                        is approximately 4 characters or 0.75 words. As a point
+                        of reference, the collected works of Shakespeare are
+                        about 900,000 words or 1.2M&nbsp;tokens.
+                      </p>
+                      <p>
+                        To learn more about how tokens work and estimate
+                        your&nbsp;usage…
+                      </p>
+                      <ul>
+                        <li>
+                          Experiment with our interactive&nbsp;
+                          <a
+                            href="https://beta.openai.com/tokenizer"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            Tokenizer&nbsp;tool
+                          </a>
+                          .
+                        </li>
+                        <li>
+                          Log in to your account and enter text into the
+                          Playground. The counter in the footer will display how
+                          many tokens are in your&nbsp;text.
+                          <br />{" "}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={`accordion-item`}>
                 <h2 className={`accordion-header`} id="headingOne">
                   <button
                     className={` accordion-button px-0 py-3 fw-bold`}
                     id={style["a_accordion-button"]}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
+                    data-bs-target="#collapseTwo"
                     aria-expanded="true"
-                    aria-controls="collapseOne"
+                    aria-controls="collapseTwo"
                   >
                     Which model should I use?
                   </button>
                 </h2>
                 <div
-                  id="collapseOne"
+                  id="collapseTwo"
                   className={`accordion-collapse collapse show`}
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
@@ -473,22 +529,22 @@ const OpenAiPricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  `}>
+              <div className={`accordion-item`}>
                 <h2 className={`accordion-header" id="headingTwo`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
                     id={style["a_accordion-button"]}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
+                    data-bs-target="#collapseThree"
                     aria-expanded="false"
-                    aria-controls="collapseTwo"
+                    aria-controls="collapseThree"
                   >
                     How will I know how many tokens I've used each month?
                   </button>
                 </h2>
                 <div
-                  id="collapseTwo"
+                  id="collapseThree"
                   className={`accordion-collapse collapse`}
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
@@ -503,22 +559,22 @@ const OpenAiPricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  `}>
+              <div className={`accordion-item`}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
                     id={style["a_accordion-button"]}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
+                    data-bs-target="#collapseFour"
                     aria-expanded="false"
-                    aria-controls="collapseThree"
+                    aria-controls="collapseFour"
                   >
                     How can I manage my spending?
                   </button>
                 </h2>
                 <div
-                  id="collapseThree"
+                  id="collapseFour"
                   className={`accordion-collapse collapse`}
                   aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample"
@@ -537,22 +593,22 @@ const OpenAiPricing = () => {
                   </div>
                 </div>
               </div>
-              <div className={`accordion-item  `}>
+              <div className={`accordion-item`}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
                     className={` accordion-button px-0 py-3 fw-bold collapsed`}
                     id={style["a_accordion-button"]}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
+                    data-bs-target="#collapseFive"
                     aria-expanded="false"
-                    aria-controls="collapseFour"
+                    aria-controls="collapseFive"
                   >
                     Does Playground usage count against my quota?
                   </button>
                 </h2>
                 <div
-                  id="collapseFour"
+                  id="collapseFive"
                   className={`accordion-collapse collapse`}
                   aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample"
@@ -563,6 +619,192 @@ const OpenAiPricing = () => {
                   </div>
                 </div>
               </div>
+              <div className={`accordion-item`}>
+                <h2 className={`accordion-header" id="headingThree`}>
+                  <button
+                    className={`accordion-button px-0 py-3 fw-bold collapsed`}
+                    id={style["a_accordion-button"]}
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    How is pricing calculated for Completions?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  className={`accordion-collapse collapse`}
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className={`accordion-body px-0 border_bottom`}>
+                    <div className="pb-5">
+                      <p>
+                        <a
+                          href="https://beta.openai.com/docs/api-reference/completions"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Completions
+                        </a>
+                        &nbsp;requests are billed based on the number of tokens
+                        sent in your prompt plus the number of tokens in the
+                        completion(s) returned by the&nbsp;API.
+                      </p>
+                      <p>
+                        The <code>best_of</code> and <code>n</code> parameters
+                        may also impact costs. Because these parameters generate
+                        multiple completions per prompt, they act as multipliers
+                        on the number of tokens&nbsp;returned.
+                      </p>
+                      <p>
+                        Your request may use up to{" "}
+                        <code>
+                          num_tokens(prompt) + max_tokens * max(n, best_of)
+                        </code>{" "}
+                        tokens, which will be billed at the per-engine rates
+                        outlined at the top of this&nbsp;page.
+                      </p>
+                      <p>
+                        In the simplest case, if your prompt contains 10 tokens
+                        and you request a single 90 token completion from the
+                        davinci engine, your request will use 100 tokens and
+                        will cost&nbsp;$0.002.
+                      </p>
+                      <p>
+                        You can limit costs by reducing prompt length or maximum
+                        response length, limiting usage of{" "}
+                        <code>best_of/n</code>, adding appropriate stop
+                        sequences, or using engines with lower
+                        per-token&nbsp;costs.
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={`accordion-item`}>
+                <h2 className={`accordion-header" id="headingThree`}>
+                  <button
+                    className={`accordion-button px-0 py-3 fw-bold collapsed`}
+                    id={style["a_accordion-button"]}
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    How is pricing calculated for Fine-tuning?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  className={`accordion-collapse collapse`}
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className={`accordion-body px-0 border_bottom`}>
+                    <div className="pb-5">
+                      <p>
+                        There are two components to fine-tuning pricing:
+                        training and&nbsp;usage.
+                      </p>
+                      <p>
+                        When training a fine-tuned model, the total tokens used
+                        will be billed according to our&nbsp;
+                        <a
+                          href="https://openai.com/api/pricing/#quotas"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          training rates
+                        </a>
+                        . Note that the number of training tokens depends on the
+                        number of tokens in your training dataset&nbsp;
+                        <strong>and</strong>&nbsp;your chosen number of&nbsp;
+                        <a
+                          href="https://beta.openai.com/docs/guides/fine-tuning/hyperparameters"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          training epochs
+                        </a>
+                        . The default number of epochs is&nbsp;4.
+                      </p>
+                      <br />
+                      <span className="p-3" style={{ background: "#e5e5e5" }}>
+                        (Tokens in your training file * Number of training
+                        epochs) = Total training tokens
+                        <br />
+                      </span>
+                      <br />
+                      <p>
+                        Once you fine-tune a model, you'll be billed only for
+                        the tokens you use. Requests sent to fine-tuned models
+                        are billed at our&nbsp;
+                        <a
+                          href="https://openai.com/api/pricing/#quotas"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          usage&nbsp;rates
+                        </a>
+                        .<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={`accordion-item`}>
+                <h2 className={`accordion-header" id="headingThree`}>
+                  <button
+                    className={`accordion-button px-0 py-3 fw-bold collapsed`}
+                    id={style["a_accordion-button"]}
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    Is there an SLA on the various models?
+                  </button>
+                </h2>
+                <div
+                  id="collapseEight"
+                  className={`accordion-collapse collapse`}
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className={`accordion-body px-0 border_bottom`}>
+                    <div className="pb-5">
+                      <p>
+                        We will be publishing an SLA soon. In the meantime you
+                        can visit our&nbsp;
+                        <a
+                          href="https://status.openai.com/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Status page
+                        </a>
+                        &nbsp;to monitor service availability and view
+                        historical uptime. If your company or application has
+                        specific requirements, please&nbsp;
+                        <a
+                          href="https://openai.com/contact-sales"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          contact our sales&nbsp;team
+                        </a>
+                        .<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className={`accordion-item  ${style["ai_border_bottom"]}`}>
                 <h2 className={`accordion-header" id="headingThree`}>
                   <button
@@ -570,28 +812,42 @@ const OpenAiPricing = () => {
                     id={style["a_accordion-button"]}
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
+                    data-bs-target="#collapseNine"
                     aria-expanded="false"
-                    aria-controls="collapseFive"
+                    aria-controls="collapseNine"
                   >
-                    Accordion Item
+                    Is the API available on Microsoft Azure?
                   </button>
                 </h2>
                 <div
-                  id="collapseFive"
+                  id="collapseNine"
                   className={`accordion-collapse collapse`}
                   aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample"
                 >
                   <div className={`accordion-body px-0 border_bottom`}>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classNamees that we use to style each element.
-                    These classNamees control the overall appearance, as well as
-                    the showing and hiding via CSS transitions. You can modify
-                    any of this with custom CSS or overriding our default
-                    variables. It's also worth noting that just about any HTML
-                    can go within the , though the transition does limit
-                    overflow.
+                    <div className="pb-5">
+                      <p>
+                        Yes. Azure customers can access the OpenAI API on Azure
+                        with the compliance, regional support, and
+                        enterprise-grade security that Azure offers.&nbsp;
+                        <a
+                          href="https://azure.microsoft.com/en-us/services/openai-service/#overview"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Learn more
+                        </a>
+                        &nbsp;or contact&nbsp;
+                        <a
+                          href="mailto:sales@openai.com"
+                          rel="noopener noreferrer"
+                        >
+                          sales@openai.com
+                        </a>
+                        .<br />
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
