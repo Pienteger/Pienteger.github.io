@@ -11,12 +11,13 @@ const HeaderComponent = () => {
             <img src={logo} className="header-logo" />
           </a>
           <div className="divider"></div>
-          <div className="links">
+          <div className="links d-flex gap-3">
             {/* <a href="/">Home</a>
                         <a href="/about">About</a>
                         <a href="/products">Products</a> */}
             <a href="/solutions">Solutions</a>
             <a href="//docs.pienteger.com">Docs</a>
+            <a href="//blog.pienteger.com/">Blog</a>
             <a href="/marketplace">Marketplace</a>
           </div>
         </div>

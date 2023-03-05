@@ -1,0 +1,8 @@
+.minheight7rem {
+  min-height: 7rem;
+}
+
+.search_input {
+  font-size: 1.2rem;
+  min-width: 350px;
+}
