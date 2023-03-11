@@ -5,4 +5,5 @@
 .search_input {
   font-size: 1.2rem;
   min-width: 350px;
+  outline: none;
 }

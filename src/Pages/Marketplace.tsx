@@ -30,9 +30,9 @@ const Marketplace = () => {
         </div>
       </div>
       <div className="container m-0 px-0 py-5 d-flex">
-        <div className="container m-0 px-0 sidebar w-100 w-lg-25">
+        <div className="container m-0 px-0 sidebar">
           <h3 className="text-dark">Solution Categories</h3>
-          <ul className="unstyled">
+          <ul className="list-unstyled">
             <li>item 1</li>
             <li>item 2</li>
             <li>item 3</li>
