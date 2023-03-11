@@ -39,52 +39,32 @@ const Marketplace = () => {
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 1
+                Category Name
               </li>
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 2
+                Category Name
               </li>
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 3
+                Category Name
               </li>
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 4
+                Category Name
               </li>
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 5
+                Category Name
               </li>
               <li
                 className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
               >
-                item 6
-              </li>
-              <li
-                className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
-              >
-                item 7
-              </li>
-              <li
-                className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
-              >
-                item 8
-              </li>
-              <li
-                className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
-              >
-                item 9
-              </li>
-              <li
-                className={`${style["border_bottom"]} py-3 ${style["font1_1"]}`}
-              >
-                item 10
+                Category Name
               </li>
             </ul>
           </div>
