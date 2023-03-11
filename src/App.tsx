@@ -24,12 +24,12 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <div className="container min-vh-100">
+      <div className="container min-vh-100 px-0">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login" element={<Login />} />
-            <Route path="Register" element={<Register />}/>
+            <Route path="Register" element={<Register />} />
             {/* <Route path="register" element={<Register />} /> */}
             <Route path="Terms" element={<TOS />} />
             <Route path="LogoHistory" element={<LogoHistory />} />
@@ -39,7 +39,10 @@ function App() {
             <Route path="Careers" element={<CareerPage />} />
             <Route path="Solutions" element={<Solutions />} />
             <Route path="Marketplace" element={<Marketplace />} />
-            <Route path="/marketplace/openai_pricing" element={<OpenAiPricing />} />
+            <Route
+              path="/marketplace/openai_pricing"
+              element={<OpenAiPricing />}
+            />
             <Route path="*" element={<PageNotFound />} />
             <Route path="/solutions/consultancy" element={<Consultancy />} />
             <Route
