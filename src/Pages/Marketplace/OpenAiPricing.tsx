@@ -36,7 +36,7 @@ const OpenAiPricing = () => {
                   className={`mx-auto  ${style["width_fit_content"]} middle_div d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-5`}
                 >
                   <a
-                    href=""
+                    href="https://openai.com/research/overview"
                     className={`${style["text_opacity_light_black"]} text-uppercase text-decoration-none text-dark fw-semibold`}
                   >
                     overview
