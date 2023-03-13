@@ -4,7 +4,6 @@ import mainLogo from "../images/mainLogo.png";
 const FooterComponents = () => {
   return (
     <>
-      {/* <footer className="footer"> */}
       {/* <a className="text-decoration-none" href="/privacy">Privacy</a>| */}
       {/* <footer
         className={`footerComponent ${commonStyle["min-h20rem"]} ${commonStyle["carbon_effect_bg"]}`}
