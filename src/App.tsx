@@ -1,65 +1,39 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BlackCircle from "./Components/BlackCircle";
-import FooterComponents from "./Components/FooterComponents";
-import HeaderComponent from "./Components/HeaderComponent";
-import ConvexHull from "./Pages/Algorithms/ConvexHull";
-import CareerPage from "./Pages/CareersPage";
-import ContactPage from "./Pages/ContactPage";
-import Copyrights from "./Pages/Copyrights";
-import Home from "./Pages/Home";
-import LogoHistory from "./Pages/LogoHistory";
-import PageNotFound from "./Pages/PageNotFound";
-import Solutions from "./Pages/Solutions";
-import Consultancy from "./Pages/Solutions/Consultancy";
-import Infrastructure from "./Pages/Solutions/Infrastructure";
-import SoftwareDevelopment from "./Pages/Solutions/SoftwareDevelopment";
-import TOS from "./Pages/TOS";
-import Login from "./Pages/Login";
-import OpenAiPricing from "./Pages/Marketplace/OpenAiPricing";
-import Register from "./Pages/Register";
-import Marketplace from "./Pages/Marketplace";
-
 function App() {
+
+
   return (
     <>
-      <HeaderComponent />
-      <div className="container min-vh-100 px-0">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login" element={<Login />} />
-            <Route path="Register" element={<Register />} />
-            {/* <Route path="register" element={<Register />} /> */}
-            <Route path="Terms" element={<TOS />} />
-            <Route path="LogoHistory" element={<LogoHistory />} />
-            <Route path="Algorithms/ConvexHull" element={<ConvexHull />} />
-            <Route path="Copyrights" element={<Copyrights />} />
-            <Route path="Contact" element={<ContactPage />} />
-            <Route path="Careers" element={<CareerPage />} />
-            <Route path="Solutions" element={<Solutions />} />
-            <Route path="Marketplace" element={<Marketplace />} />
-            <Route
-              path="/marketplace/openai_pricing"
-              element={<OpenAiPricing />}
-            />
-            <Route path="*" element={<PageNotFound />} />
-            <Route path="/solutions/consultancy" element={<Consultancy />} />
-            <Route
-              path="/solutions/software-development"
-              element={<SoftwareDevelopment />}
-            />
-            <Route
-              path="/solutions/infrastructure"
-              element={<Infrastructure />}
-            />
-          </Routes>
-        </BrowserRouter>
+      <div className='flex flex-col items-center justify-center mt-10'>
+        <p className='text-xl'>Boycotting 
+          <span className='text-red-700 font-bold italic'> CocaCola</span> is not enough.
+          Let's build an alternative tech stack. How about building a social media from scratch?</p>
       </div>
-      <FooterComponents />
-      <BlackCircle />
+      <div className="flex flex-col items-center justify-center gap-2 mt-5 text-xl">
+        <p>If you are a <span className="font-bold">true Muslim</span>, and one of these -</p>
+        <ul className="list-disc">
+          <li>Architect</li>
+          <li>.NET Engineer</li>
+          <li>Mobile Developer</li>
+          <li>Frontend Engineer</li>
+          <li>UI/UX designer</li>
+          <li>Tech consultant</li>
+          <li>Potential valuable asset<br /> in this journey</li>
+        </ul>
+        <p className="text-3xl">We are looking for you.</p>
+        <button className='px-3 py-2 bg-blue-500 text-white rounded mt-5'>
+          <a href='mailto:pienteger@gmail.com' target='_blank' rel='noreferrer'>
+            Contact us
+          </a>
+        </button>
+        <p>This is a sadaqah e jariyah project and we encourage you to apply only if you are job holder or financially stable and want to invest your free time in a cause of Allah.</p>
+        <p>Running a project specially tech product requires money to run. For example hosting charges. If you want to invest money in this project, you can join us too.</p>
+      </div>
+      <div className="pt-5 pb-2 flex flex-col items-center justify-center">
+        <p>Build with ❤️ in Bangladesh</p>
+        <p>🇧🇩 🤝🏻 🇵🇸</p>
+      </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
