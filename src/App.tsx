@@ -1,8 +1,4 @@
-import dotnet_bot from "./assets/dotnet-bot.svg"
-
 function App() {
-
-
   return (
     <>
       <div className="flex flex-col gap-2 items-center justify-center text-center h-[100vh]">
