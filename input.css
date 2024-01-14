@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bold-xl{
+    @apply font-bold text-xl;
+}
+
+.bold-2xl {
+    @apply font-bold text-2xl;
+}
+
+.bold-3xl {
+    @apply font-bold text-3xl;
+}
+
+
+
+.bold-4xl {
+    @apply font-bold text-4xl;
+}
+
+
+
+.bold-8xl {
+    @apply font-bold text-8xl;
+}
