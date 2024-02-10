@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import full_dhaka from '../assets/full_dhaka.webm';
 import full_dhaka_poster from '../assets/full_dhaka_poster.jpg';
 import kk_icon from '../assets/kk_icon.png';
