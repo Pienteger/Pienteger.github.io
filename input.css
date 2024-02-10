@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bold-xl{
+.bold-xl {
     @apply font-bold text-xl;
 }
 
@@ -24,4 +24,14 @@
 
 .bold-8xl {
     @apply font-bold text-8xl;
+}
+
+
+
+.bd-flag-text {
+    @apply bg-gradient-to-r from-[#006a4e] to-[#f42a41] text-transparent bg-clip-text;
+}
+
+.product-card{
+    @apply bg-white flex flex-col rounded-lg shadow-md p-3 border border-gray-100;
 }
