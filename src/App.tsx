@@ -1,9 +1,19 @@
-import Home from "./Pages/Home"
+import Footer from "./Components/Footer"
+import Header from "./Components/Header"
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Home />
+      <header className='flex-init'>
+        <Header />
+      </header>
+      <main className='flex-1'>
+        <Outlet />
+      </main>
+      <footer className='flex-init'>
+        <Footer />
+      </footer>
     </>
   )
 }

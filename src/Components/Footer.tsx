@@ -4,7 +4,7 @@ import logo from '../assets/logo192.png';
 const Footer = () => {
     return (
         <>
-            <div className="bg-black text-white py-3 px-5 md:px-10 my-2">
+            <div className="bg-black text-white py-3 px-5 md:px-10">
                 <div className="flex flex-col md:flex-row gap-3">
                     <a href="/" className="flex items-center gap-2 flex-1">
                         <img src={logo} alt="Pienteger Logo"
@@ -36,15 +36,15 @@ const Footer = () => {
                         © 2024 <span className="font-bold">Pienteger</span>. All rights reserved.</p>
 
                     <nav className="flex flex-col md:flex-row md:gap-1">
-                        <a href="/privacy" className="font-semibold hover:underline">Privacy Policy</a>
+                        <a href="/career" className="font-semibold hover:underline">Career</a>
                         <Pipe />
                         <a href="/terms" className="font-semibold hover:underline">Terms of Use</a>
-                        <Pipe />
-                        <a href="/sales" className="font-semibold hover:underline">Sales and Refunds</a>
+                        {/* <Pipe />
+                        <a href="/sales" className="font-semibold hover:underline">Sales and Refunds</a> */}
                         <Pipe />
                         <a href="/legal" className="font-semibold hover:underline">Legal</a>
-                        <Pipe />
-                        <a href="/sitemap" className="font-semibold hover:underline">Site Map</a>
+                        {/* <Pipe />
+                        <a href="/sitemap" className="font-semibold hover:underline">Site Map</a> */}
                     </nav>
                 </div>
             </div>

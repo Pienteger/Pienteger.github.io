@@ -13,7 +13,9 @@ const Header = () => {
                 <div className='flex-init'>
                     <nav className='flex gap-2 justify-end'>
                         <a href='/about' className='font-bold hover:underline'>About</a>
-                        <a href='/services' className='font-bold hover:underline'>Services</a>
+                        <a href='https://blog.pienteger.com'
+                            target='_blank' rel='noreferrer'
+                            className='font-bold hover:underline'>Blog</a>
                         <a href='/contact' className='font-bold hover:underline'>Contact</a>
                     </nav>
                 </div>
