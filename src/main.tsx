@@ -9,6 +9,7 @@ import Tos from './Pages/Tos.tsx';
 import Legal from './Pages/Legal.tsx';
 import Career from './Pages/Career.tsx';
 import About from './Pages/About.tsx';
+import "cal-sans"; 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

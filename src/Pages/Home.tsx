@@ -2,6 +2,16 @@ import React, { useRef, useEffect } from 'react';
 import full_dhaka from '../assets/full_dhaka.webm';
 import full_dhaka_poster from '../assets/full_dhaka_poster.jpg';
 import kk_icon from '../assets/kk_icon.png';
+
+import reactlogo from "../assets/react.svg";
+import dotnetlogo from "../assets/dotnet.jpeg";
+import pythonlogo from "../assets/python.svg";
+import sqlserverlogo from "../assets/sqlserver.svg";
+import vuelogo from "../assets/vue.svg";
+import javascriptlogo from "../assets/javascript.svg";
+import wordpresslogo from "../assets/wordpress.svg";
+import azurelogo from "../assets/azure.svg";
+
 import ProductCard from '../Components/ProductCard';
 
 const Home: React.FC = () => {
@@ -24,39 +34,48 @@ const Home: React.FC = () => {
                 </video>
                 <div className='w-full h-full bg-black bg-opacity-50 top-0 left-0 absolute'></div>
                 <div className="flex flex-col gap-2 h-full items-center justify-center text-center z-20 relative">
-                    <p className="font-bold text-3xl text-white">
-                        Replacing Complexity with Simplicity
-                    </p>
-                    <p className="text-xl text-white">
-                        Pienteger®, on a Mission to Shape Bangladesh into a Smart Nation.
+                    <h2 className="text-white">
+                        <span className='text-9xl'>Tailored</span>
+                        <br />
+                        Software development
+                        <br />
+                        <span className='text-9xl'>for your</span>
+                        <br />
+                        <span className='text-9xl'>specific<br /> need</span>
+                    </h2>
+                    <p className=" text-white">
+                        Here at Pienteger®, we are committed to providing you with the best software solutions
+                        for your business.
+                        <br />
+                        Agile, secure, scalable, and reliable.
                     </p>
 
                     <a href="mailto:pienteger@gmail.com"
-                        className="flex items-center justify-center gap-1 px-3 py-2 bg-purple-400 rounded font-bold text-purple-950 md:w-fit">
+                        className="flex items-center justify-center gap-1 px-3 py-2 bg-blue-400 rounded font-bold text-blue-950 md:w-fit">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.25 4H18.75C20.483 4 21.8992 5.35645 21.9949 7.06558L22 7.25V16.75C22 18.483 20.6435 19.8992 18.9344 19.9949L18.75 20H5.25C3.51697 20 2.10075 18.6435 2.00514 16.9344L2 16.75V7.25C2 5.51697 3.35645 4.10075 5.06558 4.00514L5.25 4H18.75H5.25ZM20.5 9.373L12.3493 13.6637C12.1619 13.7623 11.9431 13.7764 11.7468 13.706L11.6507 13.6637L3.5 9.374V16.75C3.5 17.6682 4.20711 18.4212 5.10647 18.4942L5.25 18.5H18.75C19.6682 18.5 20.4212 17.7929 20.4942 16.8935L20.5 16.75V9.373ZM18.75 5.5H5.25C4.33183 5.5 3.57881 6.20711 3.5058 7.10647L3.5 7.25V7.679L12 12.1525L20.5 7.678V7.25C20.5 6.33183 19.7929 5.57881 18.8935 5.5058L18.75 5.5Z" fill="currentColor" />
                         </svg>
-                        Join Our Dream
+                        Get in touch
                     </a>
                 </div>
             </div>
 
             <div className='px-2 md:px-40 py-10'>
-                <h1 className='mx-auto text-3xl font-bold mb-2'>Our Products -</h1>
+                <h1>Our Products -</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     <ProductCard name="Sertifiket&trade;"
                         icon="https://sertifiket.com/favicon.png"
                         tagline="Proof of you"
-                        description="Comprehensive solution for digital identity, certificates, and documents." 
+                        description="Comprehensive solution for digital identity, certificates, and documents."
                         link='https://sertifiket.com'
-                        linkText='Visit Website'/>
+                        linkText='Visit Website' />
 
                     <ProductCard name="Kothakunjo&trade;"
                         icon={kk_icon}
                         tagline="Learn more, digitally"
-                        description="All-in-one digital platform for e-books, audiobooks, and courses." 
+                        description="All-in-one digital platform for e-books, audiobooks, and courses."
                         link='https://kothakunjo.com'
-                        linkText='Visit Website'/>
+                        linkText='Visit Website' />
 
                     <ProductCard name="Placeia&trade;"
                         icon="https://placeia.com/favicon.svg"
@@ -68,7 +87,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className='px-2 md:px-40 py-10'>
-                <h1 className='mx-auto text-3xl font-bold mb-2'>Open source -</h1>
+                <h1>Open source -</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     <ProductCard name="QuranLib"
                         icon="https://www.nuget.org/Content/gallery/img/default-package-icon.svg"
@@ -77,6 +96,34 @@ const Home: React.FC = () => {
                         link='https://www.nuget.org/packages/Pienteger.QuranLib/7.0.1' />
                 </div>
             </div>
+            <div className='px-2 md:px-40 py-10'>
+                <h1>Technologies we work with</h1>
+                <div className='flex flex-row justify-between items-center'>
+                    <img src={wordpresslogo} className='h-28' alt='Wordpress' title='wordpress' />
+                    <img src={javascriptlogo} className='h-28'
+                        alt='JavaScript' title='JavaScript'
+                    />
+                    <img src={vuelogo} className='h-28'
+                        alt='Vue.js' title='Vue.js'
+                    />
+                    <img src={sqlserverlogo} className='h-28'
+                        alt='Microsoft SQL Server' title='Microsoft SQL Server'
+                    />
+                    <img src={pythonlogo} className='h-28'
+                        alt='Python' title='Python'
+                    />
+                    <img src={dotnetlogo} className='h-28'
+                        alt='Dotnet' title='Dotnet'
+                    />
+                    <img src={reactlogo} className='h-28'
+                        alt='React' title='React'
+                    />
+                    <img src={azurelogo} className='h-28'
+                        alt='Azure' title='Azure' />
+
+                </div>
+            </div>
+
         </>
     )
 
