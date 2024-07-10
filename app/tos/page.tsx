@@ -43,7 +43,7 @@ const Tos: React.FC = () => {
                 <li className="text-justify">
                     You will not use Website in any way that could damage, disable, overburden, or impair any Pienteger
                     server, or the network(s) connected to any Pienteger server (including linked sites), or interfere with
-                    any other visitors' use and enjoyment of Website.
+                    any other visitors&apos; use and enjoyment of Website.
                 </li>
                 <li className="text-justify">
                     You will not use any Pienteger software, service, or resource in any way that is unlawful, or in any

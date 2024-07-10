@@ -1,13 +1,14 @@
 import logo from '../assets/logo192.png';
+import Image from 'next/image';
 
 const Header = () => {
     return (
         <>
-            <div className='flex items-center py-2 px-5 md:px-10'>
+            <div className='flex items-center py-5 px-5 md:px-10'>
                 <a className='flex items-center gap-2 flex-1' href='/'>
-                    <img src={logo} alt="Pienteger Logo"
+                    <Image src={logo} alt="Pienteger Logo"
                         className='h-6 w-6' />
-                    <h1 className='text-xl font-bold'>Pienteger</h1>
+                    <h1 className='text-xl font-bold font-inter'>Pienteger&reg;</h1>
                 </a>
 
                 <div className='flex-init'>

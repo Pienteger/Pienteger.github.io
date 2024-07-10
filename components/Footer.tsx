@@ -1,5 +1,6 @@
 import Pipe from "./Pipe";
 import logo from '../assets/logo192.png';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
             <div className="bg-black text-white py-3 px-5 md:px-10">
                 <div className="flex flex-col md:flex-row gap-3">
                     <a href="/" className="flex items-center gap-2 flex-1">
-                        <img src={logo} alt="Pienteger Logo"
+                        <Image src={logo} alt="Pienteger Logo"
                             className="h-6 w-6" />
                         <h1 className="text-xl font-bold">Pienteger</h1>
                     </a>

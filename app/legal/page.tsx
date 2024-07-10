@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: 'Copyrights and attributes - Pienteger',
+    description: '...',
+}
 const Legal = () => {
-    useEffect(() => {
-        document.title = "Copyrights and attributes - Pienteger";
-    }, []);
     return (
         <>
             <div className="md:px-40 px-5 pt-10 pb-5 flex flex-col gap-2">
