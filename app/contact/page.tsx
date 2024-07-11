@@ -2,17 +2,16 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: "Pienteger® - A software company that you can trust.",
-    description: "A software company that you can trust.",
+    title: "Contact Us | Pienteger®",
+    description: "Contact Pienteger® for inquiries, support, or any other information.",
 };
 
 const Contact = () => {
     const email = 'email';
     return (
         <>
-            <div className="md:px-40 px-5 pt-10">
-                <h1 className="text-3xl font-bold mb-2">Contact Us</h1>
-
+            <div className="content">
+                <h1>Contact Us</h1>
                 <table>
                     <tbody>
                         <tr>

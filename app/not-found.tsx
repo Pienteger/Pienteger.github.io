@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "404 - Pienteger®",
+    description: "The page you are looking for is not found.",
+};
+
 const NoPage = () => {
     return (
         <div className="flex flex-col items-center py-10">

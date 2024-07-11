@@ -1,21 +1,22 @@
 
 import Image, { StaticImageData } from "next/image";
 import React from 'react';
-import full_dhaka_poster from '../assets/full_dhaka_poster.jpg';
 import kk_icon from '../assets/kk_icon.png';
 
 import reactlogo from "../assets/react.svg";
 import dotnetlogo from "../assets/dotnet.jpeg";
 import pythonlogo from "../assets/python.svg";
 import sqlserverlogo from "../assets/sqlserver.svg";
+import postgresqllogo from "../assets/postgresql.svg";
 import vuelogo from "../assets/vue.svg";
 import javascriptlogo from "../assets/javascript.svg";
 import wordpresslogo from "../assets/wordpress.svg";
 import azurelogo from "../assets/azure.svg";
 import ProductCard from "@/components/ProductCard";
+import Link from "next/link";
+
 
 import { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "Pienteger® - A software company that you can trust.",
@@ -45,9 +46,6 @@ const Home: React.FC = () => {
           </a>
         </div>
       </div>
-
-
-
       <div className="w-full min-h-screen bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center p-8">
         <div className="max-w-3xl bg-white p-10 rounded-lg shadow-lg">
           <p className="font-cal-sans text-center mb-6">
@@ -59,8 +57,6 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
-
-
       <div className='px-2 md:px-40 py-10'>
         <h1>Our Products -</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -100,12 +96,22 @@ const Home: React.FC = () => {
       <div className='px-2 md:px-40 py-10'>
         <h1>Technologies we work with</h1>
         <div className='flex flex-row justify-between items-center'>
-          <Image src={dotnetlogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
-            alt='Dotnet' title='Dotnet' />
-          <Image src={sqlserverlogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
-            alt='Microsoft SQL Server' title='Microsoft SQL Server' />
-          <Image src={azurelogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
-            alt='Azure' title='Azure' />
+          <Link href="/why/we-use/dotnet">
+            <Image src={dotnetlogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
+              alt='Dotnet' title='Dotnet' />
+          </Link>
+          <Link href="/why/we-use/sql-server">
+            <Image src={sqlserverlogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
+              alt='Microsoft SQL Server' title='Microsoft SQL Server' />
+          </Link>
+          <Link href="/why/we-use/postgresql">
+            <Image src={postgresqllogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
+              alt='Postgresql' title='Postgresql' />
+          </Link>
+          <Link href="/why/we-use/azure">
+            <Image src={azurelogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
+              alt='Azure' title='Azure' />
+          </Link>
           <Image src={javascriptlogo} className='brand-icon-28' width="0" height="0" sizes="100vw"
             alt='JavaScript' title='JavaScript' />
           <Image src={vuelogo} className='brand-icon-28' width="0" height="0" sizes="100vw"

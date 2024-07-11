@@ -1,7 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Website Terms of Use | Pienteger®",
+    description: "Website Terms of Use for Pienteger®. Learn about the terms and conditions for using our website.",
+};
 const Tos: React.FC = () => {
     return (
         <div className="md:px-40 px-5 pt-10 pb-5 flex flex-col gap-2">
-            <h1 className="font-bold text-3xl">Website Terms of Use</h1>
+            <h1>Website Terms of Use</h1>
             <em className="text-gray-300">Version 2.0, last updated: Feb 11, 2024</em>
             <p className="mt-2 text-justify">
                 In the name of <strong>Allah</strong>, the Most Gracious, the Most Merciful.

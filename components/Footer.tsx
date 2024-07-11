@@ -39,7 +39,7 @@ const Footer = () => {
                     <nav className="flex flex-col md:flex-row md:gap-1">
                         <a href="/career" className="font-semibold hover:underline">Career</a>
                         <Pipe />
-                        <a href="/terms" className="font-semibold hover:underline">Terms of Use</a>
+                        <a href="/tos" className="font-semibold hover:underline">Terms of Use</a>
                         {/* <Pipe />
                         <a href="/sales" className="font-semibold hover:underline">Sales and Refunds</a> */}
                         <Pipe />
