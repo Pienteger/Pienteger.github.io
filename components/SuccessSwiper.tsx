@@ -1,0 +1,115 @@
+"use client";
+
+import React, { useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import Image from 'next/image';
+import sertifiket from "../assets/products/sertifiket.svg"
+import kothakunjo from "../assets/products/kothakunjo.svg"
+import serrifiket_arrow from "../assets/products/serrifiket_arrow.svg"
+import kothakunjo_arrow from "../assets/products/kothakunjo_arrow.svg"
+import quranlab_arrow from "../assets/products/quranlab_arrow.svg"
+import left_arrow from "../assets/products/left_arrow.svg";
+import right_arrow from "../assets/products/right_arrow.svg";
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+const projectsContents = [
+  {
+    image: sertifiket,
+    arrow: serrifiket_arrow,
+    title: "Sertifiket™",
+    description: "Comprehensive solution for digital identity, certificates, and documents",
+    bg_color: "CCFFD0",
+    primary_color: "006609"
+  },{
+    image: kothakunjo,
+    arrow: kothakunjo_arrow,
+    title: "Kothakunjo™",
+    description: "All-in-one digital platform for e-books, audiobooks, and courses",
+    bg_color: "CCD7FF",
+    primary_color: "0033E5"
+  },{
+    image: kothakunjo,
+    arrow: quranlab_arrow,
+    title: "QuranLib",
+    description: "A portable Quran library that gives read-only access to the entire Holy Quran.",
+    bg_color: "FFF8CC",
+    primary_color: "665900"
+  },{
+    image: sertifiket,
+    arrow: serrifiket_arrow,
+    title: "Sertifiket™",
+    description: "Comprehensive solution for digital identity, certificates, and documents",
+    bg_color: "CCFFD0",
+    primary_color: "006609"
+  },{
+    image: kothakunjo,
+    arrow: kothakunjo_arrow,
+    title: "Kothakunjo™",
+    description: "All-in-one digital platform for e-books, audiobooks, and courses",
+    bg_color: "CCD7FF",
+    primary_color: "0033E5"
+  },{
+    image: kothakunjo,
+    arrow: quranlab_arrow,
+    title: "QuranLib",
+    description: "A portable Quran library that gives read-only access to the entire Holy Quran.",
+    bg_color: "FFF8CC",
+    primary_color: "665900"
+  }
+]
+
+
+const SuccessSwiper = () => {
+  const swiperRef = useRef<SwiperCore | null>(null);
+
+  return (
+    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10'>
+      <div className='flex justify-between items-center'>
+        <h1 className='text-[#0033E5] text-[40px] font-bold leading-[54px] -tracking-[0.8px]'>
+          Reliable, Innovative Products Crafted
+        </h1>
+        <div className='flex gap-4'>
+          <button onClick={() => swiperRef.current?.slidePrev()}>
+            <Image src={left_arrow} alt='left_arrow'/>
+          </button>
+          <button onClick={() => swiperRef.current?.slideNext()}>
+            <Image src={right_arrow} alt='right_arrow'/>
+          </button>
+        </div>
+      </div>
+      <div className='w-full'>
+        <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          spaceBetween={0}
+          slidesPerView={3}
+        >
+          {projectsContents.map((content, index) => (
+            <SwiperSlide key={index}>
+                <div className={`px-5 py-6 flex flex-col gap-5 bg-[#${content.bg_color}] rounded-xl border-b-[5px] border-b-[#${content.primary_color}]`}>
+                    <Image src={content.image} alt={content.title}/>
+                    <h2 className={`text-[#${content.primary_color}] text-2xl font-bold leading-[32.4px] -tracking-[0.48px]`}>
+                        {content.title}
+                    </h2>
+                    <p className={`text-[#${content.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
+                        {content.description}
+                    </p>
+                    <button className={`flex items-center gap-2 text-[#${content.primary_color}] text-base font-bold leading-[21.6px] -tracking-[0.32px]`}>
+                        Visit Website <span><Image src={content.arrow} alt={`${content.title} arrow`}/></span>
+                    </button>
+                </div>
+            </SwiperSlide>
+           ))}
+        </Swiper>
+      </div>
+    </div>
+  )
+}
+
+export default SuccessSwiper

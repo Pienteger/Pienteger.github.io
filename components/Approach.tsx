@@ -25,7 +25,7 @@ const Approach = () => {
     ]
 
   return (
-    <div className='relative'>
+    <div className='relative min-h-[464px]'>
         <div className='bg-[url("../assets/approach/wave.svg")] bg-cover min-h-[189px]'>
         </div>
         <div className='bg-[url("../assets/approach/wave2.svg")] text-white w-full bg-cover z-[999] absolute top-[17px]'>    
