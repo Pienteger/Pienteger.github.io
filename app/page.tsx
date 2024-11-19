@@ -22,6 +22,8 @@ import TechStack from "@/components/TechStack";
 import Services from "@/components/Services";
 import Approach from "@/components/Approach";
 import SuccessSwiper from "@/components/SuccessSwiper";
+import ThoughtsWithAccordion from "@/components/ThoughtsWithAccordion";
+import Thoughts from "@/components/Thoughts";
 
 export const metadata: Metadata = {
   title: "Pienteger® - A software company that you can trust.",
@@ -37,6 +39,7 @@ const Home: React.FC = () => {
       <Services/>
       <Approach/>
       <SuccessSwiper/>
+      <ThoughtsWithAccordion/>
     </>
   );
 }
