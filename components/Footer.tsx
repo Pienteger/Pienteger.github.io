@@ -6,7 +6,63 @@ import instagram from "../assets/footer/instagram.svg";
 import linkedin from "../assets/footer/linkedin.svg";
 import line from "../assets/footer/line.svg";
 
+
 const Footer = () => {
+    const services = [
+        {
+            url: "",
+            title: "AI Integration & Beyond"
+        },
+        {
+            url: "",
+            title: "Microsoft Graph & AD Integration"
+        },
+        {
+            url: "",
+            title: "Cloud Infrastructure Management"
+        },
+        {
+            url: "",
+            title: "API Development and Integration"
+        },
+        {
+            url: "",
+            title: "Web Application Development"
+        },
+        {
+            url: "",
+            title: "Data Analytics and Insights"
+        }
+    ]
+    const mores = [
+        {
+            url: "",
+            title: "Works"
+        },
+        {
+            url: "",
+            title: "Blogs"
+        },
+        {
+            url: "",
+            title: "Contact Us"
+        }
+    ]
+    const helps = [
+        {
+            url: "",
+            title: "Privacy Policy"
+        },
+        {
+            url: "",
+            title: "Subscription Policy"
+        },
+        {
+            url: "",
+            title: "Terms & Services"
+        }
+    ]
+    
     return (
         <>
             <div className="bg-[#FFE641] mt-20 pt-4 pb-20 flex items-center justify-between px-8 rounded-tr-[32px] rounded-tl-[32px]">
@@ -35,24 +91,13 @@ const Footer = () => {
                             Services
                         </span>
                         <ul className="flex flex-col gap-6">
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                AI Integration & Beyond
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Microsoft Graph & AD Integration
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Cloud Infrastructure Management
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                API Development and Integration
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Web Application Development
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Data Analytics and Insights
-                            </li>
+                            {
+                                services.map((service, index)=>(
+                                    <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
+                                        {service?.title}
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="p-3 flex flex-col gap-6">
@@ -60,15 +105,13 @@ const Footer = () => {
                             More
                         </span>
                         <ul className="flex flex-col gap-6">
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Works
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Blogs
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Contact Us
-                            </li>
+                            {
+                                mores.map((more, index)=>(
+                                    <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
+                                        {more?.title}
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="p-3 flex flex-col gap-6">
@@ -76,15 +119,13 @@ const Footer = () => {
                             Help
                         </span>
                         <ul className="flex flex-col gap-6">
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Privacy Policy
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Subscription Policy
-                            </li>
-                            <li className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                Terms & Services
-                            </li>
+                            {
+                                helps.map((help, index)=>(
+                                    <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
+                                        {help.title}
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="p-3 flex flex-col justify-between">
