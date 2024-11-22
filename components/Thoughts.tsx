@@ -38,7 +38,7 @@ const Thoughts = () => {
     <div className='max-w-[1280px] mx-auto flex flex-col gap-5'>
         <div className='flex justify-between items-center'>
             <h1 className='text-[#F0F7FF] text-[40px] font-bold leading-[54px] -tracking-[0.8px]'>
-            Reliable, Innovative Products Crafted
+                Reliable, Innovative Products Crafted
             </h1>
             <button className='px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
         </div>
