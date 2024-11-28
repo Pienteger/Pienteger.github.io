@@ -29,12 +29,12 @@ const QAAccordion = () => {
 
     const [open, setOpen] = useState<number | null>(null);
     const handleAccordionOpen = (index:any) =>{
-        console.log("clicked")
+        console.log("clicked", index);
         setOpen(open === index ? null : index);
     }
    
   return (
-    <div className='mt-20 max-w-[1280px] mx-auto flex flex-col gap-10'>
+    <div className='pt-10 max-w-[1280px] mx-auto flex flex-col gap-10'>
         <h1 className='text-[#F0F7FF] text-[40px] font-bold leading-[54px] -tracking-[0.8px]'>
             Quick Answers Here, Saving You Time & Hassle
         </h1>
@@ -42,11 +42,9 @@ const QAAccordion = () => {
             {
                 accordionDatas.map((data, index)=>(
                     <div key={index} className='bg-[#1A4DFF] rounded-xl p-6'>
-                        <div className='flex justify-between items-center'>
-                            <h2 className='text-[#F0F7FF] text-xl font-bold leading-[28px] -tracking-[0.4px]'>{data.title}</h2>
-                            <button onClick={()=>handleAccordionOpen(index)}>
-                                <Image src={open === index ? accordionClose : accordionOpen} alt='collaps icon'/>
-                            </button>
+                        <div className='flex justify-between items-center cursor-pointer' onClick={()=>handleAccordionOpen(index)}>
+                            <span className='text-[#F0F7FF] text-xl font-bold leading-[28px] -tracking-[0.4px]'>{data.title}</span>
+                            <Image src={open === index ? accordionClose : accordionOpen} alt='collaps icon'/>
                         </div>
                         <div className="transition-all duration-500 ease-in-out">
                             {

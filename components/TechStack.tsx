@@ -9,10 +9,10 @@ import dotnet from "../assets/tech/dotnet.svg"
 import python from "../assets/tech/python.svg"
 import react from "../assets/tech/react.svg"
 import newtec from "../assets/tech/newtech.svg"
-import wordpress from "../assets/tech/wordpress.svg"
+import kafka from "../assets/tech/kafka.svg"
 import Marquee from 'react-fast-marquee'
 
-const techStacks = [postgress, angular, js, vue, dotnet, python, newtec, react, wordpress];
+const techStacks = [postgress, angular, js, vue, dotnet, python, newtec, react, kafka];
 
 const CustomGradient= {
     maskImage: 'linear-gradient(90deg, rgba(255, 230, 65, 0.00) 20%, #FFE641 100%)'

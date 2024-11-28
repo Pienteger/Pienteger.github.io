@@ -74,10 +74,10 @@ const SuccessSwiper = () => {
           Reliable, Innovative Products Crafted
         </h1>
         <div className='flex gap-4'>
-          <button onClick={() => swiperRef.current?.slidePrev()}>
+          <button onClick={() => swiperRef.current?.slidePrev()} className='hover:opacity-60'>
             <Image src={left_arrow} alt='left_arrow'/>
           </button>
-          <button onClick={() => swiperRef.current?.slideNext()}>
+          <button onClick={() => swiperRef.current?.slideNext()} className='hover:opacity-60'>
             <Image src={right_arrow} alt='right_arrow'/>
           </button>
         </div>
