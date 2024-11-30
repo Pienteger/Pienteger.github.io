@@ -24,43 +24,43 @@ const projectsContents = [
     arrow: serrifiket_arrow,
     title: "Sertifiket™",
     description: "Comprehensive solution for digital identity, certificates, and documents",
-    bg_color: "CCFFD0",
-    primary_color: "006609"
+    bg_color: "#CCFFD0",
+    primary_color: "#006609"
   },{
     image: kothakunjo,
     arrow: kothakunjo_arrow,
     title: "Kothakunjo™",
     description: "All-in-one digital platform for e-books, audiobooks, and courses",
-    bg_color: "CCD7FF",
-    primary_color: "0033E5"
+    bg_color: "#CCD7FF",
+    primary_color: "#0033E5"
   },{
     image: kothakunjo,
     arrow: quranlab_arrow,
     title: "QuranLib",
     description: "A portable Quran library that gives read-only access to the entire Holy Quran.",
-    bg_color: "FFF8CC",
-    primary_color: "665900"
+    bg_color: "#FFF8CC",
+    primary_color: "#665900"
   },{
     image: sertifiket,
     arrow: serrifiket_arrow,
     title: "Sertifiket™",
     description: "Comprehensive solution for digital identity, certificates, and documents",
-    bg_color: "CCFFD0",
-    primary_color: "006609"
+    bg_color: "#CCFFD0",
+    primary_color: "#006609"
   },{
     image: kothakunjo,
     arrow: kothakunjo_arrow,
     title: "Kothakunjo™",
     description: "All-in-one digital platform for e-books, audiobooks, and courses",
-    bg_color: "CCD7FF",
-    primary_color: "0033E5"
+    bg_color: "#CCD7FF",
+    primary_color: "#0033E5"
   },{
     image: kothakunjo,
     arrow: quranlab_arrow,
     title: "QuranLib",
     description: "A portable Quran library that gives read-only access to the entire Holy Quran.",
-    bg_color: "FFF8CC",
-    primary_color: "665900"
+    bg_color: "#FFF8CC",
+    primary_color: "#665900"
   }
 ]
 
@@ -110,15 +110,15 @@ const SuccessSwiper = () => {
         >
           {projectsContents.map((content, index) => (
             <SwiperSlide key={index}>
-                <div className={`px-5 py-6 flex flex-col gap-5 bg-[#${content.bg_color}] rounded-xl border-b-[5px] border-b-[#${content.primary_color}]`}>
+                <div className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: content.bg_color, borderBottomColor: content.primary_color}}>
                     <Image src={content.image} alt={content.title}/>
-                    <h2 className={`text-[#${content.primary_color}] text-2xl font-bold leading-[32.4px] -tracking-[0.48px]`}>
+                    <h2 className={`text-[${content.primary_color}] text-2xl font-bold leading-[32.4px] -tracking-[0.48px]`}>
                         {content.title}
                     </h2>
-                    <p className={`text-[#${content.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
+                    <p className={`text-[${content.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
                         {content.description}
                     </p>
-                    <button className={`flex items-center gap-2 text-[#${content.primary_color}] text-base font-bold leading-[21.6px] -tracking-[0.32px]`}>
+                    <button className={`flex items-center gap-2 text-[${content.primary_color}] text-base font-bold leading-[21.6px] -tracking-[0.32px]`}>
                         Visit Website <span><Image src={content.arrow} alt={`${content.title} arrow`}/></span>
                     </button>
                 </div>
