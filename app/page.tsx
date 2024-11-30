@@ -24,6 +24,7 @@ import Approach from "@/components/Approach";
 import SuccessSwiper from "@/components/SuccessSwiper";
 import ThoughtsWithAccordion from "@/components/ThoughtsWithAccordion";
 import Thoughts from "@/components/Thoughts";
+import FloatingBar from "@/components/FloatingBar";
 
 export const metadata: Metadata = {
   title: "Pienteger® - A software company that you can trust.",
@@ -40,6 +41,7 @@ const Home: React.FC = () => {
       <Approach/>
       <SuccessSwiper/>
       <ThoughtsWithAccordion/>
+      <FloatingBar/>
     </>
   );
 }
