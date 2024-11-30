@@ -3,7 +3,8 @@ import React from 'react'
 import discovery from "../assets/approach/discovery.svg"
 import design from "../assets/approach/design.svg"
 import delivery from "../assets/approach/delivery.svg"
-
+import top_bg from "../assets/approach/wave2.svg"
+import bottom_bg from "../assets/approach/wave.svg"
 
 const Approach = () => {
     const contents = [
@@ -25,15 +26,19 @@ const Approach = () => {
     ]
 
   return (
-    <div className='relative min-h-[464px]'>
-        <div className='bg-[url("../assets/approach/wave.svg")] bg-cover min-h-[189px]'>
-        </div>
-        <div className='bg-[url("../assets/approach/wave2.svg")] text-white w-full bg-cover z-[999] absolute top-[17px]'>    
-            <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-20'>
-                <h1 className='text-[#F0F7FF] text-[40px] font-bold leading-[54px] -tracking-[0.8px]'>
+    <div className='overflow-hidden'>
+        <div className='relative w-full pt-[86px] md:pt-[100px]'>    
+            <div className='absolute top-0 w-full'>
+                <Image src={bottom_bg} alt='bottom bg' className='w-full h-full z-10'/>
+            </div>
+            <div className='absolute top-5 w-full'>
+                <Image src={top_bg} alt='top bg' className='w-full h-full z-20'/>
+            </div>
+            <div className='relative bg-[#000B33] max-w-[1280px] mx-auto px-5 pb-20 flex flex-col gap-10 md:bg-transparent md:gap-20 md:px-0'>
+                <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'>
                     Our Approach: Collaborative, Transparent, and Focused
                 </h1>
-                <div className='flex gap-20'>
+                <div className='flex flex-col gap-6 md:flex-row md:gap-20'>
                     {
                         contents.map((content, index)=>(
                             <div key={index} className='flex flex-col gap-5'>

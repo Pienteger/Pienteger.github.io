@@ -23,7 +23,6 @@ import Services from "@/components/Services";
 import Approach from "@/components/Approach";
 import SuccessSwiper from "@/components/SuccessSwiper";
 import ThoughtsWithAccordion from "@/components/ThoughtsWithAccordion";
-import Thoughts from "@/components/Thoughts";
 import FloatingBar from "@/components/FloatingBar";
 
 export const metadata: Metadata = {

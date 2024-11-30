@@ -8,7 +8,7 @@ import bottom_bg from "../assets/accordion/bottom_bg.svg";
  
 const ThoughtsWithAccordion = () => {
   return (
-    <div className='overflow-hidden pt-20'>
+    <div className='overflow-hidden pt-20 '>
       <div className='relative w-full'>
         <div className='absolute bottom-0 w-full'>
           <Image src={bottom_bg} alt='bottom bg' className='w-full h-full z-10'/>
@@ -16,8 +16,8 @@ const ThoughtsWithAccordion = () => {
         <div className='absolute bottom-5 w-full'>
           <Image src={top_bg} alt='top bg' className='w-full h-full z-20'/>
         </div>
-        <div className='pb-[132px] z-40 flex flex-col gap-20 relative'>
-          <Thoughts/>
+        <div className='pb-[132px] flex flex-col relative'>
+          <Thoughts />
           <QAAccordion/>
         </div>
           <Image src={stroke_line} alt='storke line' className='-rotate-[19.722] z-20 absolute top-[230px]' width={20000}/>

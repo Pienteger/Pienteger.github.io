@@ -12,10 +12,11 @@ import quranlab_arrow from "../assets/products/quranlab_arrow.svg"
 import left_arrow from "../assets/products/left_arrow.svg";
 import right_arrow from "../assets/products/right_arrow.svg";
 
-
+import "./style/custom.css"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { Pagination } from 'swiper/modules';
 
 const projectsContents = [
   {
@@ -68,12 +69,12 @@ const SuccessSwiper = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10'>
+    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 md:px-0'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-[#0033E5] text-[40px] font-bold leading-[54px] -tracking-[0.8px]'>
+        <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'>
           Reliable, Innovative Products Crafted
         </h1>
-        <div className='flex gap-4'>
+        <div className='hidden md:flex gap-4'>
           <button onClick={() => swiperRef.current?.slidePrev()} className='hover:opacity-60'>
             <Image src={left_arrow} alt='left_arrow'/>
           </button>
@@ -87,8 +88,25 @@ const SuccessSwiper = () => {
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
+          slidesPerView={1}
           spaceBetween={0}
-          slidesPerView={3}
+          pagination={{clickable: true}}
+          breakpoints={{
+            '@0.00': {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            }
+          }}
+          modules={[Pagination]}
+          className='custom-swipper'
         >
           {projectsContents.map((content, index) => (
             <SwiperSlide key={index}>
@@ -106,6 +124,7 @@ const SuccessSwiper = () => {
                 </div>
             </SwiperSlide>
            ))}
+           <div className="custom-pagination mt-20"></div>
         </Swiper>
       </div>
     </div>
