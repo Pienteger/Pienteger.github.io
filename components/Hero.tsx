@@ -8,15 +8,15 @@ const Hero = () => {
   return (
     <div className='bg-[#0033E5] relative overflow-hidden'>
         <Image src={line} alt='pattern image' className="absolute -bottom-20 w-3/4" />
-        <div className='max-w-[1280px] mx-auto flex flex-col md:gap-[145px] md:relative'>    
-            <div className='w-full pt-10 px-5 text-[#F0F7FF] flex flex-col gap-6  md:w-[780px] md:py-[90px] md:px-0'>
-                <h1 className='font-medium text-[30px] leading-[36px] -tracking-[0.6px] text-center md:text-[64px] md:leading-[86.4px] md:-tracking-[1.28px] md:text-start'>
+        <div className='max-w-[1280px] mx-auto flex flex-col items-center lg:gap-[145px] lg:relative lg:items-start lg:px-5 2xl:px-0'>    
+            <div className='w-full pt-10 px-5 text-[#F0F7FF] flex flex-col gap-6  lg:w-[600px] lg:py-[90px] lg:px-0 2xl:w-[780px]'>
+                <h1 className='font-medium text-[30px] leading-[36px] -tracking-[0.6px] text-center lg:text-[64px] lg:leading-[86.4px] lg:-tracking-[1.28px] lg:text-start'>
                     Elevate Your Business with Bespoke Software Solution
                 </h1>
-                <p className='font-normal text-lg leading-[24.3px] -tracking-[0.36px] text-center md:text-start md:text-xl md:leading-[27px] md:-tracking-[0.4px]'>
+                <p className='font-normal text-lg leading-[24.3px] -tracking-[0.36px] text-center lg:text-start lg:text-xl lg:leading-[27px] lg:-tracking-[0.4px]'>
                     We are committed to providing you with the best software solutions for your business
                 </p>
-                <div className='flex gap-6 justify-center md:justify-normal'>
+                <div className='flex gap-6 justify-center lg:justify-normal'>
                     <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
                         Contact Us
                     </button>
@@ -25,8 +25,8 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-            <Image src={pattern} alt='pattern image' className="mx-10 md:mx-0 md:absolute md:-right-[55px] md:bottom-0"/>
-            {/* <Image src={new_pattern} alt='pattern image' className="w-fit md:absolute md:-right-[55px] md:bottom-0"/> */}
+            <Image src={pattern} alt='pattern image' className="mx-10 lg:mx-0 lg:absolute lg:-right-[55px] lg:bottom-0"/>
+            {/* <Image src={new_pattern} alt='pattern image' className="w-fit lg:absolute lg:-right-[55px] lg:bottom-0"/> */}
             
         </div>
     </div>

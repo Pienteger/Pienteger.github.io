@@ -34,8 +34,8 @@ const QAAccordion = () => {
     }
    
   return (
-    <div className='bg-[#0033E5] pt-20 max-w-[1280px] mx-auto flex flex-col gap-10 md:bg-transparent px-5 md:px-0'>
-        <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'>
+    <div className='bg-[#0033E5] pt-20 max-w-[1280px] mx-auto flex flex-col gap-10 2xl:bg-transparent px-5 2xl:px-0'>
+        <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
             Quick Answers Here, Saving You Time & Hassle
         </h1>
         <div className='flex flex-col gap-6'>

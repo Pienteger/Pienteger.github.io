@@ -35,38 +35,35 @@ const thoughts = [
 
 const Thoughts = () => {
   return (
-    <div className='bg-[#0033E5] flex flex-col gap-5 pt-[72px] px-5 md:pt-0 md:bg-transparent md:px-0'>
+    <div className='bg-[#0033E5] flex flex-col gap-5 pt-[72px] px-5 2xl:pt-0 2xl:bg-transparent 2xl:px-0'>
         <div className='max-w-[1280px] mx-auto w-full'>
             <div className='flex justify-between items-center'>
-                <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'>
+                <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                     Explore Our Latest Thoughts
                 </h1>
-                <button className='hidden md:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+                <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
             </div>
         </div>
-        <div className='w-full md:w-[calc(100%-300px)] ml-auto'>
+        <div className='w-full 2xl:w-[calc(100%-300px)] ml-auto'>
             <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
                 breakpoints={{
                     '@0.00': {
                         slidesPerView: 1,
-                        spaceBetween: 10,
                     },
                     '@0.50': {
                         slidesPerView: 2,
-                        spaceBetween: 20,
                     },
                     '@1.00': {
                         slidesPerView: 3,
-                        spaceBetween: 40,
                     }
                 }}
                 className='overflow-scroll'
             >
             {thoughts.map((thought, index) => (
                 <SwiperSlide key={index}>
-                        <div className='flex flex-col md:flex-row gap-6 p-0 max-w-[600px] md:p-5'>
+                        <div className='flex flex-col lg:flex-row gap-6 p-0 max-w-[600px] lg:p-5'>
                             <Image src={thought.image} alt={thought.date}/>
                             <div className='flex gap-6 flex-col justify-between'>
                                 <span className='text-[#F0F7FF] font-normal text-base leading-[19.2px] -tracking-[0.32px]'>{thought.date}</span>
@@ -78,7 +75,7 @@ const Thoughts = () => {
             ))}
             </Swiper>
         </div>
-        <button className='md:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+        <button className='lg:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
     </div>
   )
 }

@@ -65,11 +65,11 @@ const Footer = () => {
     
     return (
         <>
-            <div className="bg-[#FFE641] mt-20 pt-4 pb-20 flex flex-col md:flex-row items-center justify-between gap-5 md:gap-0 px-8 rounded-tr-[32px] rounded-tl-[32px]">
+            <div className="bg-[#FFE641] mt-20 pt-4 pb-20 flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 px-8 rounded-tr-[32px] rounded-tl-[32px]">
                 <h1 className="text-[#000B33] font-bold text-2xl leading-[34.56px] -tracking-[0.48px]">
                     Craft Your Dreams, Simple. Reliable. Secure
                 </h1>
-                <button className="bg-[#000B33] w-full md:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
+                <button className="bg-[#000B33] w-full lg:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
                     <span className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
                         Contact Us
                     </span>
@@ -77,7 +77,7 @@ const Footer = () => {
                 </button>
             </div>
             <div className="bg-[#000B33] rounded-tr-[50px] rounded-tl-[50px] py-10 -mt-16 relative overflow-hidden">
-                <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between gap-10 px-5 md:px-0">
+                <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5 flex-wrap 2xl:px-0 2xl:flex-nowrap">
                     <div className="flex flex-col gap-3 justify-center mr-[120px]">
                         <span className="text-[#F0F7FF] font-bold text-2xl leading-[32.4px] -tracking-[0.48px]">
                             Pienteger
@@ -128,7 +128,7 @@ const Footer = () => {
                             }
                         </ul>
                     </div>
-                    <div className="p-3 flex flex-col justify-between relative md:static">
+                    <div className="p-3 flex flex-col justify-between relative lg:static">
                         <div className="flex flex-col gap-6">
                             <span className="text-[#F0F7FF] font-bold text-base leading-[23.04px] -tracking-[0.32px]">
                                 Follow Us
@@ -140,7 +140,7 @@ const Footer = () => {
                                 <Image src={linkedin} alt="linkedin"/>
                             </div>
                         </div>
-                        <div className="flex flex-col items-center md:-mb-10 absolute md:static bottom-[153px] right-14">
+                        <div className="flex flex-col items-center lg:-mb-10 absolute 2xl:static bottom-[153px] right-14 lg:right-20 xl:right-44 2xl:right-0">
                             <button 
                                 className="bg-[#41FFFC] text-[#006664] rounded-[200px] py-2 px-6 uppercase font-bold text-base leading-[23.04px] -tracking-[0.32px] rotate-[18deg] 
                                             w-[120px] -mr-[60px]">
@@ -160,7 +160,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='absolute top-[140px] w-[1400px]'>
-                    <Image src={line} alt='line' className='w-full md:-rotate-[19.722]  -z-50' />
+                    <Image src={line} alt='line' className='w-full lg:-rotate-[19.722]  -z-50' />
                 </div>
             </div>
         </>

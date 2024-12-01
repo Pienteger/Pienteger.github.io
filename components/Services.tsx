@@ -54,18 +54,18 @@ const allServices = [
 
 const Services = () => {
   return (
-    <div className='max-w-[1280px] mx-auto py-10 flex flex-col gap-10 px-5 md:px-0 md:py-20'>
+    <div className='max-w-[1280px] mx-auto py-10 flex flex-col gap-10 px-5 2xl:px-0 lg:py-20'>
         <h1
-            className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'
+            className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'
         >
-        Expertly Crafted Solutions Delivered with Precision
+            Expertly Crafted Solutions Delivered with Precision
         </h1>
-        <div className='grid grid-cols-1 md:grid-cols-3'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'>
             {
                 allServices.map((service, index)=>(
                     <div key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
                         <Image src={service.image} alt="ai"/>
-                        <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] md:text-2xl md:leading-[32.4px] md:-tracking-[0.48px]`}>
+                        <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
                             {service.title}
                         </h2>
                         <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>

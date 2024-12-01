@@ -69,12 +69,12 @@ const SuccessSwiper = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 md:px-0'>
+    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] md:text-[40px] md:leading-[54px] md:-tracking-[0.8px]'>
+        <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
           Reliable, Innovative Products Crafted
         </h1>
-        <div className='hidden md:flex gap-4'>
+        <div className='hidden lg:flex gap-4'>
           <button onClick={() => swiperRef.current?.slidePrev()} className='hover:opacity-60'>
             <Image src={left_arrow} alt='left_arrow'/>
           </button>
@@ -94,15 +94,12 @@ const SuccessSwiper = () => {
           breakpoints={{
             '@0.00': {
               slidesPerView: 1,
-              spaceBetween: 10,
             },
-            '@0.75': {
+            '@0.50': {
               slidesPerView: 2,
-              spaceBetween: 20,
             },
             '@1.00': {
               slidesPerView: 3,
-              spaceBetween: 40,
             }
           }}
           modules={[Pagination]}
