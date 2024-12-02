@@ -40,7 +40,7 @@ const Home: React.FC = () => {
       <Approach/>
       <SuccessSwiper/>
       <ThoughtsWithAccordion/>
-      <FloatingBar/>
+      {/* <FloatingBar/> */}
     </>
   );
 }

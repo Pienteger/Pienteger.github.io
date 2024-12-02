@@ -25,8 +25,8 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-            <Image src={pattern} alt='pattern image' className="mx-10 lg:mx-0 lg:absolute lg:-right-[55px] lg:bottom-0"/>
-            {/* <Image src={new_pattern} alt='pattern image' className="w-fit lg:absolute lg:-right-[55px] lg:bottom-0"/> */}
+            <Image src={pattern} alt='pattern image' className="ml-20 lg:ml-0 lg:absolute lg:-right-[55px] lg:bottom-0"/>
+            {/* <Image src={new_pattern} alt='pattern image' className="mx-10 lg:mx-0 lg:absolute lg:right-[55px] lg:bottom-0"/> */}
             
         </div>
     </div>

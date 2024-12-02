@@ -23,7 +23,7 @@ const Header = () => {
             {/* desktop nav */}
             <div className='hidden md:block' >
                 <div style={customBorder}>
-                    <div className='hidden md:flex items-center justify-between py-5 max-w-[1280px] mx-auto lg:px-5'>
+                    <div className='hidden md:flex items-center justify-between py-5 max-w-[1280px] mx-auto md:px-5 2xl:px-0'>
                         <a className='flex items-center gap-2' href='/'>
                             <Image src={newIcon} alt="Pienteger Logo" className='h-6 w-6' />
                             <h1 className='text-[#F0F7FF] text-2xl font-bold font-sans'>Pienteger</h1>
