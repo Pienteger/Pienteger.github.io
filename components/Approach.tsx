@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import discovery from "../assets/approach/discovery.svg"
@@ -5,6 +6,8 @@ import design from "../assets/approach/design.svg"
 import delivery from "../assets/approach/delivery.svg"
 import top_bg from "../assets/approach/wave2.svg"
 import bottom_bg from "../assets/approach/wave.svg"
+import {motion} from "framer-motion"
+import { fadeIn } from '@/app/varients'
 
 const Approach = () => {
     const contents = [
@@ -34,7 +37,12 @@ const Approach = () => {
             <div className='absolute top-5 w-full'>
                 <Image src={top_bg} alt='top bg' className='w-full h-full z-20'/>
             </div>
-            <div className='relative bg-[#000B33] max-w-[1280px] mx-auto px-5 pb-20 flex flex-col gap-10 overflow-hidden xl:bg-transparent lg:gap-20 2xl:px-0'>
+            <motion.div 
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{once: true}}
+                className='relative bg-[#000B33] max-w-[1280px] mx-auto px-5 pb-20 flex flex-col gap-10 overflow-hidden xl:bg-transparent lg:gap-20 2xl:px-0'>
                 <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                     Our Approach: Collaborative, Transparent, and Focused
                 </h1>
@@ -54,7 +62,7 @@ const Approach = () => {
                     }
                     
                 </div>
-            </div>
+            </motion.div>
         </div>
       
     </div>

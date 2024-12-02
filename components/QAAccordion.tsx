@@ -5,7 +5,8 @@ import Image from 'next/image'
 import accordionOpen from "../assets/accordion/collapse_open.svg"
 import accordionClose from "../assets/accordion/collapse_close.svg"
 import "./style/accordion.css"
-
+import {motion} from "framer-motion"
+import { fadeIn } from '@/app/varients';
 
 const QAAccordion = () => {
     const accordionDatas = [
@@ -34,7 +35,12 @@ const QAAccordion = () => {
     }
    
   return (
-    <div className='bg-[#0033E5] pt-20 max-w-[1280px] mx-auto flex flex-col gap-10 2xl:bg-transparent px-5 2xl:px-0'>
+    <motion.div 
+        variants={fadeIn("up", 0.06)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: true}}
+        className='bg-[#0033E5] pt-20 max-w-[1280px] mx-auto flex flex-col gap-10 2xl:bg-transparent px-5 2xl:px-0'>
         <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
             Quick Answers Here, Saving You Time & Hassle
         </h1>
@@ -57,7 +63,7 @@ const QAAccordion = () => {
                 ))
             }
         </div>
-    </div>
+    </motion.div>
   )
 }
 

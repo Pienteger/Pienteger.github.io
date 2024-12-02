@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ai from "../assets/services/ai.svg"
 import api from "../assets/services/api.svg"
@@ -6,6 +7,8 @@ import data from "../assets/services/data.svg"
 import web from "../assets/services/web.svg"
 import microsoft from "../assets/services/microsoft.svg"
 import Image from 'next/image'
+import {motion} from "framer-motion"
+import { fadeIn } from '@/app/varients'
 
 const allServices = [
     {
@@ -54,7 +57,12 @@ const allServices = [
 
 const Services = () => {
   return (
-    <div className='max-w-[1280px] mx-auto py-10 flex flex-col gap-10 px-5 2xl:px-0 lg:py-20'>
+    <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: true}} 
+        className='max-w-[1280px] mx-auto py-10 flex flex-col gap-10 px-5 2xl:px-0 lg:py-20'>
         <h1
             className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'
         >
@@ -75,7 +83,7 @@ const Services = () => {
                 ))
             }
         </div>
-    </div>
+    </motion.div>
   )
 }
 export default Services

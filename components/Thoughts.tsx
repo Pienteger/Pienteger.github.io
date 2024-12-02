@@ -6,6 +6,9 @@ import thought2 from "../assets/thoughts/thought2.png"
 import thought3 from "../assets/thoughts/thought3.png"
 import arrow from "../assets/thoughts/arrow.svg"
 
+import {motion} from "framer-motion"
+import { fadeIn } from '@/app/varients'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -35,7 +38,12 @@ const thoughts = [
 
 const Thoughts = () => {
   return (
-    <div className='bg-[#0033E5] flex flex-col gap-5 pt-[72px] px-5 2xl:pt-0 2xl:bg-transparent 2xl:px-0'>
+    <motion.div 
+        variants={fadeIn("left", 0.06)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: true}}
+        className='bg-[#0033E5] flex flex-col gap-5 pt-[72px] px-5 2xl:pt-0 2xl:bg-transparent 2xl:px-0'>
         <div className='max-w-[1280px] mx-auto w-full'>
             <div className='flex justify-between items-center'>
                 <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
@@ -76,7 +84,7 @@ const Thoughts = () => {
             </Swiper>
         </div>
         <button className='lg:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
-    </div>
+    </motion.div>
   )
 }
 

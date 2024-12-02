@@ -11,6 +11,8 @@ import kothakunjo_arrow from "../assets/products/kothakunjo_arrow.svg"
 import quranlab_arrow from "../assets/products/quranlab_arrow.svg"
 import left_arrow from "../assets/products/left_arrow.svg";
 import right_arrow from "../assets/products/right_arrow.svg";
+import {motion} from "framer-motion"
+import { fadeIn } from '@/app/varients';
 
 import "./style/custom.css"
 import 'swiper/css';
@@ -69,7 +71,12 @@ const SuccessSwiper = () => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
-    <div className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0'>
+    <motion.div 
+      variants={fadeIn("right", 0.06)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: true}}
+      className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0'>
       <div className='flex justify-between items-center'>
         <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
           Reliable, Innovative Products Crafted
@@ -124,7 +131,7 @@ const SuccessSwiper = () => {
            <div className="custom-pagination mt-20"></div>
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
