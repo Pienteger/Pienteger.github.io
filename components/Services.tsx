@@ -71,7 +71,12 @@ const Services = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'>
             {
                 allServices.map((service, index)=>(
-                    <div key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
+                    <motion.div 
+                        variants={fadeIn("up", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: true}}
+                        key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
                         <Image src={service.image} alt="ai"/>
                         <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
                             {service.title}
@@ -79,7 +84,7 @@ const Services = () => {
                         <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
                             {service.desctiption}
                         </p>
-                    </div>
+                    </motion.div>
                 ))
             }
         </div>
