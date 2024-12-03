@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import newIcon from '../assets/logo2024.png';
+import newIcon from '../assets/newlogo2024.png';
 import Image from 'next/image';
 import mobilenavopen from "../assets/mobilenavopen.svg"
 import mobilenavclose from "../assets/mobilenavclose.svg"

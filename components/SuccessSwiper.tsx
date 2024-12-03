@@ -4,8 +4,8 @@ import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import Image from 'next/image';
-import sertifiket from "../assets/products/sertifiket.svg"
-import kothakunjo from "../assets/products/kothakunjo.svg"
+import sertifiket from "../assets/products/sertifiket.png"
+import kothakunjo from "../assets/products/kothakunjo.png"
 import serrifiket_arrow from "../assets/products/serrifiket_arrow.svg"
 import kothakunjo_arrow from "../assets/products/kothakunjo_arrow.svg"
 import quranlab_arrow from "../assets/products/quranlab_arrow.svg"
