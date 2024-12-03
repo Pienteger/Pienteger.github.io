@@ -25,7 +25,9 @@ const Header = () => {
                 <div style={customBorder}>
                     <div className='hidden md:flex items-center justify-between py-5 max-w-[1280px] mx-auto md:px-5 2xl:px-0'>
                         <a className='flex items-center gap-2' href='/'>
-                            <Image src={newIcon} alt="Pienteger Logo" className='h-6 w-6' />
+                            <span className='w-6'>
+                                <Image src={newIcon} alt="Pienteger Logo" className='w-full' />
+                            </span>
                             <h1 className='text-[#F0F7FF] text-2xl font-bold font-sans'>Pienteger</h1>
                         </a>
                         <div className='flex items-center gap-6'>
@@ -47,7 +49,9 @@ const Header = () => {
                 <div className='flex md:hidden flex-col items-center justify-between mx-auto relative'>
                     <div className='w-full flex justify-between items-center p-5 relative' style={customBorder}>
                         <a className='flex items-center gap-2' href='/'>
-                            <Image src={newIcon} alt="Pienteger Logo" className='h-6 w-6' />
+                            <span className='w-6'>
+                                <Image src={newIcon} alt="Pienteger Logo" className='w-full' />
+                            </span>
                             <h1 className='text-[#F0F7FF] text-2xl font-bold font-sans'>Pienteger</h1>
                         </a>
                         <button onClick={toggleMenu}>
