@@ -32,7 +32,12 @@ const allServices = [
 ]
 
 
-const BenefitsCard = () => {
+const BenefitsCard = ({service}:any) => {
+    const filterServiceTitle = (service:any)=>{
+        if (!service) return "";
+        const words = service.trim().split(/\s+/);
+        return words.slice(0, 2).join(" ");
+    }
   return (
     <motion.div
         variants={fadeIn("up", 0.2)}
@@ -43,7 +48,7 @@ const BenefitsCard = () => {
         <h1
             className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'
         >
-            Our AI Integration Delivers Tangible Benefits
+            {`Our ${filterServiceTitle(service?.title)} Delivers Tangible Benefits`}
         </h1>
         <div className='grid sm:justify-items-center grid-cols-1 2xl:grid-cols-3'>
             {

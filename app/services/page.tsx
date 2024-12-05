@@ -10,7 +10,7 @@ const Services= ({searchParams}:any) => {
     <>
       <Hero service={searchParams}/>
       <TechStack />
-      <BenefitsCard />
+      <BenefitsCard service={searchParams}/>
       <Approach />
       <SuccessSwiper />
       <ThoughtsWithAccordion />
