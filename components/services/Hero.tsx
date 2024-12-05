@@ -16,7 +16,7 @@ const Hero = ({service}:any) => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: true}}
-                    className='w-full py-10 px-5 text-[#0033E5] flex flex-col gap-6 lg:py-[90px] lg:px-0 2xl:w-[740px]'>
+                    className='w-full py-10 px-5 text-[#0033E5] flex flex-col gap-6 lg:py-[90px] lg:px-0 xl:w-[740px]'>
                         <h1 className='font-medium text-[30px] leading-[36px] -tracking-[0.6px] text-center lg:text-[64px] lg:leading-[86.4px] lg:-tracking-[1.28px] lg:text-start'>
                             {service?.title}
                         </h1>
@@ -33,7 +33,7 @@ const Hero = ({service}:any) => {
                         </div>
                 </motion.div>                
             </div>
-            <Image src={line} alt='pattern image' className="absolute bottom-0 left-1/2 w-1/2" />
+            <Image src={line} alt='pattern image' className="absolute bottom-0 md:-bottom-20  left-1/2 w-1/2" />
     </div>
   )
 }

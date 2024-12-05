@@ -1,18 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import newIcon from '../assets/newlogo2024.png';
 import Image from 'next/image';
-import mobilenavopen from "../assets/mobilenavopen.svg"
-import mobilenavclose from "../assets/mobilenavclose.svg"
 
-const customBorder = {
-    borderBottom: '0.5px solid',
-    borderImageSource: 'linear-gradient(90deg, rgba(244, 222, 200, 0) 0%, rgba(244, 222, 200, 0.5) 100%)',
-    borderImageSlice: 1
-}
 
-const Header = () => {
+const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose}:any) => {
     const [open, setOpen] = useState(false);
     const toggleMenu= ()=>{
         console.log("clicked");
@@ -26,17 +18,17 @@ const Header = () => {
                     <div className='hidden md:flex items-center justify-between py-5 max-w-[1280px] mx-auto md:px-5 2xl:px-0'>
                         <a className='flex items-center gap-2' href='/'>
                             <span className='w-6'>
-                                <Image src={newIcon} alt="Pienteger Logo" className='w-full' />
+                                <Image src={logo} alt="Pienteger Logo" className='w-full' />
                             </span>
-                            <h1 className='text-[#F0F7FF] text-2xl font-bold font-sans'>Pienteger</h1>
+                            <h1 className={`text-[${primaryColor}] text-2xl font-bold font-sans`}>Pienteger</h1>
                         </a>
                         <div className='flex items-center gap-6'>
-                            <nav className='flex justify-end text-sm gap-6 text-[#F0F7FF] font-medium'>
+                            <nav className={`flex justify-end text-sm gap-6 text-[${primaryColor}] font-medium`}>
                                 <a href="/#service">Services</a>
                                 <a href="/#Contact">Contact</a>
                                 <a href="/#aboutUs">About Us</a>
                             </nav>
-                            <a href="#" className='border border-[#F0F7FF] py-3 px-8 rounded-[200px] text-[#F0F7FF] text-sm font-medium'>
+                            <a href="#" className={`border border-[${primaryColor}] py-3 px-8 rounded-[200px] text-[${primaryColor}] text-sm font-medium`}>
                                 Start Free
                             </a>
                         </div>
@@ -50,9 +42,9 @@ const Header = () => {
                     <div className='w-full flex justify-between items-center p-5 relative' style={customBorder}>
                         <a className='flex items-center gap-2' href='/'>
                             <span className='w-6'>
-                                <Image src={newIcon} alt="Pienteger Logo" className='w-full' />
+                                <Image src={logo} alt="Pienteger Logo" className='w-full' />
                             </span>
-                            <h1 className='text-[#F0F7FF] text-2xl font-bold font-sans'>Pienteger</h1>
+                            <h1 className={`text-[${primaryColor}] text-2xl font-bold font-sans`}>Pienteger</h1>
                         </a>
                         <button onClick={toggleMenu}>
                             <Image src={open?mobilenavclose:mobilenavopen} alt='mobile nav icon' />

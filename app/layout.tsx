@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="">
-          <header className='flex-init bg-[#0033E5] custom-bottom-border'>
+          {/* <header className='flex-init bg-[#0033E5] custom-bottom-border'>
             <Header />
-          </header>
+          </header> */}
           <main className='flex-1 min-h-screen'>
             {children}
           </main>
