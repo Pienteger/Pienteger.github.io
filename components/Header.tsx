@@ -61,7 +61,7 @@ const Header = () => {
                     {
                         open? 
                         <div 
-                            className={`w-full min-h-[742px] bg-[#0033E5] flex flex-col justify-between items-center py-10 absolute top-24 right-0 z-50 transform transition-transform duration-500 ease-in-out 
+                            className={`w-full min-h-[742px] bg-[#0033E5] flex flex-col justify-between items-center py-10 absolute top-[82px] right-0 z-50 transform transition-transform duration-500 ease-in-out 
                                         ${open?"translate-x-0":"-translate-x-full"}`}>
                             <ul className='flex flex-col gap-10 items-center'>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Home</a></li>

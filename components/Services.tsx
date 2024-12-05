@@ -9,6 +9,7 @@ import microsoft from "../assets/services/microsoft.svg"
 import Image from 'next/image'
 import {motion} from "framer-motion"
 import { fadeIn } from '@/app/varients'
+import Link from 'next/link'
 
 const allServices = [
     {
@@ -41,7 +42,7 @@ const allServices = [
     },
     {
         image: web,
-        title: " Web Application Development",
+        title: "Web Application Development",
         desctiption: "Craft dynamic, user-friendly web applications that align perfectly with your brand and drive user engagement.",
         primary_color: "#006664",
         bg_color: "#CCFFFE"
@@ -54,6 +55,9 @@ const allServices = [
         bg_color: "#CCD7FF"
     }
 ]
+
+
+const slugify = (title: string) => title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 
 const Services = () => {
   return (
@@ -77,13 +81,23 @@ const Services = () => {
                         whileInView={"show"}
                         viewport={{once: true}}
                         key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
-                        <Image src={service.image} alt="ai"/>
-                        <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
-                            {service.title}
-                        </h2>
-                        <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
-                            {service.desctiption}
-                        </p>
+                        <Link 
+                            href={{
+                                pathname: `/services`,
+                                query: {
+                                    title: service.title,
+                                    description: service.desctiption 
+                                },
+                            }}
+                        >                        
+                            <Image src={service.image} alt="ai"/>
+                            <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
+                                {service.title}
+                            </h2>
+                            <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
+                                {service.desctiption}
+                            </p>
+                        </Link>
                     </motion.div>
                 ))
             }
