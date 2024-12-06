@@ -1,34 +1,80 @@
-import Link from 'next/link';
-import logo from '../assets/logo192.png';
-import Image from 'next/image';
-import Pipe from './Pipe';
+'use client';
 
-const Header = () => {
+import { useState } from 'react';
+import Image from 'next/image';
+
+
+const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose}:any) => {
+    const [open, setOpen] = useState(false);
+    const toggleMenu= ()=>{
+        console.log("clicked");
+        setOpen((prev)=> !prev);   
+    }
     return (
         <>
-            <div className='flex items-center py-5 px-5 md:px-10'>
-                <a className='flex items-center gap-2 flex-1' href='/'>
-                    <Image src={logo} alt="Pienteger Logo"
-                        className='h-6 w-6' />
-                    <h1 className='text-xl font-bold font-inter'>Pienteger&reg;</h1>
-                </a>
-
-                <div className='flex-init'>
-                    <nav className='flex gap-2 justify-end'>
-                        <a href='/about' className='font-bold hover:underline'>About</a>
-                        <Pipe />
-                        <Link href='/case-studies' className='font-bold hover:underline'>Case Studies</Link>
-                        <Pipe />
-                        <a href='https://blog.pienteger.com'
-                            target='_blank' rel='noreferrer'
-                            className='font-bold hover:underline'>Blog</a>
-                        <Pipe />
-                        <a href='/contact' className='font-bold hover:underline'>Contact</a>
-                    </nav>
+            {/* desktop nav */}
+            <div className='hidden md:block' >
+                <div style={customBorder}>
+                    <div className='hidden md:flex items-center justify-between py-5 max-w-[1280px] mx-auto md:px-5 2xl:px-0'>
+                        <a className='flex items-center gap-2' href='/'>
+                            <span className='w-6'>
+                                <Image src={logo} alt="Pienteger Logo" className='w-full' />
+                            </span>
+                            <h1 className={`text-[${primaryColor}] text-2xl font-bold font-sans`}>Pienteger</h1>
+                        </a>
+                        <div className='flex items-center gap-6'>
+                            <nav className={`flex justify-end text-sm gap-6 text-[${primaryColor}] font-medium`}>
+                                <a href="/#service">Services</a>
+                                <a href="/#Contact">Contact</a>
+                                <a href="/#aboutUs">About Us</a>
+                            </nav>
+                            <a href="#" className={`border border-[${primaryColor}] py-3 px-8 rounded-[200px] text-[${primaryColor}] text-sm font-medium`}>
+                                Start Free
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {/* mobile nav */}
+            <div >
+                <div className='flex md:hidden flex-col items-center justify-between mx-auto relative'>
+                    <div className='w-full flex justify-between items-center p-5 relative' style={customBorder}>
+                        <a className='flex items-center gap-2' href='/'>
+                            <span className='w-6'>
+                                <Image src={logo} alt="Pienteger Logo" className='w-full' />
+                            </span>
+                            <h1 className={`text-[${primaryColor}] text-2xl font-bold font-sans`}>Pienteger</h1>
+                        </a>
+                        <button onClick={toggleMenu}>
+                            <Image src={open?mobilenavclose:mobilenavopen} alt='mobile nav icon' />
+                        </button>
+                    </div>
+                    {
+                        open? 
+                        <div 
+                            className={`w-full min-h-[742px] bg-[#0033E5] flex flex-col justify-between items-center py-10 absolute top-[82px] right-0 z-50 transform transition-transform duration-500 ease-in-out 
+                                        ${open?"translate-x-0":"-translate-x-full"}`}>
+                            <ul className='flex flex-col gap-10 items-center'>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Home</a></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Services</a></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Contact</a></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">About us</a></li>
+                            </ul>
+                            <div className='flex gap-6'>
+                                <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
+                                    Contact Us
+                                </button>
+                                <button className='px-[47px] py-3 text-[#F0F7FF] font-medium text-base rounded-[200px] border border-[#F0F7FF] leading-[21.6px] -tracking-[0.32px]'>
+                                    Start Free
+                                </button>
+                            </div>
+                        </div>:
+                        ""
+                    }
                 </div>
             </div>
         </>
     );
 }
-
 export default Header;

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-body {
-  font-family: 'Inter', sans-serif;
+body{
+  font-family: 'Satoshi', sans-serif!important;
 }
 
 /* Custom Scrollbar */
@@ -35,15 +35,7 @@ body {
   margin: 3px 0
 }
 
-.font-cal-sans {
-  font-family: "Cal Sans", sans-serif !important;
-}
-
-.font-inter {
-  font-family: "Inter", sans-serif !important;
-}
-
-h1 {
+/* h1 {
   font-family: "Cal Sans";
   font-size: 56px;
 }
@@ -76,7 +68,7 @@ h6 {
   font-family: "Cal Sans";
   font-size: 16px;
   letter-spacing: 0.04em;
-}
+} */
 
 .bold-xl {
   @apply font-bold text-xl;
@@ -121,4 +113,9 @@ h6 {
 
 .content {
   @apply md:px-40 xl:px-80 px-5 pt-10 pb-5 flex flex-col gap-2;
+}
+
+.custom-bottom-border{
+  border-bottom: 0.5px solid;
+  border-image-source: linear-gradient(90deg, rgba(244, 222, 200, 0) 0%, rgba(244, 222, 200, 0.5) 100%);
 }

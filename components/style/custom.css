@@ -1,0 +1,28 @@
+.custom-swipper .custom-pagination, .custom-swipper .swiper-pagination{
+    display: none;
+}
+
+@media screen and (max-width: 676px){
+    .custom-swipper .swiper-pagination{
+        display: block;
+    }
+
+    .custom-swipper .custom-pagination {
+        display: block;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    .custom-swipper .swiper-pagination .swiper-pagination-bullet {
+        background-color: #CCD7FF; 
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        transition: all 0.3s;
+    }    
+    .custom-swipper .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #0033e5;
+    }    
+}
