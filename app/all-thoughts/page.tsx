@@ -1,10 +1,11 @@
 import Header from '@/components/Header'
-import ThoughtsWithAccordion from '@/components/ThoughtsWithAccordion'
 import React from 'react'
 import logo from "@/assets/bluenewlogo2024.png";
 import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
 import Hero from '@/components/allThoughts/Hero';
+import Thoughts from '@/components/allThoughts/Thoughts';
+import ThoughtsWithPagination from '@/components/allThoughts/ThoughtsWithPagination';
 
 const AllThoughts = () => {
     const customBorder = {
@@ -19,7 +20,7 @@ const AllThoughts = () => {
             <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
         </header>
         <Hero />
-        <ThoughtsWithAccordion />
+        <ThoughtsWithPagination />
         </>
     )
 }
