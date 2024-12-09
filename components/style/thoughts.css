@@ -32,3 +32,13 @@
     position: absolute;
     right: 0;
 }
+
+.custom-search-border {
+    background: linear-gradient(90deg, #F0F7FF 0%, rgba(240, 247, 255, 0.2) 100%);
+    padding: 1px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+.custom-search-border > div{
+    background-color: #0033E5;
+}

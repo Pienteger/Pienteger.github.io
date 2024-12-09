@@ -7,7 +7,8 @@ import thought3 from "../../assets/thoughts/thought3.png"
 import arrow from "../../assets/thoughts/arrow.svg"
 import left_arrow from "../../assets/all_thoughts/left_arrow.svg"
 import right_arrow from "../../assets/all_thoughts/right_arrow.svg"
-import "../style/pagination.css"
+import "../style/thoughts.css"
+import search from "../../assets/all_thoughts/search.svg"
 
 import {motion} from "framer-motion"
 import { fadeIn } from '@/app/varients'
@@ -142,15 +143,13 @@ const Thoughts = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{once: true}}
-            className='flex flex-col gap-5 pt-[72px] px-5 2xl:pt-0 2xl:px-0'>
-            <div className='max-w-[1280px] mx-auto w-full'>
-                <div className='flex justify-between items-center'>
-                    <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
-                        Explore Our Latest Thoughts
-                    </h1>
-                    <Link href="/all-thoughts" >
-                        <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
-                    </Link>
+            className='flex flex-col gap-10 pt-[72px] px-5 2xl:pt-0 2xl:px-0'>
+            <div className='max-w-[1280px] mx-auto'>
+                <div className='custom-search-border'>
+                    <div className='flex justify-start items-center py-3 px-5 gap-2 w-[335px] xl:w-[543px] rounded-[200px]'>
+                            <Image src={search} alt='search' />
+                            <input type="text" name="" id="" placeholder='Search here...' className='bg-transparent text-[#F0F7FF] font-medium text-sm leading-[18.9px] -tracking-[0.28px] w-full focus:outline-none' />
+                    </div>
                 </div>
             </div>
             <div className='w-full 2xl:w-[calc(100%-300px)] ml-auto'>
