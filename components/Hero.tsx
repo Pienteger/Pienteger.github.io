@@ -28,7 +28,7 @@ const Hero = () => {
                         Elevate Your Business with Bespoke Software Solution
                     </h1>
                     <p className='font-normal text-lg leading-[24.3px] -tracking-[0.36px] text-center lg:text-start lg:text-xl lg:leading-[27px] lg:-tracking-[0.4px]'>
-                        We are committed to provide you with the best software solutions for your business
+                        We are committed to provide the best software solutions for your business
                     </p>
                     <div className='flex gap-6 justify-center lg:justify-normal'>
                         <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
