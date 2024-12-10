@@ -175,7 +175,6 @@ const Thoughts = () => {
                 renderOnZeroPageCount={null}
                 className='flex justify-center items-center gap-[26px] text-[#F0F7FF] custom-pagination max-w-[1280px] mx-auto w-full'
             />
-            <button className='lg:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
         </motion.div>
     </div>
   )
