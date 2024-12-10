@@ -24,9 +24,9 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                         </a>
                         <div className='flex items-center gap-6'>
                             <nav className={`flex justify-end text-sm gap-6 text-[${primaryColor}] font-medium`}>
-                                <a href="/#service">Services</a>
-                                <a href="/#Contact">Contact</a>
-                                <a href="/#aboutUs">About Us</a>
+                                <a href="#services">Services</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#about-us">About Us</a>
                             </nav>
                             <a href="#" className={`border border-[${primaryColor}] py-3 px-8 rounded-[200px] text-[${primaryColor}] text-sm font-medium`}>
                                 Start Free
@@ -56,8 +56,8 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                             className={`w-full min-h-[742px] bg-[#0033E5] flex flex-col justify-between items-center py-10 absolute top-[82px] right-0 z-50 transform transition-transform duration-500 ease-in-out 
                                         ${open?"translate-x-0":"-translate-x-full"}`}>
                             <ul className='flex flex-col gap-10 items-center'>
-                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Home</a></li>
-                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Services</a></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="/">Home</a></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="/#services">Services</a></li>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">Contact</a></li>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><a href="#">About us</a></li>
                             </ul>

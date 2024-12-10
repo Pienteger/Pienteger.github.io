@@ -65,7 +65,7 @@ const Footer = () => {
     
     return (
         <>
-            <div className="bg-[#FFE641] mt-20 pt-4 pb-20 flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 px-8 rounded-tr-[32px] rounded-tl-[32px]">
+            <div className="bg-[#FFE641] pt-4 pb-20 flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 px-8 rounded-tr-[32px] rounded-tl-[32px]">
                 <h1 className="text-[#000B33] font-bold text-2xl leading-[34.56px] -tracking-[0.48px]">
                     Craft Your Dreams, Simple. Reliable. Secure
                 </h1>

@@ -21,10 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="">
-          {/* <header className='flex-init bg-[#0033E5] custom-bottom-border'>
-            <Header />
-          </header> */}
-          <main className='flex-1 min-h-screen'>
+          <main className='flex-1 min-h-screen bg-[#F0F7FF] pb-20'>
             {children}
           </main>
           <footer className='flex-init'>

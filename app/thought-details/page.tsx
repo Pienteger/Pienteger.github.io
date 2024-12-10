@@ -3,10 +3,9 @@ import React from 'react'
 import logo from "@/assets/bluenewlogo2024.png";
 import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
-import Hero from '@/components/allThoughts/Hero';
-import ThoughtsWithPagination from '@/components/allThoughts/ThoughtsWithPagination';
+import ThoughtDetails from '@/components/allThoughts/ThoughtDetails';
 
-const AllThoughts = () => {
+const Details = () => {
     const customBorder = {
         borderBottom: '0.5px solid',
         borderImageSource: 'linear-gradient(90deg, rgba(0, 51, 229, 0) 0%, rgba(0, 51, 229, 0.5) 100%)',
@@ -18,10 +17,11 @@ const AllThoughts = () => {
         <header className='flex-init bg-[#F0F7FF]'>
             <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
         </header>
-        <Hero />
-        <ThoughtsWithPagination />
+        <div className=''>
+            <ThoughtDetails/>
+        </div>
         </>
     )
 }
 
-export default AllThoughts
+export default Details
