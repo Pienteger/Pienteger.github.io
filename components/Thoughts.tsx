@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { div } from 'framer-motion/client'
+import Link from 'next/link'
 
 
 
@@ -51,7 +52,9 @@ const Thoughts = () => {
                     <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                         Explore Our Latest Thoughts
                     </h1>
-                    <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+                    <Link href="/all-thoughts" >
+                        <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+                    </Link>
                 </div>
             </div>
             <div className='w-full 2xl:w-[calc(100%-300px)] ml-auto'>
@@ -62,7 +65,7 @@ const Thoughts = () => {
                         '@0.00': {
                             slidesPerView: 1,
                         },
-                        '@0.50': {
+                        '@0.75': {
                             slidesPerView: 2,
                         },
                         '@1.00': {
