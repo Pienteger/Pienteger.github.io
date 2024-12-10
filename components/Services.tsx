@@ -66,7 +66,9 @@ const Services = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{once: true}} 
+        id='services'
         className='max-w-[1280px] mx-auto py-10 flex flex-col gap-10 px-5 2xl:px-0 lg:py-20'>
+        
         <h1
             className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'
         >

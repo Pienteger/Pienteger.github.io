@@ -6,7 +6,7 @@
   }
   
   .accordion-description.open {
-    max-height: 200px; /* Set a reasonable max height for expanded state */
+    max-height: 1000px;
     opacity: 1;
   }
   
