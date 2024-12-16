@@ -13,7 +13,6 @@ import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
 import { useEffect, useState } from "react";
 import NoPage from "@/app/not-found";
-import { div } from "framer-motion/client";
 
 
 const Services= ({params}:any) => {
@@ -22,7 +21,7 @@ const Services= ({params}:any) => {
     borderBottom: '0.5px solid',
     borderImageSource: 'linear-gradient(90deg, rgba(0, 51, 229, 0) 0%, rgba(0, 51, 229, 0.5) 100%)',
     borderImageSlice: 1
-}
+  }
 
 const [allServices, allSetServices] = useState<any>([]);
 
