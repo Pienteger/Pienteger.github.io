@@ -27,7 +27,7 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                             <nav className={`flex justify-end text-sm gap-6 text-[${primaryColor}] font-medium`}>
                                 <Link href="/#services">Services</Link>
                                 <Link href="/contact">Contact</Link>
-                                <Link href="/about">About Us</Link>
+                                <Link href="/">About Us</Link>
                             </nav>
                             <a href="#" className={`border border-[${primaryColor}] py-3 px-8 rounded-[200px] text-[${primaryColor}] text-sm font-medium`}>
                                 Start Free
@@ -60,7 +60,7 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/">Home</Link></li>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/#services">Services</Link></li>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/contact">Contact</Link></li>
-                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/about">About us</Link></li>
+                                <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/">About us</Link></li>
                             </ul>
                             <div className='flex gap-6'>
                                 <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
