@@ -23,17 +23,20 @@ const Services= ({params}:any) => {
     borderImageSlice: 1
   }
 
-const [allServices, allSetServices] = useState<any>([]);
+  const [allServices, allSetServices] = useState<any>([]);
 
-useEffect(()=>{
-  fetch('/services/data.json')
-  .then(res=>res.json())
-  .then(data=>allSetServices(data))
-  .catch(err=>console.log(err))
-},[])
+  useEffect(()=>{
+    fetch('/services/data.json')
+    .then(res=>res.json())
+    .then(data=>allSetServices(data))
+    .catch(err=>console.log(err))
+  },[])
 
-const { slug } = params;
-const service = allServices.find((service: any) => service.slug === slug);
+  const { slug } = params;
+  const service = allServices.find((service: any) => service.slug === slug);
+  if(!service){
+    return <NoPage/>
+  }
 
 return (
 
@@ -41,18 +44,12 @@ return (
       <header className='flex-init bg-[#F0F7FF]'>
         <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
       </header>
-      {
-        service?
-        <div>
-          <Hero service={service} />
-          <TechStack />
-          <BenefitsCard service={service} />
-          <Approach />
-          <SuccessSwiper />
-          <ThoughtsWithAccordion />
-        </div>
-        :<NoPage/>
-      }
+        <Hero service={service} />
+        <TechStack />
+        <BenefitsCard service={service} />
+        <Approach />
+        <SuccessSwiper />
+        <ThoughtsWithAccordion />
     </>
   );
 };
