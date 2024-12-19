@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "/services/images/ai.svg",
+        "title": "AI Integration & Beyond",
+        "slug": "ai-integration-beyond",
+        "description": "Leverage advanced AI capabilities to enhance your business operations, driving innovation and efficiency with seamless integration",
+        "primary_color": "#006609",
+        "bg_color": "#CCFFD0"
+    },
+    {
+        "id": 2,
+        "image": "/services/images/microsoft.svg",
+        "title": "Microsoft Graph & AD Integration",
+        "slug": "microsoft-graph-ad-integration",
+        "description": "Streamline access, enhance data management, and ensure secure connectivity with seamless Microsoft Graph and Active Directory integration.",
+        "primary_color": "#0033E5",
+        "bg_color": "#CCD7FF"
+    },
+    {
+        "id": 3,
+        "image": "/services/images/cloud.svg",
+        "title": "Cloud Infrastructure Management",
+        "slug": "cloud-infrastructure-management",
+        "description": "Enhance scalability, performance, and security with expertly managed cloud solutions tailored to your business needs.",
+        "primary_color": "#006664",
+        "bg_color": "#CCFFFE"
+    },
+    {
+        "id": 4,
+        "image": "/services/images/api.svg",
+        "title": "API Development and Integration",
+        "slug": "api-development-and-integration",
+        "description": "Ensure seamless connectivity and communication between your systems with reliable, well-crafted API solutions",
+        "primary_color": "#665900",
+        "bg_color": "#FFF8CC"
+    },
+    {
+        "id": 5,
+        "image": "/services/images/web.svg",
+        "title": "Web Application Development",
+        "slug": "web-application-development",
+        "description": "Craft dynamic, user-friendly web applications that align perfectly with your brand and drive user engagement.",
+        "primary_color": "#006664",
+        "bg_color": "#CCFFFE"
+    },
+    {
+        "id": 6,
+        "image": "/services/images/data.svg",
+        "title": "Data Analytics and Insights",
+        "slug": "data-analytics-and-insights",
+        "description": "Leverage data to uncover insights and drive informed decisions that propel your business forward",
+        "primary_color": "#0033E5",
+        "bg_color": "#CCD7FF"
+    }
+]
