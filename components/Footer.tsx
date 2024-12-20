@@ -5,35 +5,11 @@ import twitter from "../assets/footer/twitter.svg";
 import instagram from "../assets/footer/instagram.svg";
 import linkedin from "../assets/footer/linkedin.svg";
 import line from "../assets/footer/line.svg";
+import Link from 'next/link';
+import ServicesData from '../public/services/data.json';
 
 
 const Footer = () => {
-    const services = [
-        {
-            url: "",
-            title: "AI Integration & Beyond"
-        },
-        {
-            url: "",
-            title: "Microsoft Graph & AD Integration"
-        },
-        {
-            url: "",
-            title: "Cloud Infrastructure Management"
-        },
-        {
-            url: "",
-            title: "API Development and Integration"
-        },
-        {
-            url: "",
-            title: "Web Application Development"
-        },
-        {
-            url: "",
-            title: "Data Analytics and Insights"
-        }
-    ]
     const mores = [
         {
             url: "",
@@ -44,7 +20,7 @@ const Footer = () => {
             title: "Blogs"
         },
         {
-            url: "",
+            url: "contact",
             title: "Contact Us"
         }
     ]
@@ -58,7 +34,7 @@ const Footer = () => {
             title: "Subscription Policy"
         },
         {
-            url: "",
+            url: "tos",
             title: "Terms & Services"
         }
     ]
@@ -70,18 +46,18 @@ const Footer = () => {
                     Craft Your Dreams, Simple. Reliable. Secure
                 </h1>
                 <button className="bg-[#000B33] w-full lg:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
-                    <span className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
+                    <Link href="/contact" className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
                         Contact Us
-                    </span>
+                    </Link>
                     <Image src={left_arrow} alt="left arrow"/>
                 </button>
             </div>
             <div className="bg-[#000B33] rounded-tr-[50px] rounded-tl-[50px] py-10 -mt-16 relative overflow-hidden">
-                <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5 flex-wrap 2xl:px-0 2xl:flex-nowrap">
+                <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5 flex-wrap 2xl:px-0 2xl:flex-nowrap relative z-50">
                     <div className="flex flex-col gap-3 justify-center mr-[120px]">
-                        <span className="text-[#F0F7FF] font-bold text-2xl leading-[32.4px] -tracking-[0.48px]">
+                        <Link href="/" className="text-[#F0F7FF] font-bold text-2xl leading-[32.4px] -tracking-[0.48px]">
                             Pienteger
-                        </span>
+                        </Link>
                         <p className="text-[#B2D6FF] font-normal text-base leading-[24px] -tracking-[0.32px]">
                             © 2024 All Rights Reserved
                         </p>
@@ -92,9 +68,11 @@ const Footer = () => {
                         </span>
                         <ul className="flex flex-col gap-6">
                             {
-                                services.map((service, index)=>(
+                                ServicesData.map((service, index)=>(
                                     <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                        {service?.title}
+                                        <Link  href={`/services/${service.slug}`}>
+                                            {service?.title}
+                                        </Link>
                                     </li>
                                 ))
                             }
@@ -108,7 +86,9 @@ const Footer = () => {
                             {
                                 mores.map((more, index)=>(
                                     <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                        {more?.title}
+                                        <Link href={`/${more?.url || ""}`}>
+                                            {more?.title}
+                                        </Link>
                                     </li>
                                 ))
                             }
@@ -121,8 +101,10 @@ const Footer = () => {
                         <ul className="flex flex-col gap-6">
                             {
                                 helps.map((help, index)=>(
-                                    <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px]">
-                                        {help.title}
+                                    <li key={index} className="text-[#B2D6FF] font-normal text-base leading-[23.04px] -tracking-[0.32px] cursor-pointer">
+                                        <Link href={`/${help?.url || ""}`}>
+                                            {help.title}
+                                        </Link>
                                     </li>
                                 ))
                             }
@@ -159,7 +141,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='absolute top-[140px] w-[1400px]'>
+                <div className='absolute top-[140px] w-[1400px] z-10'>
                     <Image src={line} alt='line' className='w-full lg:-rotate-[19.722]  -z-50' />
                 </div>
             </div>
