@@ -2,6 +2,10 @@
     display: none;
 }
 
+.success-story-custom-swipper .swiper-pagination, .success-story-custom-swipper .custom-pagination{
+    display: none;
+}
+
 @media screen and (max-width: 676px){
     .custom-swipper .swiper-pagination{
         display: block;
