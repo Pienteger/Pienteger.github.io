@@ -1,4 +1,13 @@
+import Header from "@/components/Header";
 import { Metadata } from "next";
+import logo from "@/assets/bluenewlogo2024.png";
+import mobilenavopen from "@/assets/bluemobilenavopen.svg"
+import mobilenavclose from "@/assets/bluemobilenavclose.svg"
+import Hero from "@/components/about/Hero";
+import Story from "@/components/about/Story";
+import SuccessStory from "@/components/about/SuccessStory";
+import GrowingTeam from "@/components/about/GrowingTeam";
+import Hiring from "@/components/about/Hiring";
 
 export const metadata: Metadata = {
     title: "About Pienteger® | Mission, Vision, and Values",
@@ -6,17 +15,22 @@ export const metadata: Metadata = {
 };
 
 const About = () => {
+    const customBorder = {
+        borderBottom: '0.5px solid',
+        borderImageSource: 'linear-gradient(90deg, rgba(0, 51, 229, 0) 0%, rgba(0, 51, 229, 0.5) 100%)',
+        borderImageSlice: 1
+    }
 
     return (
         <>
-            <div className="content">
-                <h1>About</h1>
-                <p>
-                    Pienteger&reg; (pronounced as Pi-in-tee-zer) is a technology company based in Rajshahi, Bangladesh.
-                    We are a team of passionate individuals who are dedicated to making a difference in the world.
-                    We are committed to creating innovative solutions.
-                </p>
-            </div>
+            <header className='flex-init bg-[#F0F7FF]'>
+                <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
+            </header>
+            <Hero/>
+            <Story/>
+            <SuccessStory/>
+            <GrowingTeam/>
+            <Hiring/>
         </>
     );
 
