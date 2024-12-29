@@ -10,7 +10,7 @@ import GrowingTeam from "@/components/about/GrowingTeam";
 import Hiring from "@/components/about/Hiring";
 
 export const metadata: Metadata = {
-    title: "About Pienteger® | Mission, Vision, and Values",
+    title: "About Us | Pienteger®",
     description: "About Pienteger® - A software company that you can trust.",
 };
 
