@@ -13,6 +13,7 @@ import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
 import { useEffect, useState } from "react";
 import NoPage from "@/app/not-found";
+import Loading from "@/app/loading";
 
 
 const Services= ({params}:any) => {
@@ -24,32 +25,50 @@ const Services= ({params}:any) => {
   }
 
   const [allServices, allSetServices] = useState<any>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(()=>{
     fetch('/services/data.json')
     .then(res=>res.json())
-    .then(data=>allSetServices(data))
-    .catch(err=>console.log(err))
+    .then(data=>{
+      allSetServices(data);
+      setLoading(false);
+    })
+    .catch(err=>{
+      console.log(err);
+      setLoading(false);
+    })
   },[])
 
   const { slug } = params;
+  
+  if(loading){
+    return <Loading/>
+  }
+  
   const service = allServices.find((service: any) => service.slug === slug);
+  
   if(!service){
     return <NoPage/>
   }
 
 return (
-
     <>
       <header className='flex-init bg-[#F0F7FF]'>
         <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
       </header>
-        <Hero service={service} />
-        <TechStack />
-        <BenefitsCard service={service} />
-        <Approach />
-        <SuccessSwiper />
-        <ThoughtsWithAccordion />
+      {
+        !loading && (
+          <>
+            <Hero service={service} />
+            <TechStack />
+            <BenefitsCard service={service} />
+            <Approach />
+            <SuccessSwiper />
+            <ThoughtsWithAccordion />
+          </>
+        )
+      }
     </>
   );
 };
