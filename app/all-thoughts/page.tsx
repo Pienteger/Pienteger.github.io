@@ -5,6 +5,12 @@ import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
 import Hero from '@/components/allThoughts/Hero';
 import ThoughtsWithPagination from '@/components/allThoughts/ThoughtsWithPagination';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "All Thoughts | Pienteger®",
+    description: "Explore All Thoughts from Pienteger® - Your trusted partner in innovative software solutions.",
+};
 
 const AllThoughts = () => {
     const customBorder = {

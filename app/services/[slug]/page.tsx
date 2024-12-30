@@ -1,5 +1,3 @@
-'use client';
-
 import Approach from "@/components/Approach";
 import Header from "@/components/Header";
 import BenefitsCard from "@/components/services/BenefitsCard";
@@ -11,8 +9,16 @@ import logo from "@/assets/bluenewlogo2024.png";
 
 import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
-import { useEffect, useState } from "react";
+import servicesData from "@/public/services/data.json"
+import { Metadata } from "next";
 import NoPage from "@/app/not-found";
+
+
+
+export const metadata: Metadata = {
+  title: "Services | Pienteger®",
+  description: "Discover the wide range of services offered by Pienteger® – innovative solutions tailored to your needs.",
+};
 
 
 const Services= ({params}:any) => {
@@ -23,33 +29,23 @@ const Services= ({params}:any) => {
     borderImageSlice: 1
   }
 
-  const [allServices, allSetServices] = useState<any>([]);
-
-  useEffect(()=>{
-    fetch('/services/data.json')
-    .then(res=>res.json())
-    .then(data=>allSetServices(data))
-    .catch(err=>console.log(err))
-  },[])
-
   const { slug } = params;
-  const service = allServices.find((service: any) => service.slug === slug);
-  if(!service){
-    return <NoPage/>
-  }
+  const service = servicesData.find((service: any) => service.slug === slug);
+
+  if(!service) return <NoPage/>;
+  
 
 return (
-
     <>
       <header className='flex-init bg-[#F0F7FF]'>
         <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
       </header>
-        <Hero service={service} />
-        <TechStack />
-        <BenefitsCard service={service} />
-        <Approach />
-        <SuccessSwiper />
-        <ThoughtsWithAccordion />
+      <Hero service={service} />
+      <TechStack />
+      <BenefitsCard service={service} />
+      <Approach />
+      <SuccessSwiper />
+      <ThoughtsWithAccordion />
     </>
   );
 };

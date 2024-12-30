@@ -4,6 +4,12 @@ import logo from "@/assets/bluenewlogo2024.png";
 import mobilenavopen from "@/assets/bluemobilenavopen.svg"
 import mobilenavclose from "@/assets/bluemobilenavclose.svg"
 import ThoughtDetails from '@/components/allThoughts/ThoughtDetails';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Thoughts | Pienteger® Insights",
+    description: "Dive into thoughts - a unique perspective from Pienteger®. Discover innovative ideas and trusted insights.",
+};
 
 const Details = () => {
     const customBorder = {
