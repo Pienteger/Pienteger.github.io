@@ -32,12 +32,7 @@ const Services = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'>
             {
                 services?.map((service:any, index)=>(
-                    <motion.div 
-                        variants={fadeIn("up", 0.2)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{once: true}}
-                        key={index} className={`px-5 py-6  rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
+                    <div key={index} className={`px-5 py-6  rounded-xl border-b-[5px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
                         <Link 
                             href={`/services/${service.slug}`}
                             className='flex flex-col gap-5'
@@ -50,7 +45,7 @@ const Services = () => {
                                 {service.description}
                             </p>
                         </Link>
-                    </motion.div>
+                    </div>
                 ))
             }
         </div>
