@@ -53,20 +53,15 @@ const BenefitsCard = ({service}:any) => {
         <div className='grid sm:justify-items-center grid-cols-1 2xl:grid-cols-3'>
             {
                 allServices.map((service, index)=>(
-                    <motion.div 
-                        variants={fadeIn("up", 0.2)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{once: true}}
-                        key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px] sm:w-[426px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
-                            <Image src={service.image} alt="ai"/>
-                            <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
-                                {service.title}
-                            </h2>
-                            <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
-                                {service.desctiption}
-                            </p>
-                    </motion.div>
+                    <div key={index} className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px] sm:w-[426px]`} style={{backgroundColor: service.bg_color, borderBottomColor: service.primary_color}}>
+                        <Image src={service.image} alt="ai"/>
+                        <h2 className={`text-[${service.primary_color}] text-xl font-bold leading-[27px] -tracking-[0.4px] lg:text-2xl lg:leading-[32.4px] lg:-tracking-[0.48px]`}>
+                            {service.title}
+                        </h2>
+                        <p className={`text-[${service.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
+                            {service.desctiption}
+                        </p>
+                    </div>
                 ))
             }
         </div>
