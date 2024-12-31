@@ -72,7 +72,7 @@ const SuccessSwiper = () => {
 
   return (
     <motion.div 
-      variants={fadeIn("right", 0.06)}
+      variants={fadeIn("up", 0.02)}
       initial="hidden"
       whileInView={"show"}
       viewport={{once: true}}
