@@ -116,10 +116,18 @@ const Footer = () => {
                                 Follow Us
                             </span>
                             <div className="flex gap-6">
-                                <Image src={facebook} alt="facebook"/>
-                                <Image src={twitter} alt="twitter"/>
-                                <Image src={instagram} alt="instagram"/>
-                                <Image src={linkedin} alt="linkedin"/>
+                                <a href="https://www.facebook.com/people/Pienteger/61570979215489/?_rdc=1&_rdr" target='_blank'>
+                                    <Image src={facebook} alt="facebook"/>
+                                </a>
+                                <a href="#">
+                                    <Image src={twitter} alt="twitter"/>
+                                </a>
+                                <a href="#">
+                                    <Image src={instagram} alt="instagram"/>
+                                </a>
+                                <a href="https://www.linkedin.com/company/pienteger/" target='_blank'>
+                                    <Image src={linkedin} alt="linkedin"/>
+                                </a>
                             </div>
                         </div>
                         <div className="flex flex-col items-center lg:-mb-10 absolute 2xl:static bottom-[153px] right-14 lg:right-20 xl:right-44 2xl:right-0">
