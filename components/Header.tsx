@@ -84,4 +84,4 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
         </>
     );
 }
-export default dynamic(() => Promise.resolve(Header), { ssr: false });
+export default Header;
