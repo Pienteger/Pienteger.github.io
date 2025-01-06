@@ -19,7 +19,7 @@ const Contact = () => {
     }
     return (
         <>
-            <header className='flex-init bg-[#F0F7FF]'>
+            <header className='flex-init bg-[#F0F7FF] sticky top-0 z-[999]'>
                 <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
             </header>
             <div className="max-w-[600px] mx-auto px-5 xl:px-0 pt-16 pb-24">
