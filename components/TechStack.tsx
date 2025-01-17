@@ -22,10 +22,10 @@ const TechStack = () => {
   return (
     <div className='bg-[#FFE641]'>
         <div className='max-w-[1280px] mx-auto py-10 px-5 flex flex-col items-center gap-2 lg:flex-row lg:gap-[102px] 2xl:px-0'>
-            <h1 className='text-[#665900] text-[24px] font-bold w-[315px] leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
+            <h2 className='text-[#665900] text-[24px] font-bold w-[315px] leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                 Technologies We Excel in
                 <span className='pl-[14px]'><Image src={techPattern} alt='tech stack pattern' className='inline'/></span>
-            </h1>
+            </h2>
             <Marquee speed={40} className='flex-1'>
                 {
                     techStacks.map((techstack, index)=>(

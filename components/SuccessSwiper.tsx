@@ -78,9 +78,9 @@ const SuccessSwiper = () => {
       viewport={{once: true}}
       className='max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
+        <h4 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
           Reliable, Innovative Products Crafted
-        </h1>
+        </h4>
         <div className='hidden lg:flex gap-4'>
           <button onClick={() => swiperRef.current?.slidePrev()} className='hover:opacity-60'>
             <Image src={left_arrow} alt='left_arrow'/>
@@ -116,9 +116,9 @@ const SuccessSwiper = () => {
             <SwiperSlide key={index}>
                 <div className={`px-5 py-6 flex flex-col gap-5 rounded-xl border-b-[5px]`} style={{backgroundColor: content.bg_color, borderBottomColor: content.primary_color}}>
                     <Image src={content.image} alt={content.title}/>
-                    <h2 className={`text-[${content.primary_color}] text-2xl font-bold leading-[32.4px] -tracking-[0.48px]`}>
+                    <h4 className={`text-[${content.primary_color}] text-2xl font-bold leading-[32.4px] -tracking-[0.48px]`}>
                         {content.title}
-                    </h2>
+                    </h4>
                     <p className={`text-[${content.primary_color}] text-base font-normal leading-[21.6px] -tracking-[0.32px]`}>
                         {content.description}
                     </p>
