@@ -42,9 +42,9 @@ const Footer = () => {
     return (
         <>
             <div className="bg-[#FFE641] pt-4 pb-20 flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 px-8 rounded-tr-[32px] rounded-tl-[32px]">
-                <h1 className="text-[#000B33] font-bold text-2xl leading-[34.56px] -tracking-[0.48px]">
+                <h2 className="text-[#000B33] font-bold text-2xl leading-[34.56px] -tracking-[0.48px]">
                     Craft Your Dreams, Simple. Reliable. Secure
-                </h1>
+                </h2>
                 <button className="bg-[#000B33] w-full lg:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
                     <Link href="/contact" className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
                         Contact Us

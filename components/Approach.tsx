@@ -44,17 +44,17 @@ const Approach = () => {
             </div>
             <div className='bg-[#000B33] xl:bg-transparent'>
                 <div className='relative max-w-[1280px] mx-auto px-5 pb-20 flex flex-col gap-10 overflow-hidden lg:gap-20 2xl:px-0'>
-                    <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
+                    <h2 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                         Our Approach: Collaborative, Transparent, and Focused
-                    </h1>
+                    </h2>
                     <div className='flex flex-col gap-6 lg:flex-row 2xl:gap-20'>
                         {
                             contents.map((content, index)=>(
                                 <div key={index} className='flex flex-col gap-5'>
                                     <Image src={content?.image} alt='discovery'/>
-                                    <h2 className='text-[#F0F7FF] text-2xl font-bold leading-[54px] -tracking-[0.48px]'>
+                                    <h4 className='text-[#F0F7FF] text-2xl font-bold leading-[54px] -tracking-[0.48px]'>
                                         {content?.title}
-                                    </h2>
+                                    </h4>
                                     <p className='text-[#B2D6FF] text-base font-normal leading-[21.6px] -tracking-[0.32px]'>
                                         {content?.description}
                                     </p>

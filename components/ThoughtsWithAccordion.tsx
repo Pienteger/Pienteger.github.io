@@ -17,7 +17,7 @@ const ThoughtsWithAccordion = () => {
       whileInView={"show"}
       viewport={{once: true}}
       className='overflow-hidden md:pt-20'>
-      <div className='relative w-full'>
+      <div className='relative w-full scale-100'>
         <div className='absolute bottom-0 w-full'>
           <Image src={bottom_bg} alt='bottom bg' className='w-full h-full z-10'/>
         </div>

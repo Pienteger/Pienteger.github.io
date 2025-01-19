@@ -38,9 +38,9 @@ const Thoughts = () => {
         <div className='flex flex-col gap-5 pt-[72px] px-5 2xl:pt-0 2xl:px-0'>
             <div className='max-w-[1280px] mx-auto w-full'>
                 <div className='flex justify-between items-center'>
-                    <h1 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
+                    <h2 className='text-[#F0F7FF] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                         Explore Our Latest Thoughts
-                    </h1>
+                    </h2>
                     <Link href="/all-thoughts" >
                         <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
                     </Link>
