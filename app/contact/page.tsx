@@ -4,7 +4,7 @@ import logo from "@/assets/bluenewlogo2024.png";
 import mobilenavopen from "@/assets/bluemobilenavopen.svg";
 import mobilenavclose from "@/assets/bluemobilenavclose.svg";
 import ContactForm from "@/components/contact/ContactForm";
-
+import { Icon } from '@iconify-icon/react';
 
 export const metadata: Metadata = {
     title: "Contact Us | Pienteger®",
@@ -24,6 +24,7 @@ const Contact = () => {
             </header>
             <div className="max-w-[600px] mx-auto px-5 xl:px-0 pt-16 pb-24">
                 <ContactForm/>
+                <Icon icon="mdi-light:alert" aria-label="Alert" />
             </div>
         </>
     );
