@@ -38,6 +38,8 @@ const Footer = () => {
             title: "Terms & Services"
         }
     ]
+
+    const currentYear = new Date().getFullYear();
     
     return (
         <>
@@ -59,7 +61,7 @@ const Footer = () => {
                             Pienteger
                         </Link>
                         <p className="text-[#B2D6FF] font-normal text-base leading-[24px] -tracking-[0.32px]">
-                            © 2024 All Rights Reserved
+                            © {currentYear} All Rights Reserved
                         </p>
                     </div>
                     <div className="p-3 flex flex-col gap-6">
