@@ -118,15 +118,15 @@ const Footer = () => {
                                 Follow Us
                             </span>
                             <div className="flex gap-6">
-                                <a href="https://www.facebook.com/people/Pienteger/61570979215489/?_rdc=1&_rdr" target='_blank'>
+                                <a href="https://www.facebook.com/pientegersoftware/" target='_blank'>
                                     <Image src={facebook} alt="facebook"/>
                                 </a>
-                                <a href="#">
+                                {/* <a href="#">
                                     <Image src={twitter} alt="twitter"/>
                                 </a>
                                 <a href="#">
                                     <Image src={instagram} alt="instagram"/>
-                                </a>
+                                </a> */}
                                 <a href="https://www.linkedin.com/company/pienteger/" target='_blank'>
                                     <Image src={linkedin} alt="linkedin"/>
                                 </a>

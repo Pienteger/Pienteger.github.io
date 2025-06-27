@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import Image from "next/image";
 import sertifiket from "../assets/products/sertifiket.png";
+import crowLogo from "../assets/products/crow-logo.png";
 import rasidah_logo from "../assets/products/rasidah_logo.png";
 import green_left_arrow from "../assets/products/green_left_arrow.svg";
 import blue_left_arrow from "../assets/products/blue_left_arrow.svg";
@@ -25,7 +26,7 @@ const projectsContents = [
   {
     image: easywashapp_logo,
     arrow: blue_left_arrow,
-    title: "EasyWash™",
+    title: "EasyWash",
     description:
       "A CA based laundry management system for efficient operations",
     bg_color: "#CCD7FF",
@@ -33,19 +34,19 @@ const projectsContents = [
     website: "https://easywashapp.com",
   },
   {
-    image: sertifiket,
+    image: crowLogo,
     arrow: green_left_arrow,
-    title: "Sertifiket™",
+    title: "Crow™",
     description:
-      "Comprehensive solution for digital identity, certificates, and documents",
+      "Efficient CLI tool to scan and delete build files, helping you free up disk space.",
     bg_color: "#CCFFD0",
     primary_color: "#006609",
-    website: "https://sertifiket.com",
+    website: "https://github.com/Pienteger/Crow/releases",
   },
   {
     image: rasidah_logo,
     arrow: brown_arrow,
-    title: "Rasidah™",
+    title: "Rasidah",
     description: "A tech focused online news agency in the Bangladesh region",
     bg_color: "#FFF8CC",
     primary_color: "#665900",
