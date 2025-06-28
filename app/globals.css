@@ -54,41 +54,6 @@
   margin: 3px 0
 }
 
-/* h1 {
-  font-family: "Cal Sans";
-  font-size: 56px;
-}
-
-h2 {
-  font-family: "Cal Sans";
-  font-size: 40px;
-  letter-spacing: 0.01em;
-}
-
-h3 {
-  font-family: "Cal Sans";
-  font-size: 36px;
-  letter-spacing: 0.015em;
-}
-
-h4 {
-  font-family: "Cal Sans";
-  font-size: 28px;
-  letter-spacing: 0.02em;
-}
-
-h5 {
-  font-family: "Cal Sans";
-  font-size: 20px;
-  letter-spacing: 0.03em;
-}
-
-h6 {
-  font-family: "Cal Sans";
-  font-size: 16px;
-  letter-spacing: 0.04em;
-} */
-
 .bold-xl {
   @apply font-bold text-xl;
 }
