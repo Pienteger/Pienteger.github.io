@@ -28,7 +28,7 @@ const projectsContents = [
     arrow: blue_left_arrow,
     title: "EasyWash",
     description:
-      "A CA based laundry management system for efficient operations",
+      "A California based laundry management system for efficient operations",
     bg_color: "#CCD7FF",
     primary_color: "#0033E5",
     website: "https://easywashapp.com",
