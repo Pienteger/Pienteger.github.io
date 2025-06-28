@@ -1,6 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -91,7 +115,7 @@ h6 {
 
 
 .bd-flag-text {
-  @apply bg-gradient-to-r from-[#006a4e] to-[#f42a41] text-transparent bg-clip-text;
+  @apply bg-linear-to-r from-[#006a4e] to-[#f42a41] text-transparent bg-clip-text;
 }
 
 .product-card {

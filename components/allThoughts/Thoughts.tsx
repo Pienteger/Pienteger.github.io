@@ -148,7 +148,7 @@ const Thoughts = () => {
                 <div className='custom-search-border'>
                     <div className='flex justify-start items-center py-3 px-5 gap-2 w-[335px] xl:w-[543px] rounded-[200px]'>
                             <Image src={search} alt='search' />
-                            <input type="text" name="" id="" placeholder='Search here...' className='bg-transparent text-[#F0F7FF] font-medium text-sm leading-[18.9px] -tracking-[0.28px] w-full focus:outline-none' />
+                            <input type="text" name="" id="" placeholder='Search here...' className='bg-transparent text-[#F0F7FF] font-medium text-sm leading-[18.9px] -tracking-[0.28px] w-full focus:outline-hidden' />
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <header className='flex-init bg-[#0033E5] sticky top-0 z-[999]'>
+      <header className='flex-init bg-[#0033E5] sticky top-0 z-999'>
         <Header primaryColor="#F0F7FF" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
       </header>
       <Hero/>

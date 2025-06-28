@@ -21,7 +21,7 @@ const AllThoughts = () => {
     
     return (
         <>
-        <header className='flex-init bg-[#F0F7FF] sticky top-0 z-[999]'>
+        <header className='flex-init bg-[#F0F7FF] sticky top-0 z-999'>
             <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
         </header>
         <Hero />

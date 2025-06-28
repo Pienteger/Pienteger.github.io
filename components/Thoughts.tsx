@@ -42,7 +42,7 @@ const Thoughts = () => {
                         Explore Our Latest Thoughts
                     </h2>
                     <Link href="/all-thoughts" >
-                        <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+                        <button className='hidden lg:block px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-medium text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
                     </Link>
                 </div>
             </div>
@@ -80,7 +80,7 @@ const Thoughts = () => {
                 </Swiper>
             </div>
             <Link href="/all-thoughts" className='flex justify-center'>
-                <button className='lg:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-[500] text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
+                <button className='lg:hidden w-fit mx-auto mt-10 px-8 py-3 border border-[#F0F7FF] rounded-[200px] font-medium text-[#F0F7FF] text-base leading-[21.6px] -tracking-[0.32px]'>View All</button>
             </Link>
         </div>
     </div>
