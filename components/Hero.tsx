@@ -2,6 +2,7 @@ import React from 'react'
 import pattern from "../assets/hero_pattern.png";
 import line from "../assets/hero_line.svg";
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Hero = () => {
@@ -17,12 +18,12 @@ const Hero = () => {
                     We are committed to provide the best software solutions for your business
                 </p>
                 <div className='flex gap-6 justify-center lg:justify-normal'>
-                    <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
+                    <Link href="/contact" className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
                         Contact Us
-                    </button>
-                    <button className='px-[47px] py-3 text-[#F0F7FF] font-medium text-base rounded-[200px] border border-[#F0F7FF] leading-[21.6px] -tracking-[0.32px]'>
+                    </Link>
+                    <Link href="/contact" className='px-[47px] py-3 text-[#F0F7FF] font-medium text-base rounded-[200px] border border-[#F0F7FF] leading-[21.6px] -tracking-[0.32px]'>
                         Start Free
-                    </button>
+                    </Link>
                 </div>
             </div>
             <Image src={pattern} alt='pattern image' className="ml-20 lg:ml-0 lg:absolute lg:-right-[55px] lg:bottom-0"/>
