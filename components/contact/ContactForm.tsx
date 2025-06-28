@@ -17,7 +17,7 @@ const ContactForm = () => {
     }
   return (
     <div>
-        <h1 className='text-[#0033E5] font-bold text-4xl leading-[44px] -tracking-[0.72px]'>Get in touch</h1>
+        <h1 className='text-pieblue font-bold text-4xl leading-[44px] -tracking-[0.72px]'>Get in touch</h1>
         <p className='text-[#000B33] font-normal text-lg leading-[28px] -tracking-[0.72px] lg:text-xl lg:leading-[30px] pt-5 pb-12'>Our friendly team would love to hear from you.</p>
         <form className='flex flex-col gap-6' onSubmit={handleSubmit}>
             <div className='flex flex-col xl:flex-row gap-6 '>

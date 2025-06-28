@@ -72,7 +72,7 @@ const SuccessStory = () => {
         viewport={{once: true}}
         className='w-full 2xl:w-[calc(100%-300px)] ml-auto py-16 xl:py-20 flex flex-col px-5 2xl:px-0'>
         <div className='flex flex-col gap-5'>
-            <h1 className='text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
+            <h1 className='text-pieblue text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]'>
                 We’re Proud of Our Success Stories
             </h1>
             <p className='text-[#000B33] text-lg font-normal leading-[28px] lg:text-xl lg:leading-[30x]'>

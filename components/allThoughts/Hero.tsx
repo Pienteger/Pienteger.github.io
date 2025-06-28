@@ -16,7 +16,7 @@ const Hero = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{once: true}}
-                    className='w-full py-10 px-5 text-[#0033E5] flex flex-col gap-6 lg:py-[90px] lg:px-0'>
+                    className='w-full py-10 px-5 text-pieblue flex flex-col gap-6 lg:py-[90px] lg:px-0'>
                         <h1 className='font-medium text-[30px] leading-[36px] -tracking-[0.6px] text-center lg:text-[64px] lg:leading-[86.4px] lg:-tracking-[1.28px] lg:text-start'>
                             Explore Our Latest Thoughts
                         </h1>

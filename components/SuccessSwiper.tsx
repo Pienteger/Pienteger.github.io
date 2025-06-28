@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import Image from "next/image";
-import sertifiket from "../assets/products/sertifiket.png";
 import crowLogo from "../assets/products/crow-logo.png";
 import rasidah_logo from "../assets/products/rasidah_logo.png";
 import green_left_arrow from "../assets/products/green_left_arrow.svg";
@@ -66,19 +65,19 @@ const SuccessSwiper = () => {
       className="max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0"
     >
       <div className="flex justify-between items-center">
-        <h4 className="text-[#0033E5] text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]">
+        <h4 className="text-pieblue text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]">
           Reliable, Innovative Products Crafted
         </h4>
         <div className="hidden lg:flex gap-4">
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className="hover:opacity-60"
+            className="hover:opacity-60 cursor-pointer"
           >
             <Image src={left_arrow} alt="left_arrow" />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className="hover:opacity-60"
+            className="hover:opacity-60 cursor-pointer"
           >
             <Image src={right_arrow} alt="right_arrow" />
           </button>
@@ -89,6 +88,7 @@ const SuccessSwiper = () => {
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
+          loop={projectsContents.length > 3}
           slidesPerView={1}
           spaceBetween={0}
           pagination={{ clickable: true }}

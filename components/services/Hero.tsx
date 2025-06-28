@@ -7,7 +7,7 @@ const Hero = ({service}:any) => {
     <div
         className='bg-[#F0F7FF] overflow-hidden relative'>
         <div className='max-w-[1280px] mx-auto flex flex-col items-center lg:relative lg:items-start lg:px-5 2xl:px-0'>    
-            <div className='w-full py-10 px-5 text-[#0033E5] flex flex-col gap-6 lg:py-[90px] lg:px-0 xl:w-[740px]'>
+            <div className='w-full py-10 px-5 text-pieblue flex flex-col gap-6 lg:py-[90px] lg:px-0 xl:w-[740px]'>
                 <h1 className='font-medium text-[30px] leading-[36px] -tracking-[0.6px] text-center lg:text-[64px] lg:leading-[86.4px] lg:-tracking-[1.28px] lg:text-start'>
                     {service?.title}
                 </h1>
@@ -15,10 +15,10 @@ const Hero = ({service}:any) => {
                     {service?.description}
                 </p>
                 <div className='flex gap-6 justify-center lg:justify-normal'>
-                    <button className='px-[41px] py-3 text-[#FAFFFA] bg-[#0033E5] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
+                    <button className='px-[41px] py-3 text-[#FAFFFA] bg-pieblue font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
                         Contact Us
                     </button>
-                    <button className='px-[47px] py-3 text-[#0033E5] font-medium text-base rounded-[200px] border border-[#0033E5] leading-[21.6px] -tracking-[0.32px]'>
+                    <button className='px-[47px] py-3 text-pieblue font-medium text-base rounded-[200px] border border-pieblue leading-[21.6px] -tracking-[0.32px]'>
                         Start Free
                     </button>
                 </div>

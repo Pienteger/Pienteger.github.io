@@ -56,7 +56,7 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                     {
                         open? 
                         <div 
-                            className={`w-full max-h-screen bg-[#0033E5] flex flex-col justify-between items-center gap-20 py-10 absolute top-[81px] right-0 z-50 transform transition-transform duration-500 ease-in-out 
+                            className={`w-full max-h-screen bg-pieblue flex flex-col justify-between items-center gap-20 py-10 absolute top-[81px] right-0 z-50 transform transition-transform duration-500 ease-in-out 
                                         ${open?"translate-x-0":"-translate-x-full"}`}>
                             <ul className='flex flex-col gap-10 items-center'>
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/">Home</Link></li>
@@ -65,16 +65,12 @@ const Header = ({primaryColor, logo, customBorder, mobilenavopen, mobilenavclose
                                 <li className='text-[#F0F7FF80] text-3xl font-medium leading-[40.5px] -tracking-[0.6px]'><Link href="/about">About us</Link></li>
                             </ul>
                             <div className='flex gap-6'>
-                                <button className='px-[41px] py-3 text-[#0033E5] bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
-                                    <Link href="/contact">
-                                        Contact Us
-                                    </Link>
-                                </button>
-                                <button className='px-[47px] py-3 text-[#F0F7FF] font-medium text-base rounded-[200px] border border-[#F0F7FF] leading-[21.6px] -tracking-[0.32px]'>
-                                    <Link href="/contact">
-                                        Start Free
-                                    </Link>
-                                </button>
+                                <Link href="/contact" className='px-[41px] py-3 text-pieblue bg-[#F0F7FF] font-medium text-base rounded-[200px] leading-[21.6px] -tracking-[0.32px]'>
+                                    Contact Us
+                                </Link>
+                                <Link href="/contact" className='px-[47px] py-3 text-[#F0F7FF] font-medium text-base rounded-[200px] border border-[#F0F7FF] leading-[21.6px] -tracking-[0.32px]'>
+                                    Start Free
+                                </Link>
                             </div>
                         </div>:
                         ""
