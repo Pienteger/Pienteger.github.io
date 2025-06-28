@@ -137,7 +137,7 @@ const Thoughts = () => {
 
 
   return (
-    <div className='bg-[#0033E5] 2xl:bg-transparent'>
+    <div className='bg-pieblue 2xl:bg-transparent'>
         <motion.div 
             variants={fadeIn("left", 0.06)}
             initial="hidden"

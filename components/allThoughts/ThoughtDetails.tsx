@@ -16,7 +16,7 @@ const ThoughtDetails = () => {
         <h1 className='text-[#000B33] text-center text-[30px] font-normal leading-[44px] -tracking-[0.6px] lg:text-[64px] lg:font-medium lg:leading-[86.4px] lg:-tracking-[1.28px]'>
             Exploring the Future: How VR is Revolutionising Business and Beyond
         </h1>
-        <span className='text-[#0033E5] text-base font-normal leading-[24px] -tracking-[0.32px]'>
+        <span className='text-pieblue text-base font-normal leading-[24px] -tracking-[0.32px]'>
             August 25 2024
         </span>
         <Image src={banner} alt="hero banner" className='w-full'/> 
@@ -25,7 +25,7 @@ const ThoughtDetails = () => {
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px]'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.
         </p>
-        <h4 className='text-[#0033E5] text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[72px] pb-5'>
+        <h4 className='text-pieblue text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[72px] pb-5'>
             Introduction
         </h4>
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px] pb-7'>
@@ -52,7 +52,7 @@ const ThoughtDetails = () => {
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px]'>
             Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus. Quis velit eget ut tortor tellus. Sed vel, congue felis elit erat nam nibh orci.
         </p>
-        <h4 className='text-[#0033E5] text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[32px] pb-4'>
+        <h4 className='text-pieblue text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[32px] pb-4'>
             Software and tools
         </h4>
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px]'>      
@@ -61,7 +61,7 @@ const ThoughtDetails = () => {
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px] pt-7'>      
             Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.  
         </p>
-        <h4 className='text-[#0033E5] text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[32px] pb-4'>
+        <h4 className='text-pieblue text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pt-[32px] pb-4'>
             Other resources
         </h4>
         <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px]'>      
@@ -86,7 +86,7 @@ const ThoughtDetails = () => {
             Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.
         </p>
         <div className='bg-[#CCD7FF] rounded-2xl p-8 my-12'>
-            <h4 className='text-[#0033E5] text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pb-5'>
+            <h4 className='text-pieblue text-2xl font-medium leading-[32px] -tracking-[0.48px] lg:text-3xl lg:leading-[38px] lg:-tracking-[0.6px] pb-5'>
                 Conclusion
             </h4>
             <p className='text-[#000B33] text-base font-normal leading-[24px] -tracking-[0.32px] lg:leading-[30px] lg:-tracking-[0.32px]'>      
@@ -100,7 +100,7 @@ const ThoughtDetails = () => {
             </p>
         </div>
         <div className='flex justify-between xl:justify-normal xl:gap-6 items-center pt-6'>
-            <button className='border border-[#0033E5] rounded-[200px] px-8 py-3 flex items-center gap-2 text-[#0033E5] text-sm font-medium leading-[18.9px] -tracking-[0.28px]'>
+            <button className='border border-pieblue rounded-[200px] px-8 py-3 flex items-center gap-2 text-pieblue text-sm font-medium leading-[18.9px] -tracking-[0.28px]'>
                 <Image src={copy} alt='copy'/>
                 Copy Link
             </button>

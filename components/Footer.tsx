@@ -47,12 +47,12 @@ const Footer = () => {
                 <h2 className="text-[#000B33] font-bold text-2xl leading-[34.56px] -tracking-[0.48px]">
                     Craft Your Dreams, Simple. Reliable. Secure
                 </h2>
-                <button className="bg-[#000B33] w-full lg:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
-                    <Link href="/contact" className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
+                <Link href="/contact" className="bg-[#000B33] w-full lg:w-fit rounded-[200px] px-8 py-4 flex items-center justify-center gap-2">
+                    <span className="text-[#B2D6FF] font-medium text-base leading-[21.6px] -tracking-[0.32px]">
                         Contact Us
-                    </Link>
+                    </span>
                     <Image src={left_arrow} alt="left arrow"/>
-                </button>
+                </Link>
             </div>
             <div className="bg-[#000B33] rounded-tr-[50px] rounded-tl-[50px] py-10 -mt-16 relative overflow-hidden">
                 <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-5 flex-wrap 2xl:px-0 2xl:flex-nowrap relative z-50">

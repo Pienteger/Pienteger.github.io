@@ -6,6 +6,7 @@
     from 180deg at 50% 50%,
     var(--tw-gradient-stops)
   );
+  --color-pieblue: #0033E5;
 }
 
 /*
