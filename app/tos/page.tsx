@@ -16,7 +16,7 @@ const Tos: React.FC = () => {
     }
     return (
         <div className="">
-            <header className='flex-init bg-[#F0F7FF] sticky top-0 z-[999]'>
+            <header className='flex-init bg-[#F0F7FF] sticky top-0 z-999'>
                 <Header primaryColor="#0033E5" logo={logo} customBorder={customBorder} mobilenavopen={mobilenavopen} mobilenavclose={mobilenavclose}/>
             </header>
             <div className="max-w-[1280px] xl:mx-auto mx-4 md:px-40 px-5 pt-10 pb-5 flex flex-col gap-2">

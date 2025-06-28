@@ -134,7 +134,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col items-center lg:-mb-10 absolute 2xl:static bottom-[153px] right-14 lg:right-20 xl:right-44 2xl:right-0">
                             <button 
-                                className="bg-[#41FFFC] text-[#006664] rounded-[200px] py-2 px-6 uppercase font-bold text-base leading-[23.04px] -tracking-[0.32px] rotate-[18deg] 
+                                className="bg-[#41FFFC] text-[#006664] rounded-[200px] py-2 px-6 uppercase font-bold text-base leading-[23.04px] -tracking-[0.32px] rotate-18 
                                             w-[120px] -mr-[60px]">
                                     RELIABLE
                             </button>

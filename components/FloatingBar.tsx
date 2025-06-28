@@ -5,7 +5,7 @@ import arrow from "../assets/footer/guidance_left-arrow.svg"
 const FloatingBar = () => {
   return (
     <div className='hidden md:flex justify-center w-full'>
-        <div className='p-6 rounded-[80px] bg-[#FFE641] flex items-center gap-5 fixed bottom-10 z-[9999]'>
+        <div className='p-6 rounded-[80px] bg-[#FFE641] flex items-center gap-5 fixed bottom-10 z-9999'>
             <span className='text-[#000B33] text-2xl font-bold leading-[34.56px] -tracking-[0.48px]'>
                 Craft Your Dreams, Simple. Reliable. Secure
             </span>
