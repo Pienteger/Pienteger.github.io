@@ -6,6 +6,7 @@ import SwiperCore from "swiper";
 import Image from "next/image";
 import crowLogo from "../assets/products/crow-logo.png";
 import rasidah_logo from "../assets/products/rasidah_logo.png";
+import yakiya_logo from "../assets/products/yakiya_logo.png";
 import green_left_arrow from "../assets/products/green_left_arrow.svg";
 import blue_left_arrow from "../assets/products/blue_left_arrow.svg";
 import brown_arrow from "../assets/products/brown_left_arrow.svg";
@@ -20,8 +21,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination } from "swiper/modules";
+import ArrowIcon from "@/components/ArrowIcon";
 
 const projectsContents = [
+  {
+    image: yakiya_logo,
+    arrow: blue_left_arrow,
+    title: "YakiYa",
+    description:
+      "Yaki Ya! is a Halal Japanese restaurant based in Kingsbury, London",
+    bg_color: "#FFD6D2",
+    primary_color: "#ec3424",
+    website: "https://yaki-ya.co.uk/",
+  },
   {
     image: easywashapp_logo,
     arrow: blue_left_arrow,
@@ -64,6 +76,10 @@ const SuccessSwiper = () => {
       viewport={{ once: true }}
       className="max-w-[1280px] mx-auto py-20 flex flex-col gap-10 px-5 2xl:px-0"
     >
+      <span className="hidden bg-[#CCD7FF]"></span>
+      <span className="hidden text-[#0033E5]"></span>
+      <span className="hidden bg-[#FFD6D2]"></span>
+      <span className="hidden text-[#ec3424]"></span>
       <div className="flex justify-between items-center">
         <h4 className="text-pieblue text-[24px] font-bold leading-[28.8px] -tracking-[0.48px] lg:text-[40px] lg:leading-[54px] lg:-tracking-[0.8px]">
           Reliable, Innovative Products Crafted
@@ -134,7 +150,11 @@ const SuccessSwiper = () => {
                 >
                   Visit Website{" "}
                   <span>
-                    <Image src={content.arrow} alt={`${content.title} arrow`} />
+                    <ArrowIcon
+                      color={content.primary_color}
+                      width={21}
+                      height={20}
+                    />
                   </span>
                 </a>
               </div>
